@@ -1,0 +1,8 @@
+<h1>Bienvenue chez Projet Vroom gros bâtard!</h1>
+<p>Pour l'instant on a <%= @cars.count%> Gova dans le garage:</p>
+
+<ul>
+<% @cars.each do |car| %>
+<li><%= car.make %> <%= car.model %></li>
+<% end %>
+</ul>
