@@ -1,8 +1,16 @@
-<h1>Bienvenue chez Projet Vroom gros bâtard!</h1>
-<p>Pour l'instant on a <%= @cars.count%> Gova dans le garage:</p>
+<h1>Bienvenue chez Projet Vroom !</h1>
+<h4>Des voitures d'occasion rigoureusement inspectées, soigneusement préparées, amoureusement livrées.</h4>
+<p>Pour l'instant nous avons <%= @cars.count%> voitures dans le garage:</p>
+
 
 <ul>
-<% @cars.each do |car| %>
-<li><%= car.make %> <%= car.model %></li>
-<% end %>
+  <li><%= link_to 'Acheter', acheter_path %></li>
+  <li><%= link_to 'Vendre', vendre_path %></li>
+  <li><%= link_to 'Comment ça marche ?', commentcamarche_path %></li>
+  <li><%= link_to 'FAQ', faq_path %></li>
+  <li><%= link_to 'À propos', apropos_path %></li>
+  <li><%= link_to 'cgv', cgv_path %></li>
+  <li><%= link_to 'Mentions légales', mentionslegales_path %></li>
 </ul>
+
+

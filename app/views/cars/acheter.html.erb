@@ -1,0 +1,7 @@
+<ul>
+  <% @cars.each do |car| %>
+    <li><%= car.make %> <%= car.model %> 
+    <%= link_to 'Détails', controller: 'cars', action: 'details', id: car %>
+    </li>
+  <% end %>
+</ul>
