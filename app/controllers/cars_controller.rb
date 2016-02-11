@@ -9,7 +9,7 @@ class CarsController < ApplicationController
   def details
     @car = Car.find(params[:id])
     @caroptions = CarOption.where(car_id: @car.id)
-    @options = Option.where(id: @caroptions.map(&:id))
+    @options = Option.where(id: @caroptions.map(&:option_id))
   end
 
 end

@@ -31,7 +31,7 @@ test_option_10 = Option.create(description: 'Bon esprit')
 
 test_car_option_1 = CarOption.create(car_id: 1, option_id: 1)
 test_car_option_2 = CarOption.create(car_id: 1, option_id: 2)
-test_car_option_3 = CarOption.create(car_id: 1, option_id: 3)
+test_car_option_3 = CarOption.create(car_id: 2, option_id: 3)
 test_car_option_4 = CarOption.create(car_id: 2, option_id: 3)
 test_car_option_5 = CarOption.create(car_id: 2, option_id: 4)
 test_car_option_6 = CarOption.create(car_id: 2, option_id: 5)

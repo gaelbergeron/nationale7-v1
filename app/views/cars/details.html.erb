@@ -1,4 +1,6 @@
 <h1><%= @car.owner_comment %></h1>
+<ul>
 <% @options.each do |option| %>
-<%= option.description %>
+<li><%= option.description %></li>
 <% end %>
+</ul>
