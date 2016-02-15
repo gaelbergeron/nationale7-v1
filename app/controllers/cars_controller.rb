@@ -1,6 +1,26 @@
 class CarsController < ApplicationController
+  
   def acheter
-    @cars = Car.all 
+    @filterrific = initialize_filterrific(
+      Car,
+      params[:filterrific],
+      :select_options => {
+        sorted_by: Car.options_for_sorted_by,
+        with_make: Car.options_for_select
+      }
+    ) or return 
+    @cars = @filterrific.find.page(params[:page])
+
+
+    p '*' * 90
+    p params
+    p @cars
+    p '*' * 30 + ' sous @cars et params' + '*' * 30
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def vendre
