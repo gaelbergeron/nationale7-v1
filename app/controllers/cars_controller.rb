@@ -6,7 +6,8 @@ class CarsController < ApplicationController
       params[:filterrific],
       :select_options => {
         sorted_by: Car.options_for_sorted_by,
-        with_make: Car.options_for_select
+        with_make: Car.options_for_select_make,
+        with_fuel_type: ['Diesel', 'Essence']
       }
     ) or return 
     @cars = @filterrific.find.page(params[:page])

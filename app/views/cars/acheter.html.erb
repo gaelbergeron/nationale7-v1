@@ -9,6 +9,14 @@
   )%>
 </div>
 
+<div>
+  Motorisation
+  <%= f.select(
+    :with_fuel_type,
+    @filterrific.select_options[:with_fuel_type],
+    { include_blank: '- Any -' }
+  )%>
+</div>
 
 <%= render_filterrific_spinner %>
 

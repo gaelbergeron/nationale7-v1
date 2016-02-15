@@ -4,6 +4,7 @@ class Car < ActiveRecord::Base
               :available_filters => %w[
                 sorted_by
                 with_make
+                with_fuel_type
               ]
 
   has_many :car_clients
@@ -31,6 +32,10 @@ class Car < ActiveRecord::Base
     where(make: [makes])
   }
 
+  scope :with_fuel_type, lambda { |fuel_types|
+    where(fuel_type: [fuel_types])
+  }  
+
   def self.options_for_sorted_by
     [
       ['Prix croissant', 'vroom_price_asc'],
@@ -40,9 +45,8 @@ class Car < ActiveRecord::Base
     ]
   end
 
-  def self.options_for_select
+  def self.options_for_select_make
     order('make').map { |e| [e.make] }
   end
-
 
 end
