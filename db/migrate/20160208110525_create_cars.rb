@@ -14,9 +14,9 @@ class CreateCars < ActiveRecord::Migration
       t.integer :number_of_seats
       t.integer :mileage
       t.string :vin_number
-      t.string :exterior_color
+      t.string :exterior_paint
       t.string :interior_type
-      t.string :interior_color
+      t.string :interior_paint
       t.string :manufacturer_warranty
       t.integer :engine_size
       t.integer :horsepower

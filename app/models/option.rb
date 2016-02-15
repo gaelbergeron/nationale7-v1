@@ -1,3 +1,8 @@
 class Option < ActiveRecord::Base
-  has_many :cars_options
+  has_many :car_options
+
+  def to_s
+    "#{id} #{description}"
+  end
+
 end

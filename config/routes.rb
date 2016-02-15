@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  ActiveAdmin.routes(self)
+  
   #Cars controller
   root 'welcome#index'
   get 'acheter' => 'cars#acheter'

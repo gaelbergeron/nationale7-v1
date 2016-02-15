@@ -10,6 +10,8 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     @caroptions = CarOption.where(car_id: @car.id)
     @options = Option.where(id: @caroptions.map(&:option_id))
+    @photos = Photo.where(car_id: @car.id)
+    p @photos
   end
 
 end
