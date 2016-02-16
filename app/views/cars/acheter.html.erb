@@ -1,11 +1,16 @@
 <%= form_for_filterrific @filterrific do |f| %>
 
 <div>
+  Sorted by
+  <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by]) %>
+</div>
+
+<div>
   Constructeur
   <%= f.select(
     :with_make,
     @filterrific.select_options[:with_make],
-    { include_blank: '- Any -' }
+    { include_blank: '- Toutes marques -' }
   )%>
 </div>
 
@@ -14,7 +19,16 @@
   <%= f.select(
     :with_fuel_type,
     @filterrific.select_options[:with_fuel_type],
-    { include_blank: '- Any -' }
+    { include_blank: '- Tout type de carburant -' }
+  )%>
+</div>
+
+<div>
+  Prix
+  <%= f.select(
+    :with_vroom_price_lt,
+    @filterrific.select_options[:with_vroom_price_lt],
+    { include_blank: '- Tous les prix -' }
   )%>
 </div>
 

@@ -5,6 +5,7 @@ class Car < ActiveRecord::Base
                 sorted_by
                 with_make
                 with_fuel_type
+                with_vroom_price_lt
               ]
 
   has_many :car_clients
@@ -22,6 +23,10 @@ class Car < ActiveRecord::Base
     case sort_option.to_s
     when /^created_at_/
       order("cars.created_at #{ direction }")
+    when /^vroom_price_/
+      order("cars.vroom_price #{ direction }")
+    when /^year_/
+      order("cars.year #{ direction }")
     else
       raise(ArgumentError, "Invalid sort option: #{ sort_option.inspect }")
     end
@@ -36,8 +41,13 @@ class Car < ActiveRecord::Base
     where(fuel_type: [fuel_types])
   }  
 
+  scope :with_vroom_price_lt, lambda { |vroom_prices|
+    where('cars.vroom_price < ?', vroom_prices)
+  }  
+
   def self.options_for_sorted_by
     [
+      ['- Trier par -', 'created_at_desc'],
       ['Prix croissant', 'vroom_price_asc'],
       ['Prix décroissant', 'vroom_price_desc'],
       ['Année croissant', 'year_asc'],
