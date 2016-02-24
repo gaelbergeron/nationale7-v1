@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
   #Cars controller
@@ -14,5 +16,8 @@ Rails.application.routes.draw do
   get 'commentcamarche' => 'welcome#commentcamarche'
   get 'cgv' => 'welcome#cgv'
   get 'mentionslegales' => 'welcome#mentionslegales'
+
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
 
 end

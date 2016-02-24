@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
 //= require jquery.turbolinks
 //= require filterrific/filterrific-jquery
 //= require_tree .
+
+$(function(){ $(document).foundation(); });

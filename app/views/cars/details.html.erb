@@ -1,13 +1,113 @@
-<h1><%= @car.owner_comment %></h1>
+<h1><strong><%= @car.make %> <%= @car.model %></strong>  &nbsp;<%= @car.version_trim %> &nbsp;<%= @car.year %> | <%= @car.mileage%> Km </h1>
   
-  <div class='single-item'>
+  <div class='slider-for'>
     <% @photos.each do |photo| %>
-    <div><img src="<%=photo.picture_url%>" width="100%" height="100%"></div>
+    <div><img src="<%=photo.picture_url%>" width="100%" height="100%" ></div>
     <% end %>
   </div>
 
-<ul>
-<% @options.each do |option| %>
-<li><%= option.description %></li>
-<% end %>
+  <div class='slider-nav'>
+    <% @photos.each do |photo| %>
+    <div><img src="<%=photo.picture_url%>" width="80%" height="80%" ></div>
+    <% end %>
+  </div>
+
+
+<ul class="vertical menu" data-multi-expand="true" data-accordion-menu >
+    <li>
+      <a href="#">Quelques mots du propriétaire et de l'expert</a>
+      <ul class="menu horizontal nested">
+        <ul class="tabs" data-tabs id="comments-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Le mot du propriétaire</a></li>
+          <li class="tabs-title"><a href="#panel2">Le mot de l'expert</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="comments-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p><%= @car.owner_comment %></p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p><%= @car.inspector_comment %></p>
+          </div>
+        </div>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Caractéristiques détailées de cette <%= @car.make %></a>
+      <ul class="menu vertical nested">
+        <ul class="tabs" data-tabs id="features-tabs">
+          <li class="tabs-title is-active"><a href="#panel3" aria-selected="true">Caractéristiques</a></li>
+          <li class="tabs-title"><a href="#panel4">Options</a></li>
+          <li class="tabs-title"><a href="#panel5">Moteur et consommation</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="features-tabs">
+          <div class="tabs-panel is-active" id="panel3">
+            <ul>
+              <li>Marque: <%= @car.make %></li>
+              <li>Modèle: <%= @car.model %></li>
+              <li>Année: <%= @car.year %></li>
+              <li>Motorisation: <%= @car.engine %></li>
+              <li>Version: <%= @car.version_trim %></li>
+            </ul>
+          </div>
+          <div class="tabs-panel" id="panel4">
+            <ul>
+              <% @options.each do |option| %>
+              <li><%= option.description %></li>
+              <% end %>
+            </ul>              
+          </div>
+          <div class="tabs-panel" id="panel5">
+            <ul>
+              <li><%= @car.engine_size %></li>
+              <li><%= @car.horsepower %></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Ce que dit l'inspection</a>
+      <ul class="menu vertical nested">
+        <li><a href="#">Item 1A</a></li>
+        <li><a href="#">Item 1B</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Un prix à faire transpirer votre garagiste</a>
+      <ul class="menu vertical nested">
+        <li><a href="#">Item 1A</a></li>
+        <li><a href="#">Item 1B</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Garantie Projet Vroom, pour repartir l'esprit tranquille</a>
+      <ul class="menu vertical nested">
+        <li><a href="#">Item 1A</a></li>
+        <li><a href="#">Item 1B</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Comment prendre le volant de cette <%= @car.make %> <%= @car.model %></a>
+      <ul class="menu vertical nested">
+        <div align="center">
+          <h3>Contactez <%= @inspector.first_name %> qui a expertisé cette <%= @car.make %> <%= @car.model %> </h3>
+
+          <%= simple_form_for @contact, :html => {:class => 'form-inline' } do |f| %>
+            <%= f.input :name, :label => 'Nom', :required => true %>
+            <%= f.input :email, :label => 'Email', :required => true %>
+            <%= f.input :phone_number, :label => 'Numéro de téléphone (facultatif)', :required => false %> 
+            <%= f.input :message, :as => :text, :required => true %>
+            <%= f.hidden_field :details, :value => [@car.id, @car.make, @car.model, @car.vroom_price, @inspector ] %>
+            <div class= "hidden">
+              <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+            <div>
+              </br>
+              <%= f.button :submit, 'Envoyer le message', :class=> "btn btn-primary" %>
+            </div>
+          <% end %>
+        </div>
+      </ul>
+    </li>
 </ul>
+

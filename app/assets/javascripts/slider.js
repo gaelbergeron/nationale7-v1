@@ -1,11 +1,21 @@
 $(document).ready(function(){
 
 
-  $('.single-item').slick({
+  $('.slider-for').slick({
     slidesToShow: 1,
-    arrows: true, 
-    dots: true
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true, 
+    asNavFor: '.slider-nav'
   });
-
+  
+  $('.slider-nav').slick({
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 
 });
