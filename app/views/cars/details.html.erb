@@ -12,6 +12,14 @@
     <% end %>
   </div>
 
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <a href="#" data-dismiss="alert">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>
 
 <ul class="vertical menu" data-multi-expand="true" data-accordion-menu >
     <li>
