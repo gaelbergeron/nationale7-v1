@@ -24,6 +24,10 @@ class CarsController < ApplicationController
       }
     ) or return 
     @cars = @filterrific.find.page(params[:page])
+    @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(Description: 'Profile')
+    p @profile_photos
+    p @profile_photos.where(car_id: 2)
+
 
     respond_to do |format|
       format.html
@@ -40,7 +44,7 @@ class CarsController < ApplicationController
     @caroptions = CarOption.where(car_id: @car.id)
     @inspector = Inspector.where(id: @car.inspector_id).first
     @options = Option.where(id: @caroptions.map(&:option_id))
-    @photos = Photo.where(car_id: @car.id)
+    @photos = Photo.where(car_id: @car.id).where.not(Description: 'Profile')
   end
 
 end
