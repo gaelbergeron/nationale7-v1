@@ -1,3 +1,9 @@
 h1 {
   color: #009BFF;
 }
+
+.columns {
+    clear: inherit;
+    float: left;
+    padding: 1em;
+}

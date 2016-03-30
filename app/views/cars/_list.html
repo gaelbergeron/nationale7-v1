@@ -1,15 +1,11 @@
-<div id="filterrific_results">
-  <ul>
+<div class="row small-up-1 large-up-3" id="filterrific_results">
     <% @cars.each do |car| %>
-      <li><%= car.make %> <%= car.model %> 
+  <div class="column" id="carItem">
+      <%= car.make %> <%= car.model %> 
       <%= link_to 'Détails', controller: 'cars', action: 'details', id: car %>
-      </li>
-      <img src="<%= @profile_photos.where(car_id: car.id).first.picture_url %>" width="20%" height="20%" >
+      <img src="<%= @profile_photos.where(car_id: car.id).first.picture_url %>" >
+  </div>
     <% end %>
-  </ul>
 </div>
 
 
-<!--     <% @profile_photos.each do |photo| %>
-    <div><img src="<%=photo.picture_url%>" width="80%" height="80%" ></div>
-    <% end %> -->
