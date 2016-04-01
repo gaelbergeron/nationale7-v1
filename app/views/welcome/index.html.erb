@@ -1,14 +1,15 @@
 <h1>Bienvenue chez Projet Vroom !</h1>
 <h4>Des voitures d'occasion rigoureusement inspectées, soigneusement préparées, amoureusement livrées.</h4>
-<p>Pour l'instant nous avons <%= @cars.count%> voitures dans le garage:</p>
+<p>Pour l'instant nous avons <%= @allCars.count%> voitures dans le garage:</p>
 
 
-<ul>
-  <li><%= link_to 'Acheter', acheter_path %></li>
-  <li><%= link_to 'Vendre', vendre_path %></li>
-  <li><%= link_to 'Comment ça marche ?', commentcamarche_path %></li>
-  <li><%= link_to 'FAQ', faq_path %></li>
-  <li><%= link_to 'À propos', apropos_path %></li>
-  <li><%= link_to 'cgv', cgv_path %></li>
-  <li><%= link_to 'Mentions légales', mentionslegales_path %></li>
-</ul>
+<h2>Nos dernières voitures</h2>
+<div class="row small-up-1 large-up-3" id="filterrific_results">
+    <% @cars.each do |car| %>
+  <div class="column" id="carItem">
+      <%= car.make %> <%= car.model %> 
+      <%= link_to 'Détails', controller: 'cars', action: 'details', id: car %>
+      <img src="<%= @profile_photos.where(car_id: car.id).first.picture_url %>" >
+  </div>
+    <% end %>
+</div>
