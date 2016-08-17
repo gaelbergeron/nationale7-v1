@@ -46,5 +46,11 @@ ActiveAdmin.register Car do
     actions
   end
 
+# form do |f|
+#   f.inputs do
+#     f.input :model, as: :select, collection: ['foo', 'bar', 'baz']
+#   end
+#   f.actions
+# end
 
 end

@@ -48,6 +48,9 @@ gem 'font-awesome-rails'
 #Add gem to rename app
 gem 'rename'
 
+#Include as per Heroku recomendation
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
