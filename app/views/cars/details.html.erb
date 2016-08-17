@@ -140,8 +140,8 @@
       <a href="#">Comment prendre le volant de cette <%= @car.make %> <%= @car.model %></a>
       <ul class="menu vertical nested">
         <div align="center">
-          <h3>Contactez <%= @inspector.first_name %> qui a expertisé cette <%= @car.make %> <%= @car.model %> </h3>
-
+<!--           <h3>Contactez <%= @inspector.first_name %> qui a expertisé cette <%= @car.make %> <%= @car.model %> </h3>
+ -->
           <%= simple_form_for @contact, :html => {:class => 'form-inline' } do |f| %>
             <%= f.input :name, :label => 'Nom', :required => true %>
             <%= f.input :email, :label => 'Email', :required => true %>

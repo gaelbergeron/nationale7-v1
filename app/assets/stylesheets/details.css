@@ -75,6 +75,7 @@ a.sub-menu-link-product:visited {
 
 .car-header-description {
   margin-top: 1em;
+  display: none;
 }
 
 .slider-for {

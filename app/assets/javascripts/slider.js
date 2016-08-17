@@ -14,16 +14,20 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     fade: true, 
-    asNavFor: '.slider-nav'
+    // asNavFor: '.slider-nav'
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow"></i>',
   });
   
   $('.slider-nav').slick({
-    slidesToShow: 3, 
+    slidesToShow: 10, 
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
+    // asNavFor: '.slider-for',
+    // dots: true,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow"></i>',
   });
 
 });

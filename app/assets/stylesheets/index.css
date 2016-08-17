@@ -16,7 +16,7 @@ a, a:link, a:visited {
 }
 
 .header-homepage {
-  height: 55em;
+  height: 52em;
   background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -229,7 +229,7 @@ a.menu-link-homepage:visited {
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-top: 6.5em;
+  margin-top: 5.5em;
 }
 
 .acheter-button {
