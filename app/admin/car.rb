@@ -4,7 +4,7 @@ ActiveAdmin.register Car do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :status, :make, :model, :year, :engine, :version_trim, :body_type, :fuel_type, :transmission, :number_of_doors, :number_of_seats, :mileage, :vin_number, :exterior_paint, :interior_type, :interior_paint, :manufacturer_warranty, :engine_size, :horsepower, :fiscal_horsepower, :number_of_cylinders, :number_of_valves, :combined_l_100km, :co2_emissions, :date_of_inspection, :inspector, :vroom_price, :dealer_price, :transaction_price, :inspector_comment, :owner_comment, :location_city, :location_department  
+  permit_params :status, :make, :model, :year, :engine, :version_trim, :body_type, :fuel_type, :transmission, :number_of_doors, :number_of_seats, :mileage, :vin_number, :exterior_paint, :interior_type, :interior_paint, :manufacturer_warranty, :engine_size, :horsepower, :fiscal_horsepower, :number_of_cylinders, :number_of_valves, :combined_l_100km, :co2_emissions, :date_of_inspection, :inspector_id, :vroom_price, :dealer_price, :transaction_price, :inspector_comment, :owner_comment, :location_city, :location_department  
 
   index do
     id_column
@@ -33,7 +33,7 @@ ActiveAdmin.register Car do
     column :combined_l_100km
     column :co2_emissions
     column :date_of_inspection
-    column :inspector
+    column :inspector_id
     column :vroom_price
     column :dealer_price
     column :transaction_price

@@ -1,15 +1,201 @@
-<h1>Bienvenue chez Projet Vroom !</h1>
-<h4>Des voitures d'occasion rigoureusement inspectées, soigneusement préparées, amoureusement livrées.</h4>
-<p>Pour l'instant nous avons <%= @allCars.count%> voitures dans le garage:</p>
-
-
-<h2>Nos dernières voitures</h2>
-<div class="row small-up-1 large-up-3" id="filterrific_results">
-    <% @cars.each do |car| %>
-  <div class="column" id="carItem">
-      <%= car.make %> <%= car.model %> 
-      <%= link_to 'Détails', controller: 'cars', action: 'details', id: car %>
-      <img src="<%= @profile_photos.where(car_id: car.id).first.picture_url %>" >
+<header class="header-homepage">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
   </div>
-    <% end %>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+  <div class="homepage-tagline-container"><h1 class="homepage-tagline">Quand ACHETER et VENDRE sa voiture </br> devient aussi agréable qu'un départ en vacances.</h1></div>
+
+  <div class="header-button-homepage acheter-button">acheter</div>
+  <div class="header-button-homepage vendre-button">vendre</div>
+
+</header>
+
+<div class="sub-explanation-homepage vendre-explanation">
+  <%= image_tag "fleche-rouge.png", class: "fleche" %>
+  <p class="sub-explanation-title vendre-title">La vente chez Nationale 7</p>
+  <div class="sub-explanation-table">
+    <ul class="sub-explanation-bullets">
+      <li class="sub-explanation-li">La garantie d’un <strong>meilleur prix</strong> que chez le concessionnaire.</li>
+      <li class="sub-explanation-li">Une gestion complète de la transaction.</br>
+      <strong>Paiement et paperasserie inclus.</strong></li>
+      <li class="sub-explanation-li">Enlèvement de la voiture <strong>depuis chez-vous.</strong></li>
+    </ul>
+  </div>
+  <div class="sub-explanation-page-link vendre-link"><%= link_to raw('<strong>VENDRE</strong></br> VOTRE VOITURE'), vendre_path, class: "sub-explanation-a-link vendre-a-link" %></div>
 </div>
+
+<div class="sub-explanation-homepage acheter-explanation">
+  <%= image_tag "fleche-bleue.png", class: "fleche" %>
+  <p class="sub-explanation-title acheter-title">L'achat chez Nationale 7</p>
+  <div class="sub-explanation-table">
+    <ul class="sub-explanation-bullets">
+      <li class="sub-explanation-li">Certification après une <strong>inspection </br> complète sur 75 points. Garantie 6 mois.</strong></li>
+      <li class="sub-explanation-li"><strong>Livraison où vous voulez,</strong> quand vous voulez !</li>
+      <li class="sub-explanation-li">Paiement à la livraison, <strong>pas avant !</strong></li>
+    </ul>
+  </div>
+  <div class="sub-explanation-page-link acheter-link"><%= link_to raw('<strong>DÉCOUVRIR</strong></br> VOTRE FUTURE VOITURE'), acheter_path, class: "sub-explanation-a-link acheter-a-link" %></div>
+</div>
+
+<div class="section-nationale7-explanation">
+  <p class="cest-quoi-explanation-title">Nationale 7, c'est quoi ?</p>
+  <div class="title-green-line"></div>
+  
+  <div class="four-sub-sections-wrap">
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "meilleur-prix.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        MEILLEUR PRIX </br>GARANTI
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Le vendeur en obtient plus.</p>
+        <p class="sub-section-copy-line">L’acheteur paye moins.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "inspection-garantie.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        INSPECTION EN 75 POINTS</br>ET GARANTIE 6 MOIS
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Des professionnels à votre service.</p>
+        <p class="sub-section-copy-line">Finies les mauvaises surprises.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "livraison-essai.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        LIVRAISON ET ESSAI</br>CHEZ VOUS
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Voitures préparées avec soin, livrées avec amour.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "paiement-paperasse.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        PAIEMENT SÉCURISÉ</br>ET PAPERASSE 100% GÉRÉE
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Transaction au coup </br> de coeur sans. Prise de tête.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-clients-sereins">
+
+  <p class="clients-sereins-explanation-title">Des clients sereins</p>
+  <div class="title-green-line"></div>
+
+  <div class='clients-slider'>
+    <div class="client-serein-smart-1" style="height:53em;">
+      <div class="client-serein-caption smart-1-caption">
+        <h3 style="color:black;">Jonathan</h3>
+        <p>Service au top ! Merci beaucoup Nationale 7.</p>
+      </div>
+    </div>
+    <div class="client-serein-smart-2" style="height:53em;">
+      <div class="client-serein-caption smart-2-caption">
+        <h3 style="color:black;">Pierre-Olivier</h3>
+        <p>À moi la liberté avec ma nouvelle Smart !</p>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="dernieres-voitures-section">
+  <p class="dernieres-voitures-title">Nos dernières voitures</p>
+  <div class="title-green-line"></div>
+
+  <div class="row small-up-1 large-up-3" id="filterrific_results">
+    
+    <% @cars.each do |car| %>
+
+      <script> 
+
+      $(document).ready(function(){
+
+        $(".extra-info-layer").hide();
+
+        $(".carItem<%= car.id %>").mouseover(function () {
+            $(".car-extra-info<%= car.id %>").show("fast");
+        });
+
+        $(".carItem<%= car.id %>").mouseleave(function () {
+          $(".car-extra-info<%= car.id %>").hide("fast");
+        });
+      });
+
+      </script>
+
+      <div class="column carItem<%= car.id %>" >
+        <div class="picture-extras">
+          <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
+          <div class="car-extra-info<%= car.id %> extra-info-layer">
+            <p class="engine-version"><%= car.engine %> <%= car.version_trim %> </p>
+            <p class="mileage"> <%= number_with_delimiter(car.mileage, :delimiter => ' ') %> Km</p>
+          </div>
+        </div>
+        <p class="derniere-voiture-name">
+         <%= car.make %> <%= car.model %> <%= car.year %> 
+        </p> </br>
+        <p class="derniere-voiture-prix">
+          <%= car.vroom_price %> €
+        </p>
+      </div>
+
+    <% end %>
+  </div>
+
+  <div class="toutes-voitures-div">
+    <%= link_to 'Voir toutes nos voitures', acheter_path, class: "toutes-voitures-link" %>
+    <div class="toutes-voitures-line"></div>
+  </div>
+
+</div>
+

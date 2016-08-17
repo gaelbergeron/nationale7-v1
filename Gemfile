@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+# Use postgresql as the database for Active Record
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,6 +38,15 @@ gem 'simple_form'
 
 # Install Foundation 6 as CSS & JS framework
 gem 'foundation-rails'
+
+#Magnific popup plugin
+gem 'magnific-popup-rails', '~> 1.1.0'
+
+#Add Font Awesome
+gem 'font-awesome-rails'
+
+#Add gem to rename app
+gem 'rename'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

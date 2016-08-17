@@ -1,8 +1,26 @@
-<footer>
-  <%= link_to 'Comment ça marche ?', commentcamarche_path %>
-  <%= link_to 'FAQ', faq_path %>
-  <%= link_to 'À propos', apropos_path %>
-  <%= link_to 'cgv', cgv_path %>
-  <%= link_to 'Mentions légales', mentionslegales_path %>
-  <p>Fait avec amour en France</p>
+<footer class="footer">
+
+<div class="mascotte-div">
+  <%= image_tag('mascotte-footer.png', class: "mascotte-footer hvr-buzz-out") %>
+</div>
+
+  <div class="footer-links">
+    <%= link_to 'COMMENT ÇA MARCHE ?', commentcamarche_path, class: "footer-link" %>
+    <%= link_to 'FAQ', faq_path, class: "footer-link" %>
+    <%= link_to 'À PROPOS', apropos_path, class: "footer-link" %>
+    <%= link_to 'CONDITIONS GÉNÉRALES', cgv_path, class: "footer-link" %>
+    <%= link_to 'MENTIONS LÉGALES', mentionslegales_path, class: "footer-link" %>
+  </div>
+
+  <div class="social-buttons">
+    <a href="https://www.facebook.com" class="fa fa-facebook fa-2x hvr-grow social-icon"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter fa-2x hvr-grow social-icon"></a>
+    <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin fa-2x hvr-grow social-icon"></a>
+  </div>
+
+  <div class="copyright">
+    <p>© Nationale 7 - 2016 - Tous droits réservés</p>
+  </div>
+
+
 </footer>

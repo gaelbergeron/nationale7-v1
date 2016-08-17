@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', serif;  
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  padding: 0;
+}
+
+.header-homepage {
+  height: 60em;
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.logo-homepage {
+  width: 21em;
+  float: left;
+  margin-left: 3.5em;
+  margin-top: 0.9em;
+}
+
+.header-link {
+  padding: 0;
+  font-size: 14px;
+  margin-top: 2em;
+  margin-right: 0.3em;
+  margin-left: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2;
+  -moz-transform: matrix( 1,0,0,1.00017762689619,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00017762689619,0,0);
+  -ms-transform: matrix( 1,0,0,1.00017762689619,0,0);
+}
+
+.pourquoi-n7-homepage {
+  width: 14.5em;
+  padding-top: 0.7em;
+}
+
+.sub-menu-homepage {
+  height: 10em;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  opacity: 0.902;
+}
+
+.phone-number-header {
+  margin-right: 5em;
+  width: 9.5em;
+  height: 2.4em;
+  opacity: 0.85;
+  background-color: #ffffff;
+  margin-top: 2em;
+  border-radius: 40px;
+}
+
+a.header-number-homepage {
+  color: rgb(121, 163, 212);
+  font-family: 'Montserrat', serif;  
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.align-right {
+  list-style-type: none;
+}
+
+.menu-link {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+
+.menu-link:hover {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+
+.menu-link:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #ffffff;
+}
+
+.homepage-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24em;
+  height: 70px;
+  font-size: 32.5px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5.5em;
+  font-family: 'Montserrat-UltraLight';
+  /*src: url('fonts/Montserrat-UltraLight.otf');*/
+}

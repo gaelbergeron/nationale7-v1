@@ -16,8 +16,22 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require filterrific/filterrific-jquery
+//= require magnific-popup
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ 
+
+  $(document).foundation(); 
 
 
+});
+
+
+$(document).ready(function() {
+
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    midClick: true
+  });
+
+});

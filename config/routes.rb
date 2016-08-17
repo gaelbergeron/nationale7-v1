@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'apropos' => 'welcome#apropos'
   get 'faq' => 'welcome#faq'
   get 'commentcamarche' => 'welcome#commentcamarche'
+  get 'prixn7' => 'welcome#prixn7'
+  get 'expertisen7' => 'welcome#expertisen7'
   get 'cgv' => 'welcome#cgv'
   get 'mentionslegales' => 'welcome#mentionslegales'
 

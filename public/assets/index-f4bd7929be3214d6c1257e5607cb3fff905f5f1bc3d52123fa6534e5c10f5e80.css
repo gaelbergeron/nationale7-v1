@@ -1,0 +1,19 @@
+* {
+/*  box-sizing: border-box;
+  font-family: 'Source Sans Pro', serif;  
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;*/
+}
+
+body {
+  /*margin: 0;*/
+}
+
+.photo_header {
+  height: 45em;
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+}
