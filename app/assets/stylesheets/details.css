@@ -84,9 +84,11 @@ a.sub-menu-link-product:visited {
   position: relative;
 }
 
-.slick-slider {
--webkit-transform: none !important;
-transform:none !important; 
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    transform: none;
+    position: relative;
 }
 
 

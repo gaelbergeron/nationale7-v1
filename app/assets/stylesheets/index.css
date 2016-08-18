@@ -58,7 +58,14 @@ a, a:link, a:visited {
   background-color: rgb(245, 245, 245);
   opacity: 0.902;
   position: absolute;
-  z-index:99;
+  z-index: 99;
+
+}
+
+.homepage-nav-bar {
+  position: absolute;
+  z-index: 99;
+  right: 0em;
 }
 
 a.sub-menu-link-homepage {
