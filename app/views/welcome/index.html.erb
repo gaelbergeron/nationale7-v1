@@ -157,7 +157,7 @@
     <% @cars.each do |car| %>
 
       <script> 
-
+      // This js snippet was put in erb because I couldn't figure out how to pass ruby variables in the js file
       $(document).ready(function(){
 
         $(".extra-info-layer").hide();
@@ -170,22 +170,21 @@
           $(".car-extra-info<%= car.id %>").hide("fast");
         });
       });
-
       </script>
 
       <div class="column carItem<%= car.id %>" >
         <div class="picture-extras">
           <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
           <div class="car-extra-info<%= car.id %> extra-info-layer">
-            <p class="engine-version"><%= car.engine %> <%= car.version_trim %> </p>
-            <p class="mileage"> <%= number_with_delimiter(car.mileage, :delimiter => ' ') %> Km</p>
+            <p class="engine-version"><%= car.motorisation %> <%= car.finition %> </p>
+            <p class="mileage"> <%= number_with_delimiter(car.kilometrage, :delimiter => ' ') %> Km</p>
           </div>
         </div>
         <p class="derniere-voiture-name">
-         <%= car.make %> <%= car.model %> <%= car.year %> 
+         <%= car.marque %> <%= car.modele %> <%= car.annee %> 
         </p> </br>
         <p class="derniere-voiture-prix">
-          <%= car.vroom_price %> €
+          <%= car.prix_n7 %> €
         </p>
       </div>
 

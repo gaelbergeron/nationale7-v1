@@ -1,39 +1,39 @@
 class CreateCars < ActiveRecord::Migration
   def change
     create_table :cars do |t|
-      t.string :status
-      t.string :make
-      t.string :model
-      t.integer :year
-      t.string :engine
-      t.string :version_trim
-      t.string :body_type
-      t.string :fuel_type
-      t.string :transmission
-      t.integer :number_of_doors
-      t.integer :number_of_seats
-      t.integer :mileage
-      t.string :vin_number
-      t.string :exterior_paint
-      t.string :interior_type
-      t.string :interior_paint
-      t.string :manufacturer_warranty
-      t.integer :engine_size
-      t.integer :horsepower
-      t.integer :fiscal_horsepower
-      t.integer :number_of_cylinders
-      t.integer :number_of_valves
-      t.integer :combined_l_100km
-      t.integer :co2_emissions
-      t.datetime :date_of_inspection
-      t.references :inspector
-      t.integer :vroom_price
-      t.integer :dealer_price
-      t.integer :transaction_price
-      t.text :inspector_comment
-      t.text :owner_comment
-      t.string :location_city
-      t.string :location_department
+      t.string :status #renamed
+      t.string :make #renamed
+      t.string :model #renamed
+      t.integer :year #renamed
+      t.string :engine #renamed
+      t.string :version_trim #renamed
+      t.string :body_type #removed
+      t.string :fuel_type #renamed
+      t.string :transmission #untouched
+      t.integer :number_of_doors #renamed
+      t.integer :number_of_seats #renamed
+      t.integer :mileage #renamed
+      t.string :vin_number #renamed
+      t.string :exterior_paint #renamed
+      t.string :interior_type #renamed
+      t.string :interior_paint #renamed
+      t.string :manufacturer_warranty   #renamed
+      t.integer :engine_size #renamed
+      t.integer :horsepower #renamed
+      t.integer :fiscal_horsepower #renamed
+      t.integer :number_of_cylinders #renamed
+      t.integer :number_of_valves #renamed
+      t.integer :combined_l_100km #renamed
+      t.integer :co2_emissions #renamed
+      t.datetime :date_of_inspection #removed
+      t.references :inspector #removed
+      t.integer :vroom_price #renamed
+      t.integer :dealer_price #renamed
+      t.integer :transaction_price #removed
+      t.text :inspector_comment #removed
+      t.text :owner_comment #renamed
+      t.string :location_city #removed
+      t.string :location_department #removed
 
       t.timestamps null: false
     end

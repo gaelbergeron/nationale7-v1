@@ -45,7 +45,7 @@ class CarsController < ApplicationController
     @caroptions = CarOption.where(car_id: @car.id)
     @inspector = Inspector.where(id: @car.inspector_id).first
     @options = Option.where(id: @caroptions.map(&:option_id))
-    @photos = Photo.where(car_id: @car.id).where.not(description: 'Profile')
+    @photos = Photo.where(car_id: @car.id).where.not(description: 'Profile').order(created_at: :asc)
   end
 
 end
