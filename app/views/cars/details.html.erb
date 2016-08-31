@@ -66,81 +66,223 @@
 
 <div class="car-data-menu">
 
-  <ul class="vertical menu" data-multi-expand="true" data-accordion-menu >
-<!--       <li>
-        <a href="#">Quelques mots sur cette <%= @car.marque %> <%= @car.modele %></a>
-        <ul class="menu horizontal nested">
-          <ul class="tabs" data-tabs id="comments-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Le mot du propriétaire</a></li>
-            <li class="tabs-title"><a href="#panel2">Le mot de l'expert</a></li>
-          </ul>
-          <div class="tabs-content" data-tabs-content="comments-tabs">
-            <div class="tabs-panel is-active" id="panel1">
-            </div>
-            <div class="tabs-panel" id="panel2">
-              <p><%= @car.commentaire_general %></p>
-            </div>
-          </div>
-        </ul>
-      </li> -->
+  <ul class="vertical accordion-menu menu" data-accordion-menu >
       <li>
         <a href="#" class="car-menu-title">Caractéristiques détailées de cette <%= @car.marque %></a>
-        <ul class="menu vertical nested">
-          <ul class="tabs" data-tabs id="features-tabs">
-            <li class="tabs-title is-active"><a href="#panel3" aria-selected="true">Caractéristiques</a></li>
-            <li class="tabs-title"><a href="#panel4">Options</a></li>
-            <li class="tabs-title"><a href="#panel5">Moteur et consommation</a></li>
+        
+        <ul class="menu vertical sublevel-1">
+          
+          <ul class="tabs car-menu-subtitle-ul" data-tabs id="features-tabs">
+            <li class="tabs-title is-active car-menu-subtitle-li"><a href="#panel3"  class="car-menu-subtitle-a" aria-selected="true">Caractéristiques</a></li>
+            <li class="tabs-title car-menu-subtitle-li"><a href="#panel4" class="car-menu-subtitle-a">Options</a></li>
+            <li class="tabs-title car-menu-subtitle-li"><a href="#panel5" class="car-menu-subtitle-a">Moteur et consommation</a></li>
           </ul>
-          <div class="tabs-content" data-tabs-content="features-tabs">
+          <div class="tabs-content menu-caracteristique" data-tabs-content="features-tabs">
             <div class="tabs-panel is-active" id="panel3">
-              <ul>
-                <li>Marque: <%= @car.marque %></li>
-                <li>Modèle: <%= @car.modele %></li>
-                <li>Année: <%= @car.annee %></li>
-                <li>Motorisation: <%= @car.motorisation %></li>
-                <li>Version: <%= @car.finition %></li>
+              <ul class="two-column-section">
+                <li class="car-menu-li"><strong>Marque :</strong> <%= @car.marque %></li>
+                <li class="car-menu-li"><strong>Modèle :</strong> <%= @car.modele %></li>
+                <li class="car-menu-li"><strong>Année :</strong> <%= @car.annee %></li>
+                <li class="car-menu-li"><strong>Motorisation :</strong> <%= @car.motorisation %></li>
+                <li class="car-menu-li"><strong>Finition :</strong> <%= @car.finition %></li>
+                <li class="car-menu-li"><strong>Énergie :</strong> <%= @car.energie %></li>
+                <li class="car-menu-li"><strong>Transmission :</strong> <%= @car.transmission %></li>
+                <li class="car-menu-li"><strong>Nombre de portes :</strong> <%= @car.nombre_portes %></li>
+                <li class="car-menu-li"><strong>Nombre de places :</strong> <%= @car.nombre_places %></li>
+                <li class="car-menu-li"><strong>Kilométrage :</strong> <%= @car.kilometrage %> Km</li>
+                <li class="car-menu-li"><strong>Nombre de propriétaires précédents :</strong> <%= @car.nombre_proprietaires %></li>
+                <li class="car-menu-li"><strong>Date de première mise en circulation :</strong> <%= @car.premiere_mise_en_circulation %></li>
+                <li class="car-menu-li"><strong>Couleur extérieure :</strong> <%= @car.couleur_exterieure %></li>
+                <li class="car-menu-li"><strong>Matière intérieure :</strong> <%= @car.matiere_interieure %></li>
+                <li class="car-menu-li"><strong>Couleur intérieure :</strong> <%= @car.couleur_interieure %></li>
               </ul>
             </div>
             <div class="tabs-panel" id="panel4">
-              <ul>
+              <ul class="two-column-section">
                 <% @options.each do |option| %>
-                <li><%= option.description %></li>
+                <li class="car-menu-li"><%= option.description %></li>
                 <% end %>
               </ul>              
             </div>
             <div class="tabs-panel" id="panel5">
-              <ul>
-                <li><%= @car.cylindree %></li>
-                <li><%= @car.puissance_din %></li>
+              <ul class="two-column-section">
+                <li class="car-menu-li"><strong>Puissance din :</strong> <%= @car.puissance_din %></li>
+                <li class="car-menu-li"><strong>Puissance fiscale :</strong> <%= @car.puissance_fiscale %></li>
+                <li class="car-menu-li"><strong>Cylindrée :</strong> <%= @car.cylindree %> cm3</li>
+                <li class="car-menu-li"><strong>Nombre de cylindres :</strong> <%= @car.nombre_cylindres %></li>
+                <li class="car-menu-li"><strong>Nombre de soupapes :</strong> <%= @car.nombre_soupapes %></li>
+                <li class="car-menu-li"><strong>Roues motrices :</strong> <%= @car.roues_motrices %></li>
+                <li class="car-menu-li"><strong>Consommation cycle urbain :</strong> </br><%= @car.consommation_urbain %> l/100 km</li>
+                <li class="car-menu-li"><strong>Consommation cycle mixte :</strong> </br><%= @car.consommation_mixte %> l/100 km</li>
+                <li class="car-menu-li"><strong>Consommation cycle extra urbain :</strong> </br><%= @car.consommation_extra_urbain %> l/100 km</li>
+                <li class="car-menu-li"><strong>Émission co2 :</strong> <%= @car.emission_co2 %> g/km</li>
               </ul>
             </div>
           </div>
         </ul>
       </li>
+      
       <li>
         <a href="#" class="car-menu-title">Ce que dit l'inspection</a>
-        <ul class="menu vertical nested">
-          <li><a href="#">Item 1A</a></li>
-          <li><a href="#">Item 1B</a></li>
-        </ul>
+        <ul class="menu vertical sublevel-1">
+          <li>
+          <a href="#" class="inspection-title">Historique et entretien - <%= @car.note_entretien %>/10</a>
+            <ul class="menu vertical sublevel-2">
+                <li class="inspection-line">
+                  <strong>Certificat d'immatriculation :</strong> 
+                  <% if @car.certificat_immatriculation == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.certificat_immatriculation_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Certificat de non-gage :</strong> 
+                  <% if @car.certificat_situation == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.certificat_situation_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Facture d'achat :</strong> 
+                  <% if @car.facture_achat == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.facture_achat_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Carnet d'entretien :</strong> 
+                  <% if @car.carnet_entretien == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.carnet_entretien_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Notice d'utilisation :</strong> 
+                  <% if @car.notice_utilisation == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.notice_utilisation_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Factures d'entretien :</strong> 
+                  <% if @car.facture_entretien == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.facture_entretien_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Double des clés :</strong> 
+                  <% if @car.double_cles == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.double_cles_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Contrôle technique :</strong> 
+                  <% if @car.controle_technique == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.controle_technique_commentaire %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Prochain contrôle technique :</strong> <%= @car.echeance_controle_technique %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Prochaine révision :</strong> <%= @car.echeance_revision %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Prochain remplacement de la distribution :</strong> <%= @car.echeance_remplacement_distribution %>
+                </li>
+                <li class="inspection-line">
+                  <strong>Prochain entretien de la climatisation :</strong> <%= @car.echeance_entretien_climatisation %>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="inspection-title">Sécurité - <%= @car.note_securite %>/10</a>
+            <ul class="menu vertical sublevel-2">
+                <li class="inspection-line">
+                  <strong>Présence des airbags :</strong> 
+                  <% if @car.presence_airbag == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>           
+                <li class="inspection-line">
+                  <strong>Désactivation airbag passager :</strong> 
+                  <% if @car.desactivation_airbag_passager == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                  &emsp; <%= @car.desactivation_airbag_passager_commentaire %>
+                </li>             
+                <li class="inspection-line">
+                  <strong>Présence des ceintures :</strong> 
+                  <% if @car.presence_ceintures == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>             
+                <li class="inspection-line">
+                  <strong>Fonctionnement des ceintures : <%= @car.fonctionnement_ceintures %>
+                </li>             
+
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="inspection-title">Mécanique - <%= @car.note_mecanique %>/10</a>
+            <ul class="menu vertical sublevel-2">
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="inspection-title">Carrosserie - <%= @car.note_carrosserie %>/10</a>
+            <ul class="menu vertical sublevel-2">
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="inspection-title">Mécanique - <%= @car.note_mecanique %>/10</a>
+            <ul class="menu vertical sublevel-2">
+            </ul>
+          </li>
+        </ul>        
       </li>
+      
       <li>
         <a href="#" class="car-menu-title">Un prix à faire transpirer votre garagiste</a>
-        <ul class="menu vertical nested">
-          <li><a href="#">Item 1A</a></li>
-          <li><a href="#">Item 1B</a></li>
+        <ul class="menu vertical sublevel-2">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1B</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="car-menu-title">Garantie, pour repartir l'esprit tranquille</a>
-        <ul class="menu vertical nested">
+        <ul class="menu vertical sublevel-2">
           <li><a href="#">Item 1A</a></li>
           <li><a href="#">Item 1B</a></li>
         </ul>
       </li>
       <li>
         <a href="#"  class="car-menu-title">Comment prendre le volant de cette <%= @car.marque %> <%= @car.modele %></a>
-        <ul class="menu vertical nested">
+        <ul class="menu vertical sublevel-2">
           <div align="center">
             <h3>Contactez-nous pour en savoir plus !</h3
             <%= simple_form_for @contact, :html => {:class => 'form-inline' } do |f| %>
@@ -151,16 +293,73 @@
               <%= f.hidden_field :details, :value => [@car.id, @car.marque, @car.modele, @car.prix_n7 ] %>
               <div class= "hidden">
                 <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-              </div>
+          </div>
               <div>
                 </br>
                 <%= f.button :submit, 'Envoyer le message', :class=> "btn btn-primary" %>
               </div>
-            <% end %>
+                <% end %>
           </div>
         </ul>
       </li>
   </ul>
 
+</div>
+
+<div class="section-nationale7-explanation">
+  <p class="cest-quoi-explanation-title">Nationale 7, c'est quoi ?</p>
+  <div class="title-green-line"></div>
+  
+  <div class="four-sub-sections-wrap">
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "meilleur-prix.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        MEILLEUR PRIX </br>GARANTI
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Le vendeur en obtient plus.</p>
+        <p class="sub-section-copy-line">L’acheteur paye moins.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "inspection-garantie.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        INSPECTION EN 75 POINTS</br>ET GARANTIE 6 MOIS
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Des professionnels à votre service.</p>
+        <p class="sub-section-copy-line">Finies les mauvaises surprises.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "livraison-essai.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        LIVRAISON ET ESSAI</br>CHEZ VOUS
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Voitures préparées avec soin, livrées avec amour.</p>
+      </div>
+    </div>
+
+    <div class="sub-section-wrap">
+      <div class="sub-section-picto">  
+        <%= image_tag "paiement-paperasse.jpg" %>
+      </div>
+      <div class="sub-section-title">
+        PAIEMENT SÉCURISÉ</br>ET PAPERASSE 100% GÉRÉE
+      </div>
+      <div class="sub-section-copy">
+        <p class="sub-section-copy-line">Transaction au coup </br> de coeur sans. Prise de tête.</p>
+      </div>
+    </div>
+  </div>
 </div>
 

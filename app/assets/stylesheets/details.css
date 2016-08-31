@@ -133,9 +133,10 @@ a.sub-menu-link-product:visited {
 }
 
 .car-data-menu {
-  width: 45em;
+  width: 50em;
   margin-left: 13%;
   margin-bottom: 6em;
+  font-family: 'Montserrat',
 }
 
 a.car-menu-title {
@@ -158,7 +159,66 @@ a.car-menu-title:before {
 }
 
 .is-accordion-submenu-parent > a::after {
-  border-color: rgb(63, 63, 63) transparent transparent;
-  border: inset 9px;
+  border-color: #e2f3f2 transparent transparent;
+      border-top-width: 18px;
+    border-right-width: 18px;
+    border-left-width: 18px;
 }
+
+ul.two-column-section {
+  columns: 2;
+}
+
+.car-menu-li {
+  list-style-type: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: 'Montserrat';
+}
+
+.car-menu-subtitle-ul {
+  font-family: 'Montserrat';
+  padding-left: 0em;
+}
+
+.menu.nested {
+  width: 93%;
+}
+
+a.car-menu-subtitle-a {
+  color: #69a2d2;
+  font-size: 1.2em;
+}
+
+.tabs-title > a[aria-selected='true'] {
+  padding: 0.9em 1.92em 0.9em 1.92em;
+}
+
+.tabs-title > a[aria-selected='false'] {
+  padding: 0.9em 1.92em 0.9em 1.92em;
+}
+
+a.inspection-title {
+  color: #69a2d2;
+  border-bottom: 1px solid #69a2d2;
+  font-family: 'Montserrat';
+  padding-bottom: 0.2em;
+  padding-top: 1em;
+  margin-bottom: 1.4em;
+  font-size: 1.2em;
+}
+
+.inspection-line {
+  font-family: 'Montserrat';
+}
+
+.fa-check {
+  color: #0fcc0f;
+}
+
+.fa-times {
+  color: red;
+}
+
+
 

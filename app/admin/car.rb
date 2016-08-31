@@ -304,11 +304,157 @@ ActiveAdmin.register Car do
     actions
   end
 
-# form do |f|
-#   f.inputs do
-#     f.input :model, as: :select, collection: ['foo', 'bar', 'baz']
-#   end
-#   f.actions
-# end
+form do |f|
+  f.inputs do
+    f.input :reference_interne
+    f.input :statut
+    f.input :commentaire_general
+    f.input :marque
+    f.input :modele
+    f.input :annee
+    f.input :motorisation
+    f.input :finition
+    f.input :energie
+    f.input :transmission
+    f.input :nombre_portes
+    f.input :nombre_places
+    f.input :kilometrage
+    f.input :nombre_proprietaires
+    f.input :premiere_mise_en_circulation, start_year: 2007
+    f.input :numero_serie
+    f.input :couleur_exterieure
+    f.input :matiere_interieure
+    f.input :couleur_interieure
+    f.input :car_options
+    f.input :puissance_din
+    f.input :puissance_fiscale
+    f.input :cylindree
+    f.input :nombre_cylindres
+    f.input :nombre_soupapes
+    f.input :roues_motrices
+    f.input :consommation_urbain
+    f.input :consommation_mixte
+    f.input :consommation_extra_urbain
+    f.input :emission_co2
+    f.input :note_conformite_administrative
+    f.input :note_entretien
+    f.input :note_securite
+    f.input :note_mecanique
+    f.input :note_carrosserie
+    f.input :note_interieur
+    f.input :certificat_immatriculation
+    f.input :certificat_immatriculation_commentaire
+    f.input :certificat_situation
+    f.input :certificat_situation_commentaire
+    f.input :facture_achat
+    f.input :facture_achat_commentaire
+    f.input :carnet_entretien
+    f.input :carnet_entretien_commentaire
+    f.input :notice_utilisation
+    f.input :notice_utilisation_commentaire
+    f.input :facture_entretien
+    f.input :facture_entretien_commentaire
+    f.input :double_cles
+    f.input :double_cles_commentaire
+    f.input :controle_technique
+    f.input :controle_technique_commentaire
+    f.input :echeance_controle_technique
+    f.input :echeance_revision
+    f.input :echeance_remplacement_distribution
+    f.input :echeance_entretien_climatisation
+    f.input :presence_airbag
+    f.input :desactivation_airbag_passager
+    f.input :desactivation_airbag_passager_commentaire
+    f.input :presence_ceintures
+    f.input :fonctionnement_ceintures
+    f.input :optiques_feux_avants
+    f.input :repetiteurs
+    f.input :feux_arrieres
+    f.input :fonctionnement_chauffage_ventilation
+    f.input :fonctionnement_ordinateur_instruments
+    f.input :presence_retroviseurs
+    f.input :etat_retroviseurs
+    f.input :fonctionnement_retroviseurs
+    f.input :fonctionnement_essuie_glaces
+    f.input :etat_balais
+    f.input :frein_main
+    f.input :efficacite_freinage
+    f.input :freinage_en_ligne
+    f.input :efficacite_suspension
+    f.input :accelere_en_ligne
+    f.input :roule_en_ligne
+    f.input :etat_direction
+    f.input :pneu_AV_largeur
+    f.input :pneu_AV_hauteur
+    f.input :pneu_AV_diametre
+    f.input :pneu_AV_charge
+    f.input :pneu_AR_largeur
+    f.input :pneu_AR_hauteur
+    f.input :pneu_AR_diametre
+    f.input :pneu_AR_charge
+    f.input :pneumatiques_conformes
+    f.input :pneu_AVD_etat
+    f.input :pneu_AVD_usure
+    f.input :pneu_AVG_etat
+    f.input :pneu_AVG_usure
+    f.input :pneu_ARD_etat
+    f.input :pneu_ARD_usure
+    f.input :pneu_ARG_etat
+    f.input :pneu_ARG_usure
+    f.input :roue_secours_etat
+    f.input :roue_secours_usure
+    f.input :presence_outillage_bord
+    f.input :presence_necessaire_anti_crevaison
+    f.input :fonctionnement_sieges
+    f.input :aspect_compartiment_moteur
+    f.input :niveau_huile_moteur
+    f.input :fuite_huile_moteur
+    f.input :niveau_liquide_frein
+    f.input :fuite_liquide_frein
+    f.input :niveau_huile_DA
+    f.input :fuite_huile_DA
+    f.input :niveau_liquide_refroidissement
+    f.input :fuite_liquide_refroidissement
+    f.input :fluides_etrangers_dans_liquide_refroidissement
+    f.input :fluides_etrangers_dans_huile_moteur
+    f.input :demarrage_froid
+    f.input :demarrage_chaud
+    f.input :fonctionnement_demarreur
+    f.input :souffle_bouchon_huile
+    f.input :presence_fumee_echappement
+    f.input :charge_alternateur
+    f.input :fonctionnement_embrayage
+    f.input :presence_jeu_levier_vitesse
+    f.input :passage_vitesses
+    f.input :accelerations_franches
+    f.input :presence_bruit_roulement
+    f.input :presence_bruit_trains_roulants
+    f.input :presence_bruit_echappement
+    f.input :fonctionnement_regulateur_vitesse
+    f.input :fonctionnement_limiteur_vitesse
+    f.input :fonctionnement_aide_stationnement
+    f.input :etat_vitrage
+    f.input :etat_capote
+    f.input :difference_teinte_carrosserie
+    f.input :ajustement_elements_carrosserie
+    f.input :presence_dommages_traces_reparation
+    f.input :presence_corrosion
+    f.input :fonctionnement_fermeture_centralisee
+    f.input :etat_planche_bord
+    f.input :etat_garnitures
+    f.input :etat_sieges
+    f.input :etat_moquettes
+    f.input :fonctionnement_eclairage_interieur
+    f.input :fonctionnement_vitres_electriques
+    f.input :fonctionnement_climatisation
+    f.input :fonctionnement_autoradio_commandes
+    f.input :fonctionnement_GPS
+    f.input :prix_n7
+    f.input :type_garantie, as: :select, collection: (["MAPFRE", "Constructeur"])
+    f.input :echeance_garantie
+
+  end
+  f.actions
+end
 
 end
