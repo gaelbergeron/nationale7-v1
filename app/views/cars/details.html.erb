@@ -129,76 +129,76 @@
           <a href="#" class="inspection-title">Historique et entretien - <%= @car.note_entretien %>/10</a>
             <ul class="menu vertical sublevel-2">
                 <li class="inspection-line">
-                  <strong>Certificat d'immatriculation :</strong> 
+                  <div class="boolean-adjustment"><strong>Certificat d'immatriculation :</strong></div>
                   <% if @car.certificat_immatriculation == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.certificat_immatriculation_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.certificat_immatriculation_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Certificat de non-gage :</strong> 
+                  <div class="boolean-adjustment"><strong>Certificat de non-gage :</strong></div>
                   <% if @car.certificat_situation == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.certificat_situation_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.certificat_situation_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Facture d'achat :</strong> 
+                  <div class="boolean-adjustment"><strong>Facture d'achat :</strong></div>
                   <% if @car.facture_achat == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.facture_achat_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.facture_achat_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Carnet d'entretien :</strong> 
+                  <div class="boolean-adjustment"><strong>Carnet d'entretien :</strong></div> 
                   <% if @car.carnet_entretien == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.carnet_entretien_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.carnet_entretien_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Notice d'utilisation :</strong> 
+                  <div class="boolean-adjustment"><strong>Notice d'utilisation :</strong></div>
                   <% if @car.notice_utilisation == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.notice_utilisation_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.notice_utilisation_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Factures d'entretien :</strong> 
+                  <div class="boolean-adjustment"><strong>Factures d'entretien :</strong></div>
                   <% if @car.facture_entretien == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.facture_entretien_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.facture_entretien_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Double des clés :</strong> 
+                  <div class="boolean-adjustment"><strong>Double des clés :</strong></div>
                   <% if @car.double_cles == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.double_cles_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.double_cles_commentaire %></div>
                 </li>
                 <li class="inspection-line">
-                  <strong>Contrôle technique :</strong> 
+                  <div class="boolean-adjustment"><strong>Contrôle technique :</strong></div> 
                   <% if @car.controle_technique == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.controle_technique_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.controle_technique_commentaire %></div>
                 </li>
                 <li class="inspection-line">
                   <strong>Prochain contrôle technique :</strong> <%= @car.echeance_controle_technique %>
@@ -218,7 +218,7 @@
             <a href="#" class="inspection-title">Sécurité - <%= @car.note_securite %>/10</a>
             <ul class="menu vertical sublevel-2">
                 <li class="inspection-line">
-                  <strong>Présence des airbags :</strong> 
+                  <div class="boolean-adjustment"><strong>Présence des airbags :</strong></div>
                   <% if @car.presence_airbag == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
@@ -226,16 +226,16 @@
                   <% end %> 
                 </li>           
                 <li class="inspection-line">
-                  <strong>Désactivation airbag passager :</strong> 
+                  <div class="boolean-adjustment"><strong>Désactivation airbag passager :</strong></div> 
                   <% if @car.desactivation_airbag_passager == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                   <% end %> 
-                  &emsp; <%= @car.desactivation_airbag_passager_commentaire %>
+                  <div class="boolean-adjustment">&emsp; <%= @car.desactivation_airbag_passager_commentaire %></div>
                 </li>             
                 <li class="inspection-line">
-                  <strong>Présence des ceintures :</strong> 
+                  <div class="boolean-adjustment"><strong>Présence des ceintures :</strong></div>
                   <% if @car.presence_ceintures == true %>
                     <i class="fa fa-check fa-2x" aria-hidden="true"></i>
                   <% else %>
@@ -243,14 +243,213 @@
                   <% end %> 
                 </li>             
                 <li class="inspection-line">
-                  <strong>Fonctionnement des ceintures : <%= @car.fonctionnement_ceintures %>
+                  <strong>Fonctionnement des ceintures : </strong> <%= @car.fonctionnement_ceintures %>
                 </li>             
+                <li class="inspection-line">
+                  <strong>Optiques et feux avants : </strong> <%= @car.optiques_feux_avants %>
+                </li>             
+                <li class="inspection-line">
+                  <strong>Clignotants : </strong> <%= @car.repetiteurs %>
+                </li>             
+                <li class="inspection-line">
+                  <strong>Feux arrières : </strong> <%= @car.feux_arrieres %>
+                </li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Fonctionnement chauffage et ventilation : </strong></div> 
+                  <% if @car.fonctionnement_chauffage_ventilation == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>                
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Fonctionnement ordinateur et instruments : </strong></div> 
+                  <% if @car.fonctionnement_ordinateur_instruments == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>                
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Présence des rétroviseurs : </strong></div> 
+                  <% if @car.presence_retroviseurs == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>
+                <li class="inspection-line">
+                  <strong>État des rétroviseurs : </strong> <%= @car.etat_retroviseurs %>
+                </li>                
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Fonctionnement des rétroviseurs : </strong></div> 
+                  <% if @car.fonctionnement_retroviseurs == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Fonctionnement des essuie glaces : </strong></div>
+                  <% if @car.fonctionnement_essuie_glaces == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li>
+                <li class="inspection-line">
+                  <strong>État des balais : </strong> <%= @car.etat_balais %>
+                </li>                
+                <li class="inspection-line">
+                  <strong>Fonctionnement du frein à main : </strong> <%= @car.frein_main %>
+                </li> 
+                <li class="inspection-line">
+                  <strong>Efficacité du freinage : </strong> <%= @car.efficacite_freinage %>
+                </li> 
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Freinage en ligne :</strong></div>
+                  <% if @car.freinage_en_ligne == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line">
+                  <strong>Efficacité des suspensions : </strong> <%= @car.efficacite_suspension %>
+                </li> 
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Accélère en ligne :</strong></div>
+                  <% if @car.accelere_en_ligne == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Roule en ligne :</strong></div>
+                  <% if @car.roule_en_ligne == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line">
+                  <strong>État de la direction : </strong> <%= @car.etat_direction %>
+                </li>
 
+                <li class="inspection-line margin-pneus">
+                <strong>Monte d'origine des pneus avant </strong> 
+                </li> 
+                <li class="inspection-line"><strong>Largeur :</strong> <%= @car.pneu_AV_largeur %> mm</li>
+                <li class="inspection-line"><strong>Hauteur :</strong> <%= @car.pneu_AV_hauteur %> %</li>
+                <li class="inspection-line"><strong>Diamètre :</strong> <%= @car.pneu_AV_diametre %> pouces</li>
+                <li class="inspection-line"><strong>Indice de charge :</strong> <%= @car.pneu_AV_charge %></li>
+
+                <li class="inspection-line margin-pneus">
+                <strong>Monte d'origine des pneus arrière </strong> 
+                </li> 
+                <li class="inspection-line"><strong>Largeur :</strong> <%= @car.pneu_AR_largeur %> mm</li>
+                <li class="inspection-line"><strong>Hauteur :</strong> <%= @car.pneu_AR_hauteur %> %</li>
+                <li class="inspection-line"><strong>Diamètre :</strong> <%= @car.pneu_AR_diametre %> pouces</li>
+                <li class="inspection-line"><strong>Indice de charge :</strong> <%= @car.pneu_AR_charge %></li>
+                
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Pneumatiques conformes à l'origine :</strong></div>
+                  <% if @car.pneumatiques_conformes == true %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line margin-pneus">
+                <strong>Pneu avant droit </strong> 
+                </li> 
+                <li class="inspection-line"><strong>État :</strong> <%= @car.pneu_AVD_etat %></li>
+                <li class="inspection-line"><strong>Usure :</strong> <%= @car.pneu_AVD_usure %> %</li>
+                <li class="inspection-line margin-pneus">
+                <strong>Pneu avant gauche </strong> 
+                </li> 
+                <li class="inspection-line"><strong>État :</strong> <%= @car.pneu_AVG_etat %></li>
+                <li class="inspection-line"><strong>Usure :</strong> <%= @car.pneu_AVG_usure %> %</li>
+                <li class="inspection-line margin-pneus">
+                <strong>Pneu arrière droit </strong> 
+                </li> 
+                <li class="inspection-line"><strong>État :</strong> <%= @car.pneu_ARD_etat %></li>
+                <li class="inspection-line"><strong>Usure :</strong> <%= @car.pneu_ARD_usure %> %</li>
+                <li class="inspection-line margin-pneus">
+                <strong>Pneu arrière gauche </strong> 
+                </li> 
+                <li class="inspection-line"><strong>État :</strong> <%= @car.pneu_ARG_etat %></li>
+                <li class="inspection-line"><strong>Usure :</strong> <%= @car.pneu_ARG_usure %> %</li>
+                <li class="inspection-line margin-pneus">
+                <strong>Roue de secours </strong> 
+                </li> 
+                <li class="inspection-line"><strong>État :</strong> <%= @car.roue_secours_etat %></li>
+                <li class="inspection-line"><strong>Usure :</strong> <%= @car.roue_secours_usure %> %</li>
+                <div style="height:0.8em;"></div>
+                <li class="inspection-line"><strong>Présence de l'outillage à bord :</strong> <%= @car.presence_outillage_bord %></li>
+                <li class="inspection-line"><strong>Présence nécessaire anti-crevaison :</strong> <%= @car.presence_necessaire_anti_crevaison %></li>
+                <li class="inspection-line"><strong>Fonctionnement des sièges :</strong> <%= @car.fonctionnement_sieges %></li>
             </ul>
           </li>
           <li>
             <a href="#" class="inspection-title">Mécanique - <%= @car.note_mecanique %>/10</a>
             <ul class="menu vertical sublevel-2">
+                <li class="inspection-line"><strong>Aspect du compartiment moteur :</strong> <%= @car.aspect_compartiment_moteur %></li>
+                <li class="inspection-line"><strong>Niveau d'huile moteur :</strong> <%= @car.niveau_huile_moteur %></li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fuite d'huile moteur :</strong></div>
+                  <% if @car.fuite_huile_moteur == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line"><strong>Niveau de liquide de frein :</strong> <%= @car.niveau_liquide_frein %></li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fuite de liquide de frein :</strong></div>
+                  <% if @car.fuite_liquide_frein == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line"><strong>Niveau d'huile de direction assistée :</strong> <%= @car.niveau_huile_DA %></li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fuite d'huile de direction assistée :</strong></div>
+                  <% if @car.fuite_huile_DA == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line"><strong>Niveau de liquide de refroidissement :</strong> <%= @car.niveau_liquide_refroidissement %></li>
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fuite de liquide de refroidissement :</strong></div>
+                  <% if @car.fuite_liquide_refroidissement == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fluides étrangers dans le liquide de refroidissement :</strong></div>
+                  <% if @car.fluides_etrangers_dans_liquide_refroidissement == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line">
+                  <div class="boolean-adjustment"><strong>Absence de fluides étrangers dans l'huile moteur :</strong></div>
+                  <% if @car.fluides_etrangers_dans_huile_moteur == false %>
+                    <i class="fa fa-check fa-2x" aria-hidden="true"></i>
+                  <% else %>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                  <% end %> 
+                </li> 
+                <li class="inspection-line"><strong>Démarrage à froid :</strong> <%= @car.demarrage_froid %></li>
+
             </ul>
           </li>
           <li>
@@ -268,42 +467,43 @@
       
       <li>
         <a href="#" class="car-menu-title">Un prix à faire transpirer votre garagiste</a>
-        <ul class="menu vertical sublevel-2">
+
+        <ul class="menu vertical sublevel-1">
             <li><a href="#">Item 1A</a></li>
             <li><a href="#">Item 1B</a></li>
         </ul>
       </li>
       <li>
         <a href="#" class="car-menu-title">Garantie, pour repartir l'esprit tranquille</a>
-        <ul class="menu vertical sublevel-2">
+        <ul class="menu vertical sublevel-1">
           <li><a href="#">Item 1A</a></li>
           <li><a href="#">Item 1B</a></li>
         </ul>
       </li>
       <li>
         <a href="#"  class="car-menu-title">Comment prendre le volant de cette <%= @car.marque %> <%= @car.modele %></a>
-        <ul class="menu vertical sublevel-2">
-          <div align="center">
-            <h3>Contactez-nous pour en savoir plus !</h3
-            <%= simple_form_for @contact, :html => {:class => 'form-inline' } do |f| %>
-              <%= f.input :name, :label => 'Nom', :required => true %>
-              <%= f.input :email, :label => 'Email', :required => true %>
-              <%= f.input :phone_number, :label => 'Numéro de téléphone (facultatif)', :required => false %> 
-              <%= f.input :message, :as => :text, :required => true %>
-              <%= f.hidden_field :details, :value => [@car.id, @car.marque, @car.modele, @car.prix_n7 ] %>
-              <div class= "hidden">
-                <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-          </div>
-              <div>
-                </br>
-                <%= f.button :submit, 'Envoyer le message', :class=> "btn btn-primary" %>
-              </div>
-                <% end %>
-          </div>
+        <ul class="menu vertical sublevel-1">
+
         </ul>
       </li>
   </ul>
+          <h3>Contactez Bergui</h3>
 
+          <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+            <%= f.input :name, :required => true %>
+            <%= f.input :email, :required => true %>
+            <%= f.input :phone_number, :label => 'Numéro de téléphone (facultatif)', :required => false %> 
+            <%= f.input :message, :as => :text, :required => true, :input_html => { :value => 'user@domain.com' } %>
+            <%= f.hidden_field :details, :value => [@car.id, @car.marque, @car.modele, @car.prix_n7 ] %>
+
+            <div class= "hidden">
+              <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+            <div>
+              </br>
+              <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+            </div>
+          <% end %>
 </div>
 
 <div class="section-nationale7-explanation">
@@ -362,4 +562,5 @@
     </div>
   </div>
 </div>
+
 

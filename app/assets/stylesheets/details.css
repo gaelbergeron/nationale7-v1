@@ -210,6 +210,12 @@ a.inspection-title {
 
 .inspection-line {
   font-family: 'Montserrat';
+  height: 2em;
+}
+
+.boolean-adjustment {
+  display: inline-block;
+  vertical-align: super;
 }
 
 .fa-check {
@@ -220,5 +226,14 @@ a.inspection-title {
   color: red;
 }
 
+.margin-pneus {
+  margin-top: 1em;
+}
 
 
+
+
+
+.n7-explanation-wrapper {
+  background-color: blue;
+}
