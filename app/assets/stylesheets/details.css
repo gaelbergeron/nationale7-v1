@@ -139,6 +139,52 @@ a.sub-menu-link-product:visited {
   font-family: 'Montserrat',
 }
 
+.prix-n7 {
+  height: 2.4em;
+  font-size: 3em;
+  margin-left: 14.5%;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  font-family: 'Montserrat';
+  display: inline-block;
+}
+
+.achetez-button {
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  font-size: 2.8em;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Montserrat-UltraLight';
+  width: 8.5em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4em;
+  background-color: #E54B40;
+  float: right;
+  margin-right: 18%;
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+}
+
+.achetez-button:hover {
+  opacity: 0.7;
+}
+
+.certifie-experveo {
+  display: flex;
+  float: right;
+  margin-top: -2em;
+  position: absolute;
+  left: 64%;
+  width: 14em;
+  height: 10em; 
+}
+
 a.car-menu-title {
   text-transform: uppercase;
   font-family: 'Montserrat';
@@ -200,7 +246,7 @@ a.car-menu-subtitle-a {
 
 a.inspection-title {
   color: #69a2d2;
-  border-bottom: 1px solid #69a2d2;
+  border-bottom: 1px solid #e6e6e6;
   font-family: 'Montserrat';
   padding-bottom: 0.2em;
   padding-top: 1em;
@@ -230,10 +276,59 @@ a.inspection-title {
   margin-top: 1em;
 }
 
-
-
-
+.sublevel-2 {
+  margin-bottom: 3em;
+}
 
 .n7-explanation-wrapper {
   background-color: blue;
 }
+
+.contact-wrapper {
+  background-color: #f9f9f9;
+}
+
+.contact-title {
+  padding-top: 1em;
+  margin-bottom: 0.6em;
+  font-size: 2em;
+  color: rgb(105, 162, 210);
+  text-align: center;
+}
+
+.contact-copy {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 0em;
+}
+
+.contact-form {
+  padding-bottom: 4em;
+  margin-top: 3em;
+}
+
+.optional {
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+  width: 51%;
+  margin-left: 20%;
+}
+
+.string.optional {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#contact_message {
+  border: 2px solid #69a2d2;
+  font-size: 0.9em;
+  width: 77%;
+  height: 7em;
+}
+
+input.contact-form-button {
+  color: #69a2d2;
+  margin-left: 46%;
+}
+
+

@@ -102,19 +102,19 @@
     <% @cars.each do |car| %>
 
       <script> 
-      // This js snippet was put in erb because I couldn't figure out how to pass ruby variables in the js file
-      $(document).ready(function(){
+        // This js snippet was put in erb because I couldn't figure out how to pass ruby variables in the js file
+        $(document).ready(function(){
 
-        $(".extra-info-layer").hide();
+          $(".extra-info-layer").hide();
 
-        $(".carItem<%= car.id %>").mouseover(function () {
-            $(".car-extra-info<%= car.id %>").show("fast");
+          $(".carItem<%= car.id %>").mouseover(function () {
+              $(".car-extra-info<%= car.id %>").show("fast");
+          });
+
+          $(".carItem<%= car.id %>").mouseleave(function () {
+            $(".car-extra-info<%= car.id %>").hide("fast");
+          });
         });
-
-        $(".carItem<%= car.id %>").mouseleave(function () {
-          $(".car-extra-info<%= car.id %>").hide("fast");
-        });
-      });
       </script>
 
       <div class="column carItem<%= car.id %>" >
@@ -129,7 +129,7 @@
          <%= car.marque %> <%= car.modele %> <%= car.annee %> 
         </p> </br>
         <p class="derniere-voiture-prix">
-          <%= car.prix_n7 %> €
+          <%= number_with_delimiter(car.prix_n7, :delimiter => ' ') %> €
         </p>
       </div>
 

@@ -37,6 +37,12 @@ $(document).ready(function(){
       $(".toutes-voitures-line").css("background-color", "#69a2d2" );
   });
 
+  $(".achetez-button").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".contact-wrapper").offset().top
+      }, 1000);
+  });
+
 });
 
 

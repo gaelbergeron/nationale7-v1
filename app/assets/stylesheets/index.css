@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', serif;  
+  /*font-family: 'Montserrat';  */
   /*border: 1px solid red;*/
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', serif;
 }
 
 a, a:link, a:visited {
