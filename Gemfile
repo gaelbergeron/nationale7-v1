@@ -39,6 +39,9 @@ gem 'simple_form'
 # Install Foundation 6 as CSS & JS framework
 gem 'foundation-rails'
 
+gem 'bootstrap-sass', '~> 3.3.6'
+
+
 #Magnific popup plugin
 gem 'magnific-popup-rails', '~> 1.1.0'
 

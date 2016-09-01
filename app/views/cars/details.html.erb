@@ -1,3 +1,12 @@
+<div>
+  <% flash.each do |key, value| %>
+    <div class="confirmation-message">
+      <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>
+
 <header class="header-product">
   <div class="logo-product">
     <%= link_to image_tag('logo-blue.png'), root_path, class: "logo-product" %>
@@ -54,14 +63,6 @@
     <% end %>
   </div>
 
-<div>
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
-    </div>
-  <% end %>
-</div>
 
 
   <div class="prix-n7"><%= number_with_delimiter(@car.prix_n7, :delimiter => ' ') %> €</div>
