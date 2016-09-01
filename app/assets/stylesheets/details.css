@@ -111,7 +111,7 @@ a.sub-menu-link-product:visited {
     background-color: rgba(255, 255, 255, 0.67);
     position: absolute;
     left: 15%;
-    z-index: 99;
+    z-index: 80;
     top: 17%;
     font-family: 'Montserrat';
     border-top-right-radius: 50px;
@@ -227,6 +227,10 @@ ul.two-column-section {
   padding-left: 0em;
 }
 
+.menu.vertical.sublevel-1 {
+  margin-bottom: 2em;
+}
+
 .menu.nested {
   width: 93%;
 }
@@ -337,7 +341,7 @@ input.contact-form-button {
   color: white;
   font-size: 1.4em;
   text-align: center;
-  height: 3em;
+  height: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,4 +351,8 @@ a.alert-dismiss {
   font-size: 3em;
   color: black;
   margin-right: 0.4em;
+}
+
+.garantie-copy {
+  margin-bottom: 0em;
 }

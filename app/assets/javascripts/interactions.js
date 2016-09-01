@@ -43,6 +43,12 @@ $(document).ready(function(){
       }, 1000);
   });
 
+  $(".alert-dismiss").click(
+    function() {
+      $(".confirmation-message").hide();
+    }
+  );
+
 });
 
 

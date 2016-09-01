@@ -601,8 +601,19 @@
       <li>
         <a href="#" class="car-menu-title">Garantie, pour repartir l'esprit tranquille</a>
         <ul class="menu vertical sublevel-1">
-          <li><a href="#">Item 1A</a></li>
-          <li><a href="#">Item 1B</a></li>
+          <div class="garantie-section">
+            <% if @car.type_garantie == "MAPFRE" %>
+              <p class="garantie-copy">Cette <%= @car.marque %> bénéficie d'une garantie panne mécanique de 6 mois qui vous couvrira contre les sinistres les plus graves.</p> 
+              <p>Cette garantie inclut également une assistance routière.</p>
+              <p>Nationale 7 vous offre également la possibilité de souscrire à une couverture complète type constructeur pour 6 ou 12 mois, et ce à des prix très compétitifs. N'hésitez pas à nous contacter pour en savoir plus.</p>
+              <p>Toutes nos garanties sont offertes par MAPFRE Insurance Services, leader européen des garanties automobiles.</p>
+              <%= image_tag "mapfre.png", width: '50%' %>
+            <% else %>
+              <p>Vous pouvez y aller sereinement.</p>
+              <p>Cette <%= @car.marque %> bénéficie de la <strong>garantie constructeur</strong> jusqu'au <=% @car.echeance_garantie =>.</p>
+            <% end %> 
+          </div>
+
         </ul>
       </li>
   </ul>
@@ -638,7 +649,7 @@
   <div class="four-sub-sections-wrap">
     <div class="sub-section-wrap">
       <div class="sub-section-picto">  
-        <%= image_tag "meilleur-prix.jpg" %>
+        <%= image_tag "meilleur-prix-gris.png" %>
       </div>
       <div class="sub-section-title">
         MEILLEUR PRIX </br>GARANTI
@@ -651,7 +662,7 @@
 
     <div class="sub-section-wrap">
       <div class="sub-section-picto">  
-        <%= image_tag "inspection-garantie.jpg" %>
+        <%= image_tag "inspection-garantie-gris.png" %>
       </div>
       <div class="sub-section-title">
         INSPECTION EN 75 POINTS</br>ET GARANTIE 6 MOIS
@@ -664,7 +675,7 @@
 
     <div class="sub-section-wrap">
       <div class="sub-section-picto">  
-        <%= image_tag "livraison-essai.jpg" %>
+        <%= image_tag "livraison-essai-gris.png" %>
       </div>
       <div class="sub-section-title">
         LIVRAISON ET ESSAI</br>CHEZ VOUS
@@ -676,7 +687,7 @@
 
     <div class="sub-section-wrap">
       <div class="sub-section-picto">  
-        <%= image_tag "paiement-paperasse.jpg" %>
+        <%= image_tag "paiement-paperasse-gris.png" %>
       </div>
       <div class="sub-section-title">
         PAIEMENT SÉCURISÉ</br>ET PAPERASSE 100% GÉRÉE
