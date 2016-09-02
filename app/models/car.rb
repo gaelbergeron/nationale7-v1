@@ -14,7 +14,7 @@ class Car < ActiveRecord::Base
   # belongs_to :inspector
 
   def to_s
-  "#{id} - #{marque} #{modele} - #{annee}"
+  "#{reference_interne} - #{marque} #{modele} - #{annee}"
   end
 
   scope :sorted_by, lambda { |sort_option|
@@ -23,9 +23,9 @@ class Car < ActiveRecord::Base
     case sort_option.to_s
     when /^created_at_/
       order("cars.created_at #{ direction }")
-    when /^vroom_price_/
+    when /^prix_n7_/
       order("cars.prix_n7 #{ direction }")
-    when /^year_/
+    when /^annee_/
       order("cars.annee #{ direction }")
     else
       raise(ArgumentError, "Invalid sort option: #{ sort_option.inspect }")
@@ -33,21 +33,21 @@ class Car < ActiveRecord::Base
   }
 
 
-  scope :with_marque, lambda { |makes|
-    where(marque: [makes])
+  scope :with_marque, lambda { |marque|
+    where(marque: [marque])
   }
 
-  scope :energie, lambda { |fuel_types|
-    where(energie: [fuel_types])
+  scope :with_energie, lambda { |energie|
+    where(energie: [energie])
   }  
 
-  scope :with_prix_n7_lt, lambda { |vroom_prices|
-    where('cars.prix_n7 < ?', vroom_prices)
+  scope :with_prix_n7, lambda { |prix_n7|
+    where('cars.prix_n7 < ?', prix_n7)
   }  
 
   def self.options_for_sorted_by
     [
-      ['- Trier par -', 'created_at_desc'],
+      ['Trier par', 'created_at_desc'],
       ['Prix croissant', 'prix_n7_asc'],
       ['Prix décroissant', 'prix_n7_desc'],
       ['Année croissant', 'annee_asc'],
@@ -55,7 +55,7 @@ class Car < ActiveRecord::Base
     ]
   end
 
-  def self.options_for_select_make
+  def self.options_for_select_marque
     order('marque').map { |e| [e.marque] }
   end
 

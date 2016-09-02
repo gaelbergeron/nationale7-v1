@@ -1,0 +1,187 @@
+.header-homepage.acheter-page {
+  height: 49em;
+}
+
+.acheter-pictos-wrap {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 10em;
+}
+
+.acheter-picto-sub-wrap {
+  width: 15em;
+  margin: 0 1.8em 0 1.8em;
+  float: left;	
+}
+
+.acheter-picto-title {
+  color: white;
+  text-align: center;
+}
+
+.acheter-picto {
+  width: 110px;
+  height: 115px;
+  margin: 0 auto;
+}
+
+#acheter-inspection {
+  width: 90px;
+}
+
+#acheter-livraison {
+  width: 100px;
+}
+
+#acheter-paiement {
+  width: 80px;
+}
+
+.acheter-filter {
+  width: 19em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.acheter-filter.tri {
+  width: 10em;
+  margin-left: 4em;
+}
+
+.filters-wrap {
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+select {
+
+  /* styling */
+  color: rgb(105, 162, 210);
+  font-weight: bold;
+  text-indent: 10px;
+  font-size: 1em;
+  background-color: white;
+  border: thin solid rgb(105, 162, 210);
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/* arrows */
+
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgb(105, 162, 210) 50%),
+    linear-gradient(135deg, rgb(105, 162, 210) 50%, transparent 50%),
+    linear-gradient(to right, #e2f3f2, #e2f3f2);
+  background-position:
+    calc(100% - 20px) calc(1em + 5px),
+    calc(100% - 15px) calc(1em + 5px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    3.3em 3.3em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    3.3em 3.3em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+
+.row.page-acheter {
+  max-width: 83em;
+  margin-bottom: 5em;
+}
+
+.picture-extras.page-acheter {
+  height: 17em;
+}
+
+.column.page-acheter {
+  margin-top: 2em;
+}
+
+.service-acheteur {
+  height: 18em;
+}
+
+.recherche-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+  font-family: 'Montserrat-UltraLight';
+  color: black;
+}
+
+a.recherche-button {
+  background-color: #69a2d2;
+  font-size: 1.4em;
+  display: flex;
+  margin: 0 auto;
+  padding: 0.7em;
+  border-top: none;
+  border-left: none;
+  opacity: 1;
+  border-radius: 5px;
+  width: 19em;
+  color: white;
+  justify-content: center;
+}
+
+.acheter-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  height: 100%;
+}
+
+.popup-gratuit {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.popup-toutdesuite {
+  margin-top: 2em;
+}
+
+#contact-link {
+  color: #69a2d2;
+}
+
+
+
+

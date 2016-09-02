@@ -1,44 +1,145 @@
-<%= form_for_filterrific @filterrific do |f| %>
+<header class="header-homepage acheter-page">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
 
-<div>
-  Sorted by
-  <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by]) %>
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+  <div class="homepage-tagline-container"><h1 class="homepage-tagline">Bienvenue dans le garage Nationale 7 !</h1></div>
+
+  <div class="acheter-pictos-wrap">
+
+    <div class="acheter-picto-sub-wrap">
+      <div class="acheter-picto">  
+        <%= image_tag "meilleur-prix-acheter.png" %>
+      </div>
+      <div class="acheter-picto-title">
+        <span>MEILLEUR PRIX</span><span>GARANTI</span>
+      </div>
+    </div>
+
+    <div class="acheter-picto-sub-wrap">
+      <div class="acheter-picto">  
+        <%= image_tag "inspection-garantie.png", id: "acheter-inspection" %>
+      </div>
+      <div class="acheter-picto-title">
+        <span>INSPECTION</span><span>EN 75 POINTS</span><span>ET GARANTIE 6 MOIS</span>
+      </div>
+    </div>
+
+    <div class="acheter-picto-sub-wrap">
+      <div class="acheter-picto">  
+        <%= image_tag "livraison-essai.png", id: "acheter-livraison" %>
+      </div>
+      <div class="acheter-picto-title">
+        <span>LIVRAISON ET ESSAI</span><span>CHEZ VOUS</span>
+      </div>
+    </div>
+
+    <div class="acheter-picto-sub-wrap">
+      <div class="acheter-picto">  
+        <%= image_tag "paiement-paperasse.png", id: "acheter-paiement" %>
+      </div>
+      <div class="acheter-picto-title">
+        <span>PAIEMENT SÉCURISÉ</span><span>ET PAPERASSE 100% GÉRÉE</span>
+      </div>
+    </div>
+
+  </div>
+
+    
+  </div>
+
+</header>
+
+
+<div class="filters-wrap">
+  <%= form_for_filterrific @filterrific do |f| %>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_marque,
+      @filterrific.select_options[:with_marque],
+      { include_blank: 'Toutes marques' }
+    )%>
+  </div>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_energie,
+      @filterrific.select_options[:with_energie],
+      { include_blank: 'Tout type de motorisation' }
+    )%>
+  </div>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_prix_n7,
+      @filterrific.select_options[:with_prix_n7],
+      { include_blank: 'Tous les prix' }
+    )%>
+  </div>
+
+  <div class="acheter-filter tri">
+    <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by]) %>
+  </div>
+<!--   <%= render_filterrific_spinner %>
+ -->
+  <% end %>
+
 </div>
 
-<div>
-  Constructeur
-  <%= f.select(
-    :with_make,
-    @filterrific.select_options[:with_make],
-    { include_blank: '- Toutes marques -' }
-  )%>
+  <%= render(partial: 'cars/list', locals: { cars: @cars }) %>
+
+<div class="service-acheteur">
+
+  <h2 class="recherche-title"><span>VOUS RECHERCHEZ UNE VOITURE</span><span> EN PARTICULIER ?</span></h2>
+
+  <a href="#test-popup" class="open-popup-link recherche-button">Laissez-nous vous aider !</a>
+
+  <div id="test-popup" class="acheter-popup mfp-hide">
+    <div class="popup-content">
+      <h2><strong>Nationale 7 vous trouve la perle rare !</strong></h2>
+      <p><i>La mécanique est-elle vraiment saine ? Bien entretenue ? Est-elle au bon prix ? </i></p>
+      <p>Acheter la bonne voiture d'occasion n'est pas une mince affaire. Nos experts amoureux de l'automobile peuvent vous aider à trouver la voiture idéale, avec l'assurance de la payer au bon prix.</p>
+      <p class="popup-gratuit"><strong>C'est gratuit et ne vous engage à rien !</strong></p>
+      <p>1 - Contactez-nous au <a href="tel:0176390284" id="contact-link">01 76 39 02 84</a>  ou sur <a href="mailto:bonjour@nationale7.co" id="contact-link">bonjour@nationale7.co</a>, pour nous exposer votre projet. Nous aurons quelques questions : <strong>marque</strong>, <strong>modèle</strong>, <strong>budget</strong>, <strong>motorisation</strong>, <strong>couleur</strong> et autres préférences.</p>
+      <p>2 - Suite à notre conversation nous identifions pour vous les candidates idéales, nous ferons aussi une évaluation précise du prix, puis envoyons un expert pour inspection complète.</p>
+      <p>3 - Une fois la voiture certifiée et votre coup de coeur validé, nous nous occupons de gérer le paiement et la paperasse, pour une transaction en toute sérénité !</p>
+      <h3 class="popup-toutdesuite">À tout de suite !</h3>
+    </div>
+  </div>
+
 </div>
 
-<div>
-  Motorisation
-  <%= f.select(
-    :with_fuel_type,
-    @filterrific.select_options[:with_fuel_type],
-    { include_blank: '- Tout type de carburant -' }
-  )%>
-</div>
-
-<div>
-  Prix
-  <%= f.select(
-    :with_vroom_price_lt,
-    @filterrific.select_options[:with_vroom_price_lt],
-    { include_blank: '- Tous les prix -' }
-  )%>
-</div>
-
-<%= render_filterrific_spinner %>
-
-
-<% end %>
-
-<%= render(
-  partial: 'cars/list',
-  locals: { cars: @cars }
-) %>
 

@@ -6,9 +6,9 @@ class CarsController < ApplicationController
       params[:filterrific],
       :select_options => {
         sorted_by: Car.options_for_sorted_by,
-        with_make: Car.options_for_select_make,
-        with_fuel_type: ['Diesel', 'Essence'], 
-        with_vroom_price_lt: [
+        with_marque: Car.options_for_select_marque,
+        with_energie: ['Diesel', 'Essence'], 
+        with_prix_n7: [
           ['Max 10 000 Eur', 10000], 
           ['Max 15 000 Eur', 15000], 
           ['Max 20 000 Eur', 20000], 

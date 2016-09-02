@@ -1,0 +1,38 @@
+<div class="row page-acheter small-up-1 large-up-3" id="filterrific_results">
+  <% @cars.each do |car| %>
+
+  <script> 
+    // This js snippet was put in erb because I couldn't figure out how to pass ruby variables in the js file
+    $(document).ready(function(){
+
+      $(".extra-info-layer").hide();
+
+      $(".carItem<%= car.id %>").mouseover(function () {
+          $(".car-extra-info<%= car.id %>").show("fast");
+      });
+
+      $(".carItem<%= car.id %>").mouseleave(function () {
+        $(".car-extra-info<%= car.id %>").hide("fast");
+      });
+    });
+  </script>
+
+  <div class="column page-acheter carItem<%= car.id %>">
+  	<div class="picture-extras page-acheter">
+  		<%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
+  		<div class="car-extra-info<%= car.id %> extra-info-layer">
+  			<p class="engine-version"><%= car.motorisation %> <%= car.finition %> </p>
+  			<p class="mileage"> <%= number_with_delimiter(car.kilometrage, :delimiter => ' ') %> Km</p>
+  		</div>
+  	</div>
+    <p class="derniere-voiture-name">
+      <%= car.marque %> <%= car.modele %> <%= car.annee %> 
+    </p> </br>
+    <p class="derniere-voiture-prix">
+      <%= number_with_delimiter(car.prix_n7, :delimiter => ' ') %> €
+    </p>
+  </div>
+  <% end %>
+</div>
+
+
