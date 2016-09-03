@@ -1,64 +1,83 @@
-<h1>Vendez votre voiture, plus chère, sans bouger de chez vous !</h1>
+<header class="header-vendre">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
 
-  <h3>Commençons par une évaluation gratuite de votre véhicule !</h3>
-  <h3>Soumettez le formulaire ci-dessous et nous vous rappelons dans l'heure.</h3>
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+  <div class="vendre-tagline-wrap">
+    <h1 class="vendre-h1-tagline">Vendez votre voiture, au bon prix, sans bouger de chez vous !</h1>
+    <h2 class="vendre-h2-tagline"><span>Commençons par une évaluation gratuite de votre véhicule !</span><span>Soumettez le formulaire ci-dessous pour qu'un de nos experts vous rappelle dans la journée.</span></h2>
+  </div>
+
+</header>
+
+    <div class="mascotte-vendre-div">
+      <%= image_tag('mascotte-footer.png', class: "mascotte-vendre hvr-buzz-out") %>
+    </div>
+
+    <div class="sans-engagement">
+      <p><strong><span>Sans engagement,</span>
+      <span>on vous rappelle immédiatement !</span></p></strong>
+    </div>
 
 
-    <ul class="vertical accordion-menu menu" data-accordion-menu >
-      <li>
-        <a href="#">Item 1</a>
-        <ul class="menu vertical sublevel-1">
-          <li>
-            <a href="#">Sub-item 1</a>
-            <ul class="menu vertical sublevel-2">
-              <li>Thing 1</li>
-              <li>Thing 2</li>
-              <li>Thing 3</li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Sub-item 2</a>
-            <ul class="menu vertical sublevel-2">
-              <li>
-                <a href="#">Super-sub-item 1</a>
-                <ul class="menu vertical sublevel-3">
-                  <li><a class="subitem" href="#">Thing 1</a></li>
-                  <li><a class="subitem" href="#">Thing 2</a></li>
-                </ul>
-              </li>
-              <li><a class="subitem" href="#">Thing 2</a></li>
-            </ul>
-          </li>
-          <li><a class="subitem" href="#">Thing 1</a></li>
-          <li><a class="subitem" href="#">Thing 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Item 2</a>
-        <ul class="menu vertical sublevel-1">
-          <li><a class="subitem" href="#">Thing 1</a></li>
-          <li><a class="subitem" href="#">Thing 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Item 3</a>
-        <ul class="menu vertical sublevel-1">
-          <li><a class="subitem" href="#">Thing 1</a></li>
-          <li><a class="subitem" href="#">Thing 2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Item 4</a>
-        <ul class="menu vertical sublevel-1">
-          <li>
-            <a href="#">Sub-item 3</a>
-            <ul class="menu vertical sublevel-2">
-              <li><a class="subitem" href="#">Thing 1</a></li>
-              <li><a class="subitem" href="#">Thing 2</a></li>
-            </ul>
-          </li>
-          <li><a class="subitem" href="#">Thing 1</a></li>
-          <li><a class="subitem" href="#">Thing 2</a></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="vendre-form">
+
+      <%= simple_form_for @evaluation, :html => {:class => 'form-horizontal' } do |f| %>
+        <%= f.input :marque, :label => 'Marque', :required => false %>
+        <%= f.input :modele, :label => 'Modèle', :required => false %>
+        <%= f.input :annee, :label => 'Année', :required => false %>
+        <%= f.input :motorisation, :label => 'Motorisation', :required => false %>
+        <%= f.input :finition, :label => 'Finition', :required => false %>
+        <%= f.input :kilometrage, :label => 'Kilométrage', :required => false %>
+        <%= f.input :email, :label => 'Email', :required => false, wrapper_html: { class: 'email-field' } %>
+        <%= f.input :phone_number, :label => 'Numéro de téléphone', :required => false %> 
+        <%= f.input :code_postal, :label => 'Code postal', :required => false %> 
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div class="evaluation-button">
+        <%= f.button :submit, 'Envoyer', :class=> "evaluation-form-button" %>
+      </div>
+       <% end %>
+    </div>
+
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <a href="#" data-dismiss="alert">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>

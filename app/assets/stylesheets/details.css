@@ -318,7 +318,15 @@ a.inspection-title {
   margin-left: 20%;
 }
 
-.string.optional {
+/*The code below is a repeat of the same rule for the form input fields. I wasn't able to get custom classes around the field itself, so I used the id generate by the gem.
+*/
+
+#contact_email {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#contact_phone_number {
   border: 2px solid #69a2d2;
   border-radius: 5px;
 }

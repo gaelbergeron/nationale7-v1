@@ -144,7 +144,7 @@ select:focus {
   color: black;
 }
 
-a.recherche-button {
+a:link.recherche-button {
   background-color: #69a2d2;
   font-size: 1.4em;
   display: flex;

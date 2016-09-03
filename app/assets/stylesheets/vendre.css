@@ -1,0 +1,118 @@
+.header-vendre {
+  height: 20em;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/header-vendre.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.vendre-tagline-wrap {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 9.5em;
+}
+
+.vendre-h1-tagline {
+	color: white;
+	font-size: 2.4em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+}
+
+.vendre-h2-tagline {
+	color: white;
+	font-size: 1.5em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+}
+
+.mascotte-vendre-div {
+	display: flex;
+	margin-top: 4em;
+}
+
+.mascotte-vendre {
+  width: 81.75px;
+  height: 100.5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 3em;
+}
+
+.sans-engagement {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;	
+	text-align: center;
+	color: #458ac6;
+	margin-top: 1em;
+}
+
+#evaluation_marque {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_modele {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_annee {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_motorisation {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_finition {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_kilometrage {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_email {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_phone_number {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+#evaluation_code_postal {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+}
+
+.email-field {
+	margin-top: 5em;
+}
+
+.evaluation-button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input.button.evaluation-form-button {
+	left: 0;
+	right: 0;
+	font-family: 'Montserrat';
+	margin-bottom: 5em;
+	width: 12em;
+}
+

@@ -37,6 +37,7 @@ class CarsController < ApplicationController
   end
 
   def vendre
+    @evaluation = Evaluation.new
   end
 
   def details

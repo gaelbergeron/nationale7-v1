@@ -1,0 +1,15 @@
+    <div class="vendre-form">
+
+      <%= simple_form_for @evaluation, :html => {:class => 'form-horizontal' } do |f| %>
+        <%= f.input :email, :label => 'Votre email', :required => false %>
+        <%= f.input :phone_number, :label => 'Votre numéro de téléphone', :required => false %> 
+        <%= f.input :message, :label => 'Vos questions, vos envies, dites-nous tout ! (libre)', :as => :text, :required => false, :input_html => { :value => 'Bonjour, cette voiture m\'intéresse. Merci de me recontacter !' } %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Envoyer', :class=> "contact-form-button" %>
+      </div>
+      <% end %>
+    </div>

@@ -20,5 +20,9 @@ Rails.application.routes.draw do
   get 'mentionslegales' => 'welcome#mentionslegales'
 
   match '/contacts', to: 'contacts#new', via: 'get'
-  resources "contacts", only: [:new, :create]
+  resources :contacts
+
+  match '/evaluations', to: 'evaluations#new', via: 'get'
+  resources :evaluations
+
 end
