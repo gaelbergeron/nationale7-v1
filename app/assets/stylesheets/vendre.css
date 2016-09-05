@@ -116,3 +116,40 @@ input.button.evaluation-form-button {
 	width: 12em;
 }
 
+.vendre-bottom-explanation {
+	/*height: 10em;*/
+	width: 100%;
+	background-color: #f4fafa;
+}
+
+.vendre-bottom-section-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vendre-bottom-title {
+	text-align: center;
+  font-size: 1.6em;
+  padding-top: 2em;
+}
+
+.vendre-bottom-section {
+	width: 25em;
+	height: 18em;
+}
+
+.vendre-picto-wrap {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.vendre-picto-img {
+	width: 100px;
+}
+
+.vendre-bottom-copy {
+	text-align: center;
+  line-height: 1.4;
+}
+

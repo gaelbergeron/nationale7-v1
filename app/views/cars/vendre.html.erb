@@ -1,3 +1,12 @@
+<div>
+  <% flash.each do |key, value| %>
+    <div class="confirmation-message">
+      <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>
+
 <header class="header-vendre">
   <div class="logo-homepage">
     <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
@@ -73,11 +82,59 @@
        <% end %>
     </div>
 
-<div>
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
+    <div class="vendre-bottom-explanation">
+      
+      <div class="vendre-bottom-row">
+        <p class="vendre-bottom-title">PLACE À LA SIMPLICITÉ</p>
+
+        <div class="vendre-bottom-section-wrap">
+
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-rendez-vous.jpg', class: "vendre-picto-img") %>
+            </div>
+            <p class="vendre-bottom-copy"><span>Prenez rendez-vous pour</span><span> l'inspection, où et quand cela</span><span> vous arrange, gratuitement.</span></p>
+          </div>
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-meilleur-prix.jpg', class: "vendre-picto-img") %>
+            </div>
+            <p class="vendre-bottom-copy"><span>Nous vous donnerons un prix final,</span><span>avant la mise-en-marché.</span></p>
+          </div>
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-utiliser-voiture.jpg', class: "vendre-picto-img") %>
+            </div>  
+            <p class="vendre-bottom-copy"><span>Continuez d'utiliser votre auto</span><span>le temps que l'on trouve votre</span><span>futur acheteur.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendre-bottom-row">
+        <p class="vendre-bottom-title">C'EST L'HEURE DE SE DIRE AU-REVOIR</p>
+
+        <div class="vendre-bottom-section-wrap">
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-acheteur.jpg', class: "vendre-picto-img") %>
+            </div>
+            <p class="vendre-bottom-copy"><span>Un acheteur s'est</span><span>manifesté, nous venons chez</span><span>vous enlever la voiture.</span></p>
+          </div>
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-paperasse.jpg', class: "vendre-picto-img") %>
+            </div>
+            <p class="vendre-bottom-copy"><span>La paperasse sera prête, il n'y</span><span>aura plus qu'à signer</span></p>
+          </div>
+          <div class="vendre-bottom-section">
+            <div class="vendre-picto-wrap">
+              <%= image_tag('vendre-paiement-securise.jpg', class: "vendre-picto-img") %>
+            </div>
+            <p class="vendre-bottom-copy"><span>Nous sécurisons le paiement</span><span>grâce à nos partenaires</span><span>Lemonway et BNP Paribas.</span></p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-  <% end %>
-</div>
+
