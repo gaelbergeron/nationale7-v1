@@ -77,7 +77,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { :host => 'http://nationale7-v1.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'nationale7-v1.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -85,13 +85,13 @@ Rails.application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    address: 'smtp-relay.gmail.com',
-    port: 587,
-    domain: 'nationale7.co',
+    address: 'smtp.gmail.com',
+    port: 25,
+    domain: 'gmail.com',
     authentication: 'plain',
     enable_starttls_auto: true,
-    user_name: 'gael@nationale7.co',
-    password: 'Gilerasm50'
+    user_name: 'gael.bergeron@gmail.com',
+    password: 'Gmail1988'
   }
 
 end
