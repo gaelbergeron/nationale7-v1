@@ -52,7 +52,8 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: true,
     user_name: 'gael.bergeron@gmail.com',
-    password: 'Gmail1988'
+    password: 'Gmail1988',
+    openssl_verify_mode: 'none'
   }
 
 end
