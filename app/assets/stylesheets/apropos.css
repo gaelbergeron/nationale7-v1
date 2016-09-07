@@ -1,0 +1,112 @@
+.header-apropos {
+  height: 43em;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/apropos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.apropos-tagline-wrap {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 9.5em;
+}
+
+.apropos-h1-tagline {
+	color: white;
+	font-size: 2.4em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+}
+
+.apropos-h2-tagline {
+	color: white;
+	font-size: 1.5em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+  margin-top: 2em;
+}
+
+.apropos-copy {
+	width: 47%;
+	margin: 0 auto;
+}
+
+.manifesto {
+	font-size: 2em;
+	margin-bottom: 2em;
+	padding-top: 3em;
+	color: black;
+	text-align: center;
+  font-family: 'Montserrat-Light';
+}
+
+.p-apropos {
+  font-size: 1.25em;
+  text-align: center;
+  font-family: 'Montserrat-Light';
+}
+
+.paragraph-start {
+	margin-top: 1em;
+}
+
+.signature-N7 {
+	text-align: center;
+	font-size: 1.1em;
+	margin-bottom: 4em;
+}
+	
+.equipe-n7-body {
+	background-color: #f4fafa;
+}
+
+.equipe-n7-section-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.equipe-n7-individual {
+	width: 16em;
+	height: 18em;
+}
+
+.equipe-picto-wrap {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.equipe-picto-img {
+	width: 120px;
+}
+
+.equipe-nom {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.3em;
+}
+
+.recrutement-body {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	height: 23em;
+}
+
+.recrutement-title {
+	text-align: center;
+}
+
+a.bosser-button {
+	margin: 0 auto;
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 3em;
+	background-color: #E54B40;
+  padding: 1em 2em 1em 2em;
+  border-radius: 10px;
+}
+

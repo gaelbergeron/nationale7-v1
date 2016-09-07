@@ -1,0 +1,129 @@
+.grey-title-wrap {
+  background-color: rgb(245, 245, 246);
+  height: 15em;
+  font-family: 'Montserrat-Light';
+}
+
+.faq-title {
+	padding-top: 1em;
+  color: rgb(68, 139, 199);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.faq-subtitle {
+  color: rgb(68, 139, 199);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.faq-intro-title {
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	color: black;
+}
+
+.p-faq {
+  font-size: 1.25em;
+  text-align: center;
+  font-family: 'Montserrat-Light';
+}
+
+.paragraph-start {
+	margin-top: 1em;
+}
+
+.intro-copy {
+	width: 47%;
+	margin: 0 auto;
+	margin-bottom: 5em;
+}
+
+.faq-sides-wrap {
+	background-color: #e8e8e8;
+	display: flex;
+}
+
+.faq-vendre-section {
+  background-color: #f17971;
+  width: 50%;
+  float: left;
+  flex: 1;
+}
+
+.faq-acheter-section {
+  background-color: rgb(145, 188, 221);
+  width: 50%;
+  float: left;
+  flex: 1;
+}
+
+
+.faq-vendre-content {
+	margin-left:35%;
+	margin-right: 10%; 
+	color: white;
+}
+
+.faq-acheter-content {
+	margin-right:35%;
+	margin-left: 10%; 
+	color: white;
+}
+
+.faq-content-title {
+	font-size: 2.2em;
+	color: white;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.question-div {
+	font-size: 1.2em;
+	margin-bottom: 2em;
+}
+
+.answer-div {
+	font-size: 1.2em;
+	margin-bottom: 3.5em;
+	margin-left: 3em;
+}
+
+.faq-round {
+	border: 1px solid white;
+	border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  margin: 0px;
+  float: left;
+}
+
+.p-question {
+	padding-top: 0.4em;
+  margin-left: 3em;
+}
+
+.faq-end-section {
+	text-align: center;
+	height: 14em;
+}
+
+.faq-end-title {
+	font-size: 1.6em;
+	margin-top: 3em;
+	text-align: center;
+}
+
+a.faq-end-a {
+	color: #E54B40;
+	font-size: 1.4em;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+

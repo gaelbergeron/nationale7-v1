@@ -1,0 +1,87 @@
+<header class="header-product">
+  <div class="logo-product">
+    <%= link_to image_tag('logo-blue.png'), root_path, class: "logo-product" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-product header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-product"><a href="#aide-popup" class="open-popup-link menu-link-product sliding-middle-out sliding-blue">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-product"><%= link_to 'Vendre', vendre_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>  
+    <li class="header-link-product"><%= link_to 'Acheter', acheter_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>
+    <li class="header-link-product wrapper pourquoi-n7 sliding-blue">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+</header>
+
+
+<div class="grey-title-wrap">
+  <h1 class="expertise-title">L'EXPERTISE NATIONALE 7</h1>
+  <h3 class="expertise-subtitle">L'expérience au profite de votre voiture</h3>
+</div>
+
+
+<div class="expertise-explanation-wrap">
+  <p>Passage nécessaire pour estimer au mieux votre voiture, l’expertise Nationale 7 comprend la visite d'un de nos experts pendant une heure pour inspecter votre voiture dans ses moindres détails.</p>
+  <p>Suivant un process éprouvé, notre expert vérifie :</p>
+</div>
+
+<div class="expertise-pictos">
+  <div class="expertise-picto-wrap">
+    <%= image_tag('expertise-75-points.jpg', class: "expertise-picto-img") %>
+    <p class="expertise-p"><span>75</span><span>points</span></p>
+  </div>
+  <div class="expertise-picto-wrap">
+    <%= image_tag('expertise-carrosserie-interieur.jpg', class: "expertise-picto-img") %>
+    <p class="expertise-p"><span>Carrosserie</span><span>et intérieur</span></p>
+  </div>
+  <div class="expertise-picto-wrap">
+    <%= image_tag('expertise-mecanique.jpg', class: "expertise-picto-img") %>
+    <p class="expertise-p"><span>Mécanique</span><span>et chassis</span></p>
+  </div>
+  <div class="expertise-picto-wrap">
+    <%= image_tag('expertise-historique-entretien.jpg', class: "expertise-picto-img") %>
+    <p class="expertise-p"><span>Historique</span><span>et entretien</span></p>
+  </div>
+  <div class="expertise-picto-wrap">
+    <%= image_tag('expertise-test-conduite.jpg', class: "expertise-picto-img") %>
+    <p class="expertise-p"><span>Test</span><span>de conduite</span></p>
+  </div>
+</div>
+
+<div class="expertise-experveo-wrap">
+  <%= image_tag('fake-expertise.jpg', class: "fake-expertise-img") %>
+  <div class="experveo-presentation">
+    <p class="experveo-presentation-title">Qui sont ces experts ?</p>
+    <p class="experveo-presentation-copy"><span>Aujourd'hui nous travaillons main dans la main avec Experveo, filiale de BCA expertise, un leader du domaine depuis 1995.</span><span>Avec un réseau de 600 experts agréés par le Ministère de l'intérieur, ils interviennent chez vous en moins de 48h. Si tout est conforme, la qualité de votre voiture est certifiée Nationale 7 !</span></p>
+    <%= image_tag('certifie-experveo-green.jpg', class: "experveo-presentation-img") %>
+  </div>  
+</div>
+
+<div class="expertise-white-separator"></div>
+
+
+

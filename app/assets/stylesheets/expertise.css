@@ -1,0 +1,92 @@
+.expertise-title {
+	padding-top: 1em;
+  color: rgb(68, 139, 199);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.expertise-subtitle {
+  color: rgb(68, 139, 199);
+  line-height: 2;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.expertise-explanation-wrap {
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.2em;
+ 	font-family: 'Montserrat-Light';
+  margin-top: 2em;
+}
+
+.expertise-pictos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 4em;
+	margin-bottom: 5em;
+}
+
+.expertise-picto-wrap {
+	width: 14em;
+}
+
+.expertise-picto-img {
+	width: 100px;
+}
+
+.expertise-p {
+  color: rgb(68, 139, 199);
+  font-weight: 600;	
+}
+
+.expertise-experveo-wrap {
+	display: flex;
+}
+
+.fake-expertise-img {
+	flex: 1;
+	width: 50%;
+	float: left;
+	height: 50%;
+}
+
+.experveo-presentation {
+	flex: 1;
+	background-color: #f4fafa;
+	width: 50%;
+	float: left;
+}
+
+.experveo-presentation-title {
+  color: rgb(68, 139, 199);
+	font-size: 2.5em;
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+}
+
+.experveo-presentation-copy {
+  font-size: 1.2em;
+ 	font-family: 'Montserrat-Light';
+	margin-left: 4.2em;	
+	width: 62%;
+	line-height: 1.4;
+}
+
+.experveo-presentation-img {
+	margin-left: 4em;
+	width: 25%;
+}
+
+.expertise-white-separator {
+	height: 8em;
+}
+
+
+
+
+

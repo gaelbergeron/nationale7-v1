@@ -1,2 +1,236 @@
-<h1>Foire aux questions</h1>
-<h4>Foire aux réponses</h4>
+<header class="header-product">
+  <div class="logo-product">
+    <%= link_to image_tag('logo-blue.png'), root_path, class: "logo-product" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-product header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-product"><a href="#aide-popup" class="open-popup-link menu-link-product sliding-middle-out sliding-blue">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-product"><%= link_to 'Vendre', vendre_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>  
+    <li class="header-link-product"><%= link_to 'Acheter', acheter_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>
+    <li class="header-link-product wrapper pourquoi-n7 sliding-blue">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+</header>
+
+
+<div class="grey-title-wrap">
+  <h1 class="faq-title">Foire aux questions</h1>
+  <h3 class="faq-subtitle">Foire aux réponses</h3>
+</div>
+
+<div class="faq-intro-wrap">
+  <h2 class="faq-intro-title">Qu'est-ce que Nationale 7 ?</h2>
+  <div class="intro-copy">
+    <p class="p-apropos paragraph-start" >Nationale 7 est le service dont vous rêviez pour votre voiture d'occasion. Notre objectif est de vous simplifier à l'extrême la vente et l'achat entre particuliers.</p>
+    <p class="p-apropos paragraph-start" >Nationale 7 agit comme tiers de confiance et permet aux vendeurs et acheteurs d'interagir dans un environnement simple et à la fois sécurisé. Chacune de nos voitures passe une inspection rigoureuse de 75 points complétée par un expert agréé.</p>
+    <p class="p-apropos paragraph-start" >Nous nous occupons de toutes les étapes importantes: pré-sélectionner, expertiser, certifier, photographier puis livrer et transiger la voiture. Toutefois nous ne sommes pas un concessionnaire traditionnel: pas de stocks ni de showroom coûteux, un système qui offre des économies à la fois aux acheteurs et aux vendeurs.</p>
+  </div>
+</div>
+
+<div class="faq-sides-wrap">
+  <div class="faq-vendre-section">
+    <div class="faq-vendre-content">
+      <p class="faq-content-title">Vendre</p>
+      
+      <div class="question-div" id="vq1">
+        <div class="faq-round">1</div><p class="p-question">Que se passe-t-il une fois que ma voiture passe l’inspection ?</p>
+      </div>
+      <div class="answer-div" id="va1">
+        <p>Yo</p>
+      </div>
+      
+      <div class="question-div" id="vq2">
+        <div class="faq-round">2</div><p class="p-question">Quels sont les frais prélevés par Nationale 7 ?</p>
+      </div>
+      <div class="answer-div" id="va2">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq3">
+        <div class="faq-round">3</div><p class="p-question">Est-ce que je peux vendre ma voiture ailleurs quand elle est avec Nationale 7?</p>
+      </div>
+      <div class="answer-div" id="va3">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq4">
+        <div class="faq-round">4</div><p class="p-question">Comment définissez-vous le prix de ma voiture ?</p>
+      </div>
+      <div class="answer-div" id="va4">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq5">
+        <div class="faq-round">5</div><p class="p-question">Comment se déroule l’expertise ?</p>
+      </div>
+      <div class="answer-div" id="va5">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq6">
+        <div class="faq-round">6</div><p class="p-question">Dois-je être présent lors de l’expertise ?</p>
+      </div>
+      <div class="answer-div" id="va6">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq7">
+        <div class="faq-round">7</div><p class="p-question">Qui sont vos experts ?</p>
+      </div>
+      <div class="answer-div" id="va7">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq8">
+        <div class="faq-round">8</div><p class="p-question">Qui gère les rendez-vous avec les acheteurs potentiels ?</p>
+      </div>
+      <div class="answer-div" id="va8">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq9">
+        <div class="faq-round">9</div><p class="p-question">Que se passe-t-il lorsqu'un acheteur sérieux se manifeste ?</p>
+      </div>
+      <div class="answer-div" id="va9">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq10">
+        <div class="faq-round">10</div><p class="p-question">Comment se passe la livraison ?</p>
+      </div>
+      <div class="answer-div" id="va10">
+        <p>Yo</p>
+      </div>
+
+      <div class="question-div" id="vq11">
+        <div class="faq-round">11</div><p class="p-question">Que se passe-t-il si l'acheteur ne souhaite pas acheter la voiture ?</p>
+      </div>
+      <div class="answer-div" id="va11">
+        <p>Yo</p>
+      </div>
+      
+      <div class="question-div" id="vq12">
+        <div class="faq-round">12</div><p class="p-question">Comment gérez-vous le paiement ?</p>
+      </div>
+      <div class="answer-div" id="va12">
+        <p>Yo</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="faq-acheter-section">
+    <div class="faq-acheter-content">
+      <p class="faq-content-title">Acheter</p>
+      
+      <div class="question-div" id="aq1">
+        <div class="faq-round">1</div><p class="p-question">Êtes-vous un concessionnaire ?</p>
+      </div>
+      <div class="answer-div" id="aa1">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq2">
+        <div class="faq-round">2</div><p class="p-question">J'ai moi-même une titine à vendre, vous me faites un deal ?</p>
+      </div>
+      <div class="answer-div" id="aa2">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq3">
+        <div class="faq-round">3</div><p class="p-question">Je veux voir une de vos voitures, comment ça se passe ?</p>
+      </div>
+      <div class="answer-div" id="aa3">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq4">
+        <div class="faq-round">4</div><p class="p-question">Est-ce que je peux faire un essai ? Est-ce que je peux changer d'avis une fois qu'elle arrive chez moi ?</p>
+      </div>
+      <div class="answer-div" id="aa4">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq5">
+        <div class="faq-round">5</div><p class="p-question">Comment se passe la livraison ? Combien ça coûte ?</p>
+      </div>
+      <div class="answer-div" id="aa5">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq6">
+        <div class="faq-round">6</div><p class="p-question">Je refuse la livraison, je veux me déplacer en personne chez le vendeur. Est-ce possible ?</p>
+      </div>
+      <div class="answer-div" id="aa6">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq7">
+        <div class="faq-round">7</div><p class="p-question">Qui va venir livrer la voiture ?</p>
+      </div>
+      <div class="answer-div" id="aa7">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq8">
+        <div class="faq-round">8</div><p class="p-question">Comment vérifiez-vous l'historique de la voiture ?</p>
+      </div>
+      <div class="answer-div" id="aa8">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq9">
+        <div class="faq-round">9</div><p class="p-question">Est-ce que la voiture a été accidentée ?</p>
+      </div>
+      <div class="answer-div" id="aa9">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq10">
+        <div class="faq-round">10</div><p class="p-question">Est-ce que le prix est négociable ?</p>
+      </div>
+      <div class="answer-div" id="aa10">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq11">
+        <div class="faq-round">11</div><p class="p-question">Quels moyens de paiement sont à ma disposition ?</p>
+      </div>
+      <div class="answer-div" id="aa11">
+        <p>Yo</p>
+      </div>
+      <div class="question-div" id="aq12">
+        <div class="faq-round">12</div><p class="p-question">Comment sécurisez-vous le paiement ?</p>
+      </div>
+      <div class="answer-div" id="aa12">
+        <p>Yo</p>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div class="faq-end-section">
+  <p class=faq-end-title><span>Félicitations, vous êtes arrivés au bout de la liste !</span><span>Si vous avez d'autres questions, n'hésitez pas !</span></p>
+
+  <span><a class="faq-end-a" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a></span>
+  <span><a class="faq-end-a" href="tel:0176390284">01 76 39 02 84</a></span>
+
+
+</div>

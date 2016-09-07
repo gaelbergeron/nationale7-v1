@@ -1,1 +1,93 @@
-<h1>Une équipe en pleine croissance, des rêves de voitures pleins la tête.</h1>
+<header class="header-apropos">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+      
+  </ul>
+
+  <div class="apropos-tagline-wrap">
+    <h1 class="apropos-h1-tagline"><span>Une équipe en pleine croissance,</span> <span>des rêves de voitures plein la tête.</span></h1>
+    <h2 class="apropos-h2-tagline"><span>Nous facilitons la vente entre particuliers,</span><span>pour que tout le monde y gagne.</span></h2>
+  </div>
+
+</header>
+
+
+
+<div class="apropos-body">
+	<div class="apropos-copy">
+	<h1 class="manifesto">PARCE QUE C'EST UN PEU PLUS QU'UNE VOITURE.</h1>
+    <p class="p-apropos paragraph-start">Que vous ayez tout vécu avec, ou que vous soyez sur le point de la découvrir.</p>
+    <p class="p-apropos">Pensez à tous ces moments inoubliables, ces flirts, ces coups de klaxon, ces moments trop cools, ces courbes parfaitement maîtrisées, ces crevaisons, ces kilomètres.</p>
+    <p class="p-apropos">Tout autant de raisons d’acheter ou de vendre votre voiture avec soin et auprès de professionnels. Parce que c’est difficile d’imaginer les choses autrement.</p>
+
+    <p class="p-apropos paragraph-start">Notre mission, chez Nationale 7 c’est de vous permettre d’acheter ou de vendre votre voiture en toute sérénité. Grâce à nos experts amoureux des voitures et toujours enthousiastes, notre offre de livraison et notre système de garantie, vous l’achetez ou la vendez au bon prix, en bon état et elle vous est livrée jusque chez vous. C’est exactement ce dont vous aviez besoin, parce qu’on n’est jamais trop prudent.</p>
+
+    <p class="p-apropos paragraph-start" >La passion des voitures et la conviction que le marché de l’occasion se doit d’être transparent nous ont poussés à entreprendre.</p>
+    <p class="p-apropos">Depuis, notre équipe met chaque jour tous ses efforts et son expertise pour vous apporter un service de qualité et personnalisé aussi bien quand vous cherchez à vendre votre fidèle auto que quand vous partez en quête de la voiture de vos rêves.</p>
+    <p class="p-apropos">Vous pouvez vous y mettre le cœur léger, comme lors d’un départ en vacances.</p>
+
+    <div class="signature-N7"><strong><i>Emmanuel, Florian et Gael, fondateurs Nationale 7</strong></i></div>
+</div>
+
+<div class="equipe-n7-body">
+	<h1 class="manifesto">L'ÉQUIPE NATIONALE 7</h1>
+	<div class="equipe-n7-section-wrap">    
+    <div class="equipe-n7-individual">
+      <div class="equipe-picto-wrap">
+        <%= image_tag('emmanuel-rond.png', class: "equipe-picto-img") %>
+      </div>
+      <p class="equipe-nom">Emmanuel</p>
+    </div>
+    <div class="equipe-n7-individual">
+      <div class="equipe-picto-wrap">
+        <%= image_tag('gael-rond.png', class: "equipe-picto-img") %>
+      </div>
+      <p class="equipe-nom">Gael</p>
+    </div>
+    <div class="equipe-n7-individual">
+      <div class="equipe-picto-wrap">
+        <%= image_tag('florian-rond.png', class: "equipe-picto-img") %>
+      </div>
+      <p class="equipe-nom">Florian</p>
+    </div>
+	</div>
+</div>
+
+<div class="recrutement-body">
+	<h1 class="manifesto recrutement-title"><span>CHANGER UN DES PLUS GROS MARCHÉS AU MONDE</span> <span>EST UN TRAVAIL D'ÉQUIPE,</span> <span>LA NÔTRE EST ENTHOUSIASTE ET PASSIONNÉE.</span></h1>
+	<a class="bosser-button" href="mailto:jerejoinslequipe@nationale7.co">jerejoinslequipe@nationale7.co</a>
+
+</div>
+
+

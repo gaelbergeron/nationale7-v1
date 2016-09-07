@@ -610,7 +610,7 @@
               <%= image_tag "mapfre.png", width: '50%' %>
             <% else %>
               <p>Vous pouvez y aller sereinement.</p>
-              <p>Cette <%= @car.marque %> bénéficie de la <strong>garantie constructeur</strong> jusqu'au <=% @car.echeance_garantie =>.</p>
+              <p>Cette <%= @car.marque %> bénéficie de la <strong>garantie constructeur</strong> jusqu'au <%= @car.echeance_garantie %>.</p>
             <% end %> 
           </div>
 
