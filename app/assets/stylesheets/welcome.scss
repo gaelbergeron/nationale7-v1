@@ -4,20 +4,20 @@
 
 @font-face {
   font-family: "Montserrat-Light";
-  src: font-url(/assets/Montserrat-Light.ttf) format("truetype");
+  src: asset-url('Montserrat-Light.ttf');
 }
 
 @font-face {
   font-family: "Montserrat-UltraLight";
-  src: font-url(/assets/Montserrat-UltraLight.ttf) format("truetype");
+  src: asset-url('Montserrat-UltraLight.ttf');
 }
 
 @font-face {
   font-family: "Montserrat-Light";
-  src: font-url(/assets/Montserrat-Light.otf) format("truetype");
+  src: asset-url('Montserrat-Light.otf');
 }
 
 @font-face {
   font-family: "Montserrat-UltraLight";
-  src: font-url(/assets/Montserrat-UltraLight.otf) format("truetype");
+  src: asset-url('Montserrat-UltraLight.otf');
 }
