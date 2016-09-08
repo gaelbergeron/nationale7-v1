@@ -82,6 +82,7 @@ a.sub-menu-link-product:visited {
   width: 70%;
   margin: 0 auto;
   position: relative;
+  margin-top: -7em;
 }
 
 .slick-slider .slick-track,
@@ -109,10 +110,10 @@ a.sub-menu-link-product:visited {
     width: 35em;
     height: 5em;
     background-color: rgba(255, 255, 255, 0.67);
-    position: absolute;
+    position: relative;
     left: 15%;
     z-index: 80;
-    top: 17%;
+    top: 5%;
     font-family: 'Montserrat';
     border-top-right-radius: 50px;
     padding-left: 6em;
