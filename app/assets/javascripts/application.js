@@ -15,6 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require jquery.turbolinks
+//= require jquery-ui
 //= require filterrific/filterrific-jquery
 //= require magnific-popup
 //= require_tree .

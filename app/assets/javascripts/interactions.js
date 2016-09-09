@@ -52,10 +52,45 @@ $(document).ready(function(){
   $(".answer-div").hide();
 
   $(".question-div").click( function() { 
-    $(this).next().slideToggle();} );
+    $(this).next().slideToggle();} 
+  );
 
   
   $('#menu2').slicknav();
+
+  // $('.acheter-triangle').hide();
+
+  // $('.ccm-intro-acheter').mouseover( function(){
+  //   $('.acheter-triangle').show('slide',{direction:'left'},500);
+  //   $('.acheter-triangle').css()
+
+  // });
+        
+  // $('.ccm-intro-acheter').mouseleave( function(){
+  //   $('.acheter-triangle').hide();
+  // });
+
+  $('.acheter-summary').hide();
+  $('.vendre-summary').hide();
+  $('.acheter-content').hide();
+  $('.vendre-content').hide();
+
+
+  $('.ccm-intro-acheter').click( function() {
+    $('.vendre-summary').hide('slide', {direction: 'right'},900);
+    $('.acheter-summary').show('slide', {direction: 'left'}, 500);
+    
+    $('.vendre-content').hide('slide', { direction:'down'}, 500);
+    
+    $('.acheter-content').show('slide', { direction: 'up'}, 500);
+  });
+
+  $('.ccm-intro-vendre').click( function() {
+    $('.acheter-summary').hide('slide', {direction: 'left'},900);
+    $('.vendre-summary').show('slide', {direction: 'right'},500);
+    $('.acheter-content').hide('slide', { direction:'down'}, 500);
+    $('.vendre-content').show('slide', { direction: 'up'}, 500);
+  });
 
 });
 

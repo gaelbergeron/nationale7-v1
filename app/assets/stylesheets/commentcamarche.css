@@ -1,0 +1,126 @@
+.ccm-title {
+	padding-top: 1em;
+	padding-bottom: 0.6em;
+  color: rgb(68, 139, 199);
+  line-height: 1.2;
+  text-align: center;
+  font-size: 2.6em;
+}
+
+.ccm-subtitle {
+  color: rgb(68, 139, 199);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ccm-intro-wrap {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.ccm-intro-vendre {
+  background-color: #f17971;
+  width: 50%;
+  float: left;
+  flex: 1;
+	height: 16em;
+	color: white;
+	font-size: 1.6em;
+}
+
+.ccm-intro-acheter {
+	background-color: rgb(145, 188, 221);
+  width: 50%;
+  float: left;
+  flex: 1;
+	height: 16em;
+	color: white;
+	font-size: 1.6em;
+}
+
+.acheter-summary {
+	background-color: rgb(145, 188, 221);
+  width: 80%;
+  float: left;
+  flex: 1;
+	height: 25.6em;
+	color: white;
+	position: absolute;
+  top: 23em;
+  left: 0;
+}
+
+.vendre-summary {
+	background-color: #f17971;
+  width: 80%;
+  float: right;
+  flex: 1;
+	height: 25.6em;
+	color: white;
+	position: absolute;
+  top: 23em;
+  right: 0;	
+}
+
+.ccm-intro-vendre:hover {
+	background-color: rgba(241, 121, 113, 0.85);
+}
+
+.ccm-intro-acheter:hover {
+	background-color: rgba(145,188,221,0.85);
+}
+
+.acheter-triangle {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    background-color:rgb(145, 188, 221);
+    width:162px;
+    height:162px;
+    position:absolute;
+    top:26em;
+    left:42%;
+    -webkit-border-radius: 0 20px 0 0;
+    -moz-border-radius: 0 20px 0 0;
+    border-radius: 0 20px 0 0;
+}
+
+.verbe-span {
+	margin-top: 6em;
+}
+
+a.decouvrir-span {
+	padding-top: 1em;
+	color: white;
+	font-family: 'Montserrat';
+}
+
+.ccm-intro-text {
+	padding-bottom: 1em;
+}
+
+
+u {
+	text-decoration: none;
+  border-bottom: 3px solid white;
+}​
+
+.acheter-content {
+	height: 80em;
+}
+
+.vendre-content {
+	height: 80em;
+}
+
+.acheter-route {
+	margin: 0 auto;
+}
+
+
+
+

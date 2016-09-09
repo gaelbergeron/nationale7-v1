@@ -92,7 +92,8 @@
 				// $(".phone-number-header-product").append();
 			});
 			$(window).bind('enterBreakpoint768',function() {
-				// $(".phone-number-header-product").remove();
+   			 $("i").removeClass("fa-5x");
+   			 $("i").addClass("fa-3x");
 			});
 			
 			$(window).bind('exitBreakpoint1024',function() {

@@ -234,6 +234,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  jquery-ui-rails
   magnific-popup-rails (~> 1.1.0)
   mail_form
   pg

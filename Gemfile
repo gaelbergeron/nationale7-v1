@@ -22,6 +22,8 @@ gem 'activeadmin', '1.0.0.pre1'
 gem 'devise'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Install jquery turbolinks to fix document.ready issues happening with Carousel and other gems
