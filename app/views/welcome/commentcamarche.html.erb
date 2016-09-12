@@ -51,7 +51,26 @@
 	</div>
 
 	<div class="acheter-summary">
-		COOOOOOOOOOOOOOOOL
+		<h1 class="acheter-ccm-h1">4 étapes pour acheter votre nouvelle voiture</h1>
+		<h3 class="acheter-ccm-h3">Acheter en quelques clics</h3>
+		<div class="summary-pictos-wrap wrap-acheter">
+	  	<div class="summary-one-picto">
+	  		<%= image_tag('acheter-reperage.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p">Repérage de votre voiture</p>
+	  	</div>
+	  	<div class="summary-one-picto">
+	  		<%= image_tag('acheter-commande.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p">Commande de votre voiture</p>
+	  	</div>
+	  	<div class="summary-one-picto">
+	  		<%= image_tag('acheter-livraison.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p">Livraison chez vous</p>
+	  	</div>  	
+	  	<div class="summary-one-picto">
+	  		<%= image_tag('acheter-garantie.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p">Votre voiture toujours garantie</p>
+	  	</div>  
+	  </div>
 	</div>
 
 	<!-- <div class="acheter-triangle"></div> -->
@@ -61,19 +80,143 @@
 	</div>
 
 	<div class="vendre-summary">
-		COOOOOOOOOOOOOOOOL
+		<h1 class="vendre-ccm-h1">5 étapes pour vendre votre voiture</h1>
+		<h3 class="vendre-ccm-h3">Vous allez voir, il n'y a rien de plus simple !</h3>
+		<div class="summary-pictos-wrap wrap-vendre">
+	  	<div class="summary-picto-vendre">
+	  		<%= image_tag('vendre-estimation.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p"><span>Estimation</span><span>de votre voiture</span></p>
+	  	</div>
+	  	<div class="summary-picto-vendre">
+	  		<%= image_tag('vendre-expertise.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p"><span>Expertise</span><span>de votre voiture</span></p>
+	  	</div>
+	  	<div class="summary-picto-vendre">
+	  		<%= image_tag('vendre-mel.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p"><span>Mise en ligne</span><span>de votre voiture</span></p>
+	  	</div>  	
+	  	<div class="summary-picto-vendre">
+	  		<%= image_tag('vendre-gerer-acheteur.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p"><span>On s'occupe</span><span>des acheteurs</span></p>
+	  	</div>  
+	  	<div class="summary-picto-vendre">
+	  		<%= image_tag('vendre-enlevement.jpg', class: "acheter-summary-picto") %>
+	  		<p class="summary-p"><span>On gère l'enlèvement</span> <span>et le paiement</span></p>
+	  	</div>  
+	  </div>
 	</div>
-
 </div>
 
 <div class="acheter-content">
+	<!-- Left side of road, html sequence is upside down to keep the first element as a reference point for margin-left -->
+  <div class="acheter-content-wrap-4">
+  	<div class="acheter-title-4">Garantie 6 mois</div>
+  	<div class="acheter-p-4">
+  		<p>Achetez l'esprit léger grâce à une garantie qui vous couvre en cas de pépin mécanique jusqu'à 6 mois après l'achat. <span>Cette garantie est gérée par notre partenaire MAPFRE et couvre l'ensemble des pièces critiques de la voiture.</span></p>
+  	</div>
+  </div>
+  <%= image_tag('mascotte-bras-leves.png', class: "acheter-mascotte-4") %>
+  <%= image_tag('acheter-4.png', class: "acheter-4") %>
+  <%= image_tag('arbre.png', class: "acheter-arbre-3") %>
+  <%= image_tag('arbre.png', class: "acheter-arbre-2") %>
+  <%= image_tag('mascotte-gauche-leve.png', class: "acheter-mascotte-2") %>
+  <%= image_tag('acheter-2.png', class: "acheter-2") %>
+  <div class="acheter-content-wrap-2">
+	  <div class="acheter-title-2">Commande et paiement sécurisé</div>
+  	<div class="acheter-p-2">
+  		<p>Un coup de fil et votre voiture est commandée. Le paiement s'effectue par virement, via LemonWay et BNP Paribas pour vous garantir une complète tranquilité d'esprit.</p>
+  	</div>
+  </div>  
+  <%= image_tag('buisson.jpg', class: "acheter-buisson-1") %>
+
+  <!-- Road (route) middle of ccm page  -->
   <%= image_tag('acheter-route.jpg', class: "acheter-route") %>
+
+  <!-- Right side of the road, regular html sequence -->
+  <%= image_tag('mascotte-bras-baisses.png', class: "acheter-mascotte-1") %>
+  <%= image_tag('acheter-1.jpg', class: "acheter-1") %>
+  <div class="acheter-content-wrap-1">
+  	<div class="acheter-title-1">Faites connaissance avec votre voiture</div>
+  	<div class="acheter-p-1">
+  		<p>Pour chacune de nos voitures vous pouvez consulter des dizaines de photos haute-résolution, la liste des caractéristiques et options, ainsi que les résultats de l'expertise en 75 points.</p>
+  	</div>
+  </div>
+  <%= image_tag('arbre.png', class: "acheter-arbre-1") %>
+  <%= image_tag('mascotte-droit-leve.png', class: "acheter-mascotte-3") %>
+  <%= image_tag('acheter-3.png', class: "acheter-3") %>
+  <div class="acheter-content-wrap-3">
+  	<div class="acheter-title-3">Livraison avec amour</div>
+  	<div class="acheter-p-3">
+  		<p>Nous assurons la livraison partout en France, avec un supplément de coût pour les livraisons longues distance. Paiement au coup de coeur, vous ne réglez qu'au moment de la livraison.</p>
+  	</div>
+  </div>
+  <%= image_tag('arbre.png', class: "acheter-arbre-4") %>
+  <button class="vendre-savoir">
+  	Tout savoir pour vendre
+	</button>
 
 </div>
 
 <div class="vendre-content">
-  <%= image_tag('vendre-route.jpg', class: "acheter-route") %>
+	<!-- Left side of road, html sequence is upside down to keep the first element as a reference point for margin-left -->
+  <div class="vendre-content-wrap-4">
+  	<div class="vendre-title-4">Garantie 6 mois</div>
+  	<div class="vendre-p-4">
+  		<p>Achetez l'esprit léger grâce à une garantie qui vous couvre en cas de pépin mécanique jusqu'à 6 mois après l'achat. <span>Cette garantie est gérée par notre partenaire MAPFRE et couvre l'ensemble des pièces critiques de la voiture.</span></p>
+  	</div>
+  </div>
+  <%= image_tag('mascotte-bras-leves.png', class: "vendre-mascotte-4") %>
+  <%= image_tag('vendre-4.png', class: "vendre-4") %>
+  <%= image_tag('arbre.png', class: "vendre-arbre-3") %>
+  <%= image_tag('arbre.png', class: "vendre-arbre-2") %>
+  <%= image_tag('mascotte-gauche-leve.png', class: "vendre-mascotte-2") %>
+  <%= image_tag('vendre-2.png', class: "vendre-2") %>
+  <div class="vendre-content-wrap-2">
+	  <div class="vendre-title-2">Commande et paiement sécurisé</div>
+  	<div class="vendre-p-2">
+  		<p>Un coup de fil et votre voiture est commandée. Le paiement s'effectue par virement, via LemonWay et BNP Paribas pour vous garantir une complète tranquilité d'esprit.</p>
+  	</div>
+  </div>  
+  <%= image_tag('buisson.jpg', class: "vendre-buisson-1") %>
+
+  <!-- Road (route) middle of ccm page  -->
+  <%= image_tag('vendre-route.jpg', class: "vendre-route") %>
+
+  <!-- Right side of the road, regular html sequence -->
+  <%= image_tag('mascotte-bras-baisses.png', class: "vendre-mascotte-1") %>
+  <%= image_tag('vendre-1.png', class: "vendre-1") %>
+  <div class="vendre-content-wrap-1">
+  	<div class="vendre-title-1">Faites connaissance avec votre voiture</div>
+  	<div class="vendre-p-1">
+  		<p>Pour chacune de nos voitures vous pouvez consulter des dizaines de photos haute-résolution, la liste des caractéristiques et options, ainsi que les résultats de l'expertise en 75 points.</p>
+  	</div>
+  </div>
+  <%= image_tag('arbre.png', class: "vendre-arbre-1") %>
+  <%= image_tag('mascotte-droit-leve.png', class: "vendre-mascotte-3") %>
+  <%= image_tag('vendre-3.png', class: "vendre-3") %>
+  <div class="vendre-content-wrap-3">
+  	<div class="vendre-title-3">Livraison avec amour</div>
+  	<div class="vendre-p-3">
+  		<p>Nous assurons la livraison partout en France, avec un supplément de coût pour les livraisons longues distance. Paiement au coup de coeur, vous ne réglez qu'au moment de la livraison.</p>
+  	</div>
+  </div>
+  <%= image_tag('mascotte-bras-baisses.png', class: "vendre-mascotte-5") %>
+  <%= image_tag('vendre-5.png', class: "vendre-5") %>
+  <div class="vendre-content-wrap-5">
+  	<div class="vendre-title-5">Livraison avec amour</div>
+  	<div class="vendre-p-5">
+  		<p>Nous assurons la livraison partout en France, avec un supplément de coût pour les livraisons longues distance. Paiement au coup de coeur, vous ne réglez qu'au moment de la livraison.</p>
+  	</div>
+  </div>  <%= image_tag('arbre.png', class: "vendre-arbre-4") %>
+  <button class="acheter-savoir">
+  	Tout savoir pour acheter
+	</button>
+
+</div>
 	
 </div>
 
+<div class="ccm-bottom">
+	
+</div>
 

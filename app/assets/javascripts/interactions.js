@@ -75,23 +75,39 @@ $(document).ready(function(){
   $('.acheter-content').hide();
   $('.vendre-content').hide();
 
-
   $('.ccm-intro-acheter').click( function() {
-    $('.vendre-summary').hide('slide', {direction: 'right'},900);
+    $('.vendre-summary').hide('slide', {direction: 'right'}, 700);
     $('.acheter-summary').show('slide', {direction: 'left'}, 500);
-    
     $('.vendre-content').hide('slide', { direction:'down'}, 500);
-    
     $('.acheter-content').show('slide', { direction: 'up'}, 500);
   });
 
   $('.ccm-intro-vendre').click( function() {
-    $('.acheter-summary').hide('slide', {direction: 'left'},900);
-    $('.vendre-summary').show('slide', {direction: 'right'},500);
+    $('.acheter-summary').hide('slide', {direction: 'left'}, 700);
+    $('.vendre-summary').show('slide', {direction: 'right'}, 500);
     $('.acheter-content').hide('slide', { direction:'down'}, 500);
     $('.vendre-content').show('slide', { direction: 'up'}, 500);
   });
 
+  $('.vendre-savoir').click( function() {
+    $('.acheter-summary').hide('slide', {direction: 'left'}, 700);
+    $('.vendre-summary').show('slide', {direction: 'right'}, 500);
+    $('.acheter-content').fadeOut(300);
+    $('.vendre-content').show('slide', { direction: 'up'}, 500);
+    $('html, body').animate({
+      scrollTop: $(".vendre-summary").offset().top
+    }, 500);
+  });
+
+  $('.acheter-savoir').click( function() {
+    $('.vendre-summary').hide('slide', {direction: 'right'}, 700);
+    $('.acheter-summary').show('slide', {direction: 'left'}, 500);
+    $('.vendre-content').fadeOut(300);
+    $('.acheter-content').show('slide', { direction: 'up'}, 500);
+    $('html, body').animate({
+      scrollTop: $('.acheter-summary').offset().top
+    }, 500);
+  });
 });
 
 
