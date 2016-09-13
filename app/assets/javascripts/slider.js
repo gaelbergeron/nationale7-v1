@@ -4,8 +4,8 @@ $(document).ready(function(){
     slidesToShow: 1,
     arrows: true,
     dots: false,
-    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow"></i>',
-    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow"></i>',
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left"></i>',
   });
 
   $('.slider-for').slick({
@@ -18,8 +18,8 @@ $(document).ready(function(){
 
     // accessibility: true;
     asNavFor: '.slider-nav',
-    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow"></i>',
-    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow"></i>',
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left"></i>',
   });
   
   $('.slider-nav').slick({

@@ -30,6 +30,14 @@
 	font-size: 1.6em;
 }
 
+.vendre-arrow {
+	margin-right: 5%;
+	display: block;
+	margin-left: 80%;
+	margin-top: -4.5%;
+	font-size: 5em;
+}
+
 .ccm-intro-acheter {
 	background-color: rgb(145, 188, 221);
   width: 50%;
@@ -38,6 +46,14 @@
 	height: 18em;
 	color: white;
 	font-size: 1.6em;
+}
+
+.acheter-arrow {
+	margin-right: 5%;
+	display: block;
+	margin-right: 80%;
+	margin-top: -4.5%;
+	font-size: 5em;
 }
 
 .acheter-summary {
@@ -372,6 +388,7 @@ button.vendre-savoir {
   margin-left: 40%;
   margin-top: 3em;
   border: none;
+  font-weight: 600;
 }
 
 .vendre-savoir:hover {
@@ -420,8 +437,8 @@ button.vendre-savoir {
 }
 
 .vendre-title-1 {
-	color: rgb(68, 139, 199);
-  width: 12em;
+	color: rgb(235, 111, 102);
+  width: 16em;
   font-size: 1.2em;
   margin-bottom: 1em;
 }
@@ -450,7 +467,7 @@ button.vendre-savoir {
 }
 
 .vendre-title-2 {
-	color: rgb(68, 139, 199);
+	color: rgb(235, 111, 102);
   font-size: 1.2em;
   margin-bottom: 1em;
   text-align: right;
@@ -487,11 +504,11 @@ button.vendre-savoir {
   display: inline-block;
   margin-left: -21.5em;
   width: 21em;
-  vertical-align: 36em;
+  vertical-align: 35em;
 }
 
 .vendre-title-3 {
-	color: rgb(68, 139, 199);
+	color: rgb(235, 111, 102);
   width: 12em;
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -537,7 +554,7 @@ button.vendre-savoir {
 }
 
 .vendre-title-4 {
-	color: rgb(68, 139, 199);
+	color: rgb(235, 111, 102);
   text-align: right;
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -550,7 +567,7 @@ button.vendre-savoir {
 .vendre-arbre-4 {
   position: absolute;
   margin-left: -20em;
-  margin-top: 67em;
+  margin-top: 63em;
   width: 50px;
   z-index: 99;
 }
@@ -559,12 +576,12 @@ button.vendre-savoir {
   display: inline-block;
   margin-left: -21.5em;
   width: 21em;
-  vertical-align: 4em;
+  vertical-align: 0em;
 }
 
 .vendre-title-5 {
-	color: rgb(68, 139, 199);
-  width: 12em;
+	color: rgb(235, 111, 102);
+  width: 15em;
   font-size: 1.2em;
   margin-bottom: 1em;
 }
@@ -572,7 +589,7 @@ button.vendre-savoir {
 .vendre-mascotte-5 {
   position: absolute;
   margin-left: -22em;
-  margin-top: 73.5em;
+  margin-top: 72em;
   width: 60px;
   z-index: 99;
 }
@@ -580,8 +597,16 @@ button.vendre-savoir {
 .vendre-5 {
 	position: absolute;
   margin-left: -17.5em;
-  margin-top: 75em;
+  margin-top: 73.5em;
   width: 40px;
+}
+
+.vendre-buisson-2 {
+	width: 2em;
+  position: absolute;
+  margin-left: 45.5%;
+  margin-top: 82.3em;
+  z-index: 1;
 }
 
 button.acheter-savoir {
@@ -593,6 +618,7 @@ button.acheter-savoir {
   margin-left: 40%;
   margin-top: 3em;
   border: none;
+  font-weight: 600;
 }
 
 .acheter-savoir:hover {

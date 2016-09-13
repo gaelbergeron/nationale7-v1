@@ -74,12 +74,16 @@ $(document).ready(function(){
   $('.vendre-summary').hide();
   $('.acheter-content').hide();
   $('.vendre-content').hide();
+  $('.vendre-arrow').hide();
+  $('.acheter-arrow').hide();
+
 
   $('.ccm-intro-acheter').click( function() {
     $('.vendre-summary').hide('slide', {direction: 'right'}, 700);
     $('.acheter-summary').show('slide', {direction: 'left'}, 500);
     $('.vendre-content').hide('slide', { direction:'down'}, 500);
     $('.acheter-content').show('slide', { direction: 'up'}, 500);
+    $('.vendre-arrow').show('slide', {direction: 'left'}, 500);
   });
 
   $('.ccm-intro-vendre').click( function() {
@@ -87,6 +91,7 @@ $(document).ready(function(){
     $('.vendre-summary').show('slide', {direction: 'right'}, 500);
     $('.acheter-content').hide('slide', { direction:'down'}, 500);
     $('.vendre-content').show('slide', { direction: 'up'}, 500);
+    $('.acheter-arrow').show('slide', {direction: 'right'}, 500);
   });
 
   $('.vendre-savoir').click( function() {
@@ -94,6 +99,7 @@ $(document).ready(function(){
     $('.vendre-summary').show('slide', {direction: 'right'}, 500);
     $('.acheter-content').fadeOut(300);
     $('.vendre-content').show('slide', { direction: 'up'}, 500);
+    $('.vendre-arrow').hide();
     $('html, body').animate({
       scrollTop: $(".vendre-summary").offset().top
     }, 500);
@@ -104,6 +110,8 @@ $(document).ready(function(){
     $('.acheter-summary').show('slide', {direction: 'left'}, 500);
     $('.vendre-content').fadeOut(300);
     $('.acheter-content').show('slide', { direction: 'up'}, 500);
+    $('.vendre-arrow').show('slide', {direction: 'left'}, 500);
+    $('.acheter-arrow').hide();
     $('html, body').animate({
       scrollTop: $('.acheter-summary').offset().top
     }, 500);
