@@ -1,1 +1,83 @@
-<h1>Mentions Légales</h1>
+<header class="header-product">
+  <div class="logo-product">
+    <%= link_to image_tag('logo-blue.png'), root_path, class: "logo-product" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-product header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-product"><a href="#aide-popup" class="open-popup-link menu-link-product sliding-middle-out sliding-blue">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-product"><%= link_to 'Vendre', vendre_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>  
+    <li class="header-link-product"><%= link_to 'Acheter', acheter_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>
+    <li class="header-link-product wrapper pourquoi-n7 sliding-blue">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+      </ul>
+      </div>  
+    </li>
+  </ul>
+
+  <ul id="menu2">
+      <li>Parent 1
+          <ul>
+              <li><a href="#">item 3</a></li>
+              <li>Parent 3
+                  <ul>
+                      <li><a href="#">item 8</a></li>
+                      <li><a href="#">item 9</a></li>
+                      <li><a href="#">item 10</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">item 4</a></li>
+          </ul>
+      </li>
+      <li><a href="#">item 1</a></li>
+      <li>non-link item</li>
+      <li>Parent 2
+          <ul>
+              <li><a href="#">item 5</a></li>
+              <li><a href="#">item 6</a></li>
+              <li><a href="#">item 7</a></li>
+          </ul>
+      </li>
+  </ul>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+
+</header>
+
+
+<div class="main-container-ML">
+  <h1 class="title-ML">Mentions légales</h1>
+  <p class="tagline-ML">Parce qu'on ne rigole pas avec ça</p>
+  <div class="copy-ML">
+      
+    <p>Le site internet <a href="http://www.nationale7.co/" target="_blank"> www.nationale7.co</a> est édité par la SAS Nationale 7 au capital de 1 000 euros, 48, rue du Transvaal, 44300, Nantes – téléphone <a href="tel:0176390284">01 76 39 02 84</a> – immatriculée au Registre du Commerce et des Sociétés de Nantes sous le numéro 820 295 558.</p>
+
+    <p>Le numéro de TVA intracommunautaire de la SAS est FR 81 820295558.</p>
+    
+    <p>Le responsable de la publication est M. Gaël BERGERON.</p>
+
+    <p>L’hébergement du site internet <a href="http://www.nationale7.co/" target="_blank">www.nationale7.co</a> est assuré par la société Heroku, Inc. dont le siège social est au 650 7th Street San Francisco, CA 94103. Contact: <a href= "https://www.heroku.com/contact" target="_blank">heroku.com/contact</a>. La société Heroku dispose de Data-Centers hautement sécurisés situés en Europe, offrant d’importantes garanties de sécurité et respecte la législation européenne concernant les données personnelles. Pour en savoir plus sur la sécurité mise en œuvre : <a href="https://www.heroku.com/policy/security" target="_blank">heroku.com/policy/security</a></p>
+
+    <p>Une assistance à l’utilisation du site internet <a href="http://www.nationale7.co/" target="_blank">www.nationale7.co</a> et des services offerts par Nationale 7 est accessible :</p>
+    <ul>
+      <li>Par email en écrivant à <a href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a></li>
+      <li>Par téléphone en appelant au <a href="tel:0176390284">01 76 39 02 84</a>.</li>
+    </ul>
+  </div>
+</div>

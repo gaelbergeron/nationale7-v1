@@ -1,0 +1,42 @@
+.background-container-ML {
+  background-color: #F5F3F3;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.main-container-ML {
+  width: 60em;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.copy-ML {
+  background-color: white;
+  padding: 1.5em;
+  height: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.1em;
+  font-family: 'Montserrat-Light';
+}
+
+.title-ML {
+  text-align: center;
+  margin-top: 1em;
+  color: #69a2d2;
+}
+
+.tagline-ML {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media (min-width: 320px) 
+  and (max-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  .main-container-ML {
+    width: 100%;
+  }
+
+}
