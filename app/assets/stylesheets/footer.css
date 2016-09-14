@@ -1,9 +1,12 @@
 .footer {
-  height: 25em;
+  height: 28em;
   background-color: #69a2d2;
   color: rgb(255, 255, 255);
-  display: block;
+  display: relative;
   justify-content: center;
+  left: 0;
+  width: 100%;
+  clear: both;
 }
 
 .mascotte-div {

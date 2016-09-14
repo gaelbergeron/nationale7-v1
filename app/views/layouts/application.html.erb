@@ -17,10 +17,13 @@
   </head>
 
   <body>
-    <%= yield %>
-  <%= render 'layouts/footer' %>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <div id="wrapper">
 
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+      
+    </div>
   </body>
 </html>
 
