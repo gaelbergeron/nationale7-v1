@@ -1,11 +1,15 @@
+$( window ).load(function() {
+  $('.slider-for').focus()
+});
+
 $(document).ready(function(){
 
   $('.clients-slider').slick({
     slidesToShow: 1,
     arrows: true,
     dots: false,
-    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right"></i>',
-    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left"></i>',
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right desktop-right"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left desktop-left"></i>',
   });
 
   $('.slider-for').slick({
@@ -15,11 +19,20 @@ $(document).ready(function(){
     arrows: true,
     fade: true, 
     focusOnSelect: true,
-
-    // accessibility: true;
     asNavFor: '.slider-nav',
-    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right"></i>',
-    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left"></i>',
+    nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right desktop-right"></i>',
+    prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left desktop-left"></i>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right mobile-right"></i>',
+          prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left mobile-left"></i>'
+        }
+      }
+    ]
+
+
   });
   
   $('.slider-nav').slick({
@@ -29,10 +42,16 @@ $(document).ready(function(){
     centerMode: true,
     arrows: false,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
   });
 
-$( window ).load(function() {
-  $('.slider-for').focus()
-});
 
 });

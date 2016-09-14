@@ -121,6 +121,10 @@ a.sub-menu-link-product:visited {
     padding-top: 0.8em;
 }
 
+.photo-car-description-mobile {
+  display: none;
+}
+
 .photo-car-description-h2 {
   color: black;
   font-size: 1.4em;
@@ -184,6 +188,10 @@ a.sub-menu-link-product:visited {
   left: 64%;
   width: 14em;
   height: 10em; 
+}
+
+.certifie-experveo-mobile {
+  display: none;
 }
 
 a.car-menu-title {
@@ -372,3 +380,171 @@ a.alert-dismiss {
 .garantie-copy {
   margin-bottom: 0em;
 }
+
+@media only screen and (max-width: 900px) {
+
+
+/*  .phone-number-header-homepage {
+    display: none;
+  }*/
+  .homepage-nav-bar {
+    visibility: hidden;
+  }
+
+  div.slicknav_menu {
+    display: block;
+    background-color: rgba(244, 250, 250, 0.83);
+    /*opacity: 0.6;*/
+  }
+
+  a.slicknav_btn {
+    background-color: #f4fafa;
+    margin-right: 50%;
+    /*width: 16%;*/
+  }
+
+  .slicknav_icon-bar {
+    background-color: #69a2d2;
+  }
+
+  .logo-product {
+    float: none;
+    margin: 0 auto;
+    padding-top: 1.8em;
+  }
+
+  .menu-link-mobile {
+    color: black;
+  }
+
+  .white-popup {
+
+  }
+
+  a.help-button-chat {
+    width: 20em;
+  }
+
+  a.help-button-email {
+    width: 20em;
+  }
+
+  .mobile-right {
+    font-size: 4em;
+  }
+
+  .mobile-left {
+    font-size: 4em;
+  }
+
+  .slider-nav {
+    height: 6em;
+  }
+
+  .slider-for {
+    width: 100%;
+    display: inline;
+  } 
+
+  .slick-slider {
+    top: 10%;
+    margin-top: -6em;
+  }
+
+  .photo-car-description {
+    display: none;
+  }
+
+  .photo-car-description-mobile {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 6em;
+  }
+
+  .prix-n7 {
+    height: 2.4em;
+    font-size: 3em;
+    margin-top: 1em;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 0em;
+    margin-bottom: -1em;
+  }
+
+  .achetez-button {
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    font-size: 2.8em;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat-UltraLight';
+    width: 8.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E54B40;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    float: none;
+  }
+
+  .certifie-experveo {
+    display: none;
+  }
+
+  .certifie-experveo-mobile {
+    display: block;
+    float: none;
+    margin-top: 0em; 
+    position: inherit;
+    left: 0%; 
+    width: 14em;
+    margin: 0 auto;
+    margin-top: 4em;  }
+
+  .car-data-menu {
+    width: 100%; 
+    margin-left: 0; 
+    margin-bottom: 6em;
+    font-family: 'Montserrat',;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  a.car-menu-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    color: rgb(63, 63, 63);
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+    padding-left: 0em;
+    width: 23em;
+  }
+
+  .is-accordion-submenu-parent > a::after {
+    border-color: #e2f3f2 transparent transparent;
+    border-top-width: 12px;
+    border-right-width: 12px;
+    border-left-width: 12px;
+    padding-left: 2px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  
+  .slider-nav {
+    height: 14em;
+  }
+
+}
+
+
+
