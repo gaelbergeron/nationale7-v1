@@ -90,6 +90,8 @@ a.sub-menu-link-product:visited {
 {
     transform: none;
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .slick-current {
@@ -517,7 +519,8 @@ a.alert-dismiss {
   }
 
   ul {
-    padding-left: 0;
+    padding: 0em;
+    margin: 0em;
   }
 
   a.car-menu-title {
@@ -580,9 +583,31 @@ a.alert-dismiss {
     width: 90%;
   }
 
+  .slider-wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   input.button.contact-form-button {
     margin-left: 30%;
   }
+
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      transform: none;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      /*padding: 0 10%;*/
+      -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: none; -o-transform: translate3d(0, 0, 0); transform: none; 
+  }
+
+/*  .slick-initialized .slick-slide
+    {
+    display: block;
+    overflow:hidden;
+    }*/
 
 }
 

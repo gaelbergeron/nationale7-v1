@@ -1,4 +1,16 @@
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 $(document).ready(function(){
+
+
 
 
     enquire.register("screen and (max-width:1100px)", {
