@@ -23,6 +23,19 @@
   height: 53em;
 }
 
+.slick-dots {
+	bottom: 0px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots li button:before {
+	color: white !important;
+	font-size: 15px !important;
+}
+
 .fa-angle-left {
   color: white;
   width: 1em;
@@ -40,6 +53,10 @@
 .desktop-left {
   font-size: 9em;
   margin-top: 25%;
+}
+
+.mobile-left {
+  font-size: 4em;
 }
 
 .fa-angle-left:hover {
@@ -63,6 +80,10 @@
 .desktop-right {
   font-size: 9em;
   margin-top: 25%;
+}
+
+.mobile-right {
+  font-size: 4em;
 }
 
 .fa-angle-right:hover {
@@ -169,16 +190,19 @@
   }
 
   .smart-2-caption {
-    margin-top: 1em;
-    margin-left: 1em;
+		margin-top: 1em;
+    position: absolute;
+    right: 26%;
   }
 
   .client-serein-smart-1 {
     background-size: 45em auto;
+    background-color: #e2f3f2;
   }
 
   .client-serein-smart-2 {
     background-size: 45em auto;
+    background-color: #e2f3f2;
   }
 
   .client-right, .client-left {
