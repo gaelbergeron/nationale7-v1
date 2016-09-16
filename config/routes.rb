@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   #Cars controller
   root 'welcome#index'
   get 'acheter' => 'cars#acheter'
-  get 'details' => 'cars#details'
+  # get 'details' => 'cars#details'
+
   get 'vendre' => 'cars#vendre'
 
   # Welcome controller
@@ -24,5 +25,7 @@ Rails.application.routes.draw do
 
   match '/evaluations', to: 'evaluations#new', via: 'get'
   resources :evaluations
+
+  resources 'cars'
 
 end

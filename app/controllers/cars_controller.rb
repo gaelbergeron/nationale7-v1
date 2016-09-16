@@ -25,9 +25,7 @@ class CarsController < ApplicationController
     ) or return 
     @cars = @filterrific.find.page(params[:page])
     @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
-    p "**" * 90
     p @profile_photos
-    p "**" * 90
 
 
     respond_to do |format|
@@ -40,9 +38,12 @@ class CarsController < ApplicationController
     @evaluation = Evaluation.new
   end
 
-  def details
+  def show
     @contact = Contact.new
-    @car = Car.find(params[:id])
+    @car = Car.friendly.find(params[:id])
+    p "**" * 200
+    p @car.friendly_id
+    p "**" * 200
     @caroptions = CarOption.where(car_id: @car.id)
     @inspector = Inspector.where(id: @car.inspector_id).first
     @options = Option.where(id: @caroptions.map(&:option_id))

@@ -1,4 +1,6 @@
 class Car < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :car_url, use: :slugged
 
   filterrific :default_filter_params => { :sorted_by => 'created_at_desc' },
               :available_filters => %w[
@@ -11,7 +13,12 @@ class Car < ActiveRecord::Base
   has_many :car_clients
   has_many :photos
   has_many :car_options
-  # belongs_to :inspector
+
+
+  def car_url
+    "#{reference_interne} #{marque} #{modele} #{annee} #{motorisation} #{finition}"
+  end
+
 
   def to_s
   "#{reference_interne} - #{marque} #{modele} - #{annee}"
@@ -56,7 +63,7 @@ class Car < ActiveRecord::Base
   end
 
   def self.options_for_select_marque
-    order('marque').map { |e| [e.marque] }
+    order('marque').map { |e| [e.marque] }.uniq
   end
 
 end

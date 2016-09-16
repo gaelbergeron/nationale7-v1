@@ -53,6 +53,9 @@ gem 'font-awesome-rails'
 #Add gem to rename app
 gem 'rename'
 
+#Add friendly_id for url slugs
+gem 'friendly_id', '~> 5.1.0'
+
 #Include as per Heroku recomendation
 gem 'rails_12factor', group: :production
 

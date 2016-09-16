@@ -149,7 +149,7 @@
       <div class="column carItem<%= car.id %>" >
         <div class="picture-extras">
         <div class="wrap-<%= car.id %>">
-          <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
+          <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'show', controller: 'cars',  id: car.slug } %>
         </div>
           <div style="position: relative; height: 0">
             <div class="car-extra-info<%= car.id %> extra-info-layer">
