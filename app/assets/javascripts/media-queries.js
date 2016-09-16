@@ -9,21 +9,22 @@ $(document).ready(function(){
         // If supplied, triggered when a media query matches.
         match : function() {
           $('.phone-number-header-product').remove();
-
+          $('.phone-number-header-homepage').remove();
         },      
                                     
         // OPTIONAL
         // If supplied, triggered when the media query transitions 
         // *from a matched state to an unmatched state*.
         unmatch : function() {
-            $('.homepage-nav-bar').prepend('<li class="phone-number-header-product header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>');
-
+            $('.productpage-nav-bar').prepend('<li class="phone-number-header-product header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>');
+            $('.homepage-nav-bar').prepend('<li class="phone-number-header-homepage header-link-product"><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>');
         },    
         
         // OPTIONAL
         // If supplied, triggered once, when the handler is registered.
         setup : function() {
           $('.phone-number-header-product').remove();
+          $('.phone-number-header-homepage').remove();
 
 
         },    

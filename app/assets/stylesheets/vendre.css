@@ -154,3 +154,92 @@ input.button.evaluation-form-button {
  	font-size: 1.1em;
 }
 
+.vendre-bottom-white {
+  height: 5em;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .header-vendre {
+    height: 32em;
+  }
+  .vendre-tagline-wrap {
+    padding-top: 4em;
+  }
+
+  .vendre-h1-tagline {
+    font-size: 2em;
+  }
+
+  .vendre-h2-tagline {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size: 1.4em;
+  }
+
+  .optional {
+    width: 90%;
+  }
+
+  #evaluation_marque {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_modele {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_annee {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_motorisation {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_finition {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_kilometrage {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_email {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_phone_number {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  #evaluation_code_postal {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .vendre-bottom-section-wrap {
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    width: 100%;
+  }
+
+  .vendre-bottom-section {
+/*    width: 44%;
+    margin: 0% 1% 0% 1%;
+    float: left;*/
+    height: 16em;
+    margin: 0 auto;
+  }
+
+}

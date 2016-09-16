@@ -41,8 +41,23 @@
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>
-      
   </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
 
   <div class="vendre-tagline-wrap">
     <h1 class="vendre-h1-tagline">Vendez votre voiture, au bon prix, sans bouger de chez vous !</h1>
@@ -134,7 +149,7 @@
           </div>
         </div>
       </div>
-
-
     </div>
-
+    <div class="vendre-bottom-white">
+      
+    </div>

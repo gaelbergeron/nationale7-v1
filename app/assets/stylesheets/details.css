@@ -78,12 +78,6 @@ a.sub-menu-link-product:visited {
   display: none;
 }
 
-.slider-nav {
-  background-color: #e2f3f2;
-  height: 8em;
-  padding-top: 1.2em;
-}
-
 .photo-car-description {
     width: 35em;
     height: 5em;
@@ -366,8 +360,8 @@ a.alert-dismiss {
 /*  .phone-number-header-homepage {
     display: none;
   }*/
-  .homepage-nav-bar {
-    visibility: hidden;
+  .productpage-nav-bar {
+    display: none;
   }
 
   div.slicknav_menu {
@@ -489,7 +483,7 @@ a.alert-dismiss {
     /*line-height: 1.4;*/
     margin-bottom: 0.8em;
     padding-left: 0em;
-    width: 100%;
+    width: 95%;
   }
 
   .menu > li > a {
@@ -509,6 +503,7 @@ a.alert-dismiss {
     border-right-width: 12px;
     border-left-width: 12px;
     padding-left: 2px;
+    right: 1em;
   }
 
   .garantie-section {

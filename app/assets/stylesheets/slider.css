@@ -12,9 +12,14 @@
   background-color: #69a2d2;
 }
 
-/*.slick-slide img {
+.slick-slide img {
   margin: 0 auto;
-}*/
+}
+
+.slider-nav {
+  background-color: #e2f3f2;
+  height: 100%;
+}
 
 .clients-slider {
   width: 60%;
@@ -48,11 +53,11 @@
   top: 0;
   z-index: 10;
   margin-left: 0.3em;
+  margin-top: 25%;
 }
 
 .desktop-left {
   font-size: 9em;
-  margin-top: 25%;
 }
 
 .mobile-left {
@@ -75,11 +80,11 @@
   top: 0;
   right: -0.4em;
   z-index: 10;
+  margin-top: 25%;
 }
 
 .desktop-right {
   font-size: 9em;
-  margin-top: 25%;
 }
 
 .mobile-right {
