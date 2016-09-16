@@ -182,6 +182,47 @@ a:link.recherche-button {
   color: #69a2d2;
 }
 
+@media only screen and (max-width: 900px) {
 
+  .acheter-pictos-wrap {
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    width: 100%;
+  }
+
+  .filters-wrap {
+    height: 20em;
+    display: inherit; 
+    justify-content: inherit; 
+    align-items: inherit; 
+  }
+
+  .acheter-filter {
+    display: inherit;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .acheter-filter.tri {
+    margin-left: auto;
+  }
+
+  .header-homepage.acheter-page {
+    height: 62em;
+  }
+
+  .acheter-picto-sub-wrap {
+    width: 50%;
+    margin: 0%;
+    margin-bottom: 2em;
+  }
+
+  .acheter-picto {
+    height: 90px;
+  }
+
+}
 
 
