@@ -1,3 +1,200 @@
-/*.slick-slide {
-  height: auto;
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    transform: none;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.slick-current {
+  background-color: #69a2d2;
+}
+
+/*.slick-slide img {
+  margin: 0 auto;
 }*/
+
+.clients-slider {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  height: 53em;
+}
+
+.fa-angle-left {
+  color: white;
+  width: 1em;
+  height: 1em;
+}
+
+.slider-left {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  margin-left: 0.3em;
+}
+
+.desktop-left {
+  font-size: 9em;
+  margin-top: 25%;
+}
+
+.fa-angle-left:hover {
+  opacity: 0.7;
+}
+
+.fa-angle-right {
+  color: white;
+  width: 1em;
+  height: 1em;
+}
+
+.slider-right {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -0.4em;
+  z-index: 10;
+}
+
+.desktop-right {
+  font-size: 9em;
+  margin-top: 25%;
+}
+
+.fa-angle-right:hover {
+  opacity: 0.7;
+}
+
+.client-serein-caption {
+  position: absolute;
+  width: 14em;
+  padding: 1em;
+  z-index: 3;
+  font-family: 'Montserrat';
+  font-size: 1.3em;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.64);
+  border-radius: 10px;
+}
+
+.caption-p {
+  word-break: break-word;
+  white-space: normal;
+}
+
+.smart-1-caption {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.smart-2-caption {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.client-serein-smart-1 {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Jonathan---WEB.jpg");
+  background-position: center;
+  background-size: 80em auto;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  /*height: 53em;*/
+}
+
+.client-serein-smart-2 {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Pierre-Olivier-2+-+WEB.jpg");
+  background-position: center;
+  background-size: 80em auto;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  /*height: 53em;*/
+}
+
+.slider-for {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -7em;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .slick-slider {
+    /*top: 10%;*/
+    /*margin-top: -6em;*/
+  }
+
+  .slick-slider.slick-track,
+  .slick-slider.slick-list
+  {
+      /*height: 100%;*/
+      /*transform: none;*/
+      /*position: relative;*/
+      /*overflow: hidden;*/
+      /*white-space: nowrap;*/
+      /*padding: 0 10%;*/
+      /*-webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: none; -o-transform: translate3d(0, 0, 0); transform: none; */
+  }
+
+/*  .slick-initialized .slick-slide
+    {
+    display: block;
+    overflow:hidden;
+    }*/
+
+  .clients-slider {
+    width: 95%;
+    height: 29em;
+  }
+
+  .client-serein-caption {
+    position: absolute;
+    width: 12em;
+    padding: 1em;
+    z-index: 3;
+    font-family: 'Montserrat';
+    font-size: 1.1em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.64);
+    border-radius: 10px;
+  }
+
+  .smart-1-caption {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+
+  .smart-2-caption {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .client-serein-smart-1 {
+    background-size: 45em auto;
+  }
+
+  .client-serein-smart-2 {
+    background-size: 45em auto;
+  }
+
+  .client-right, .client-left {
+    margin-top: 44%;
+  }
+
+  .slider-wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .slider-for {
+    width: 100%;
+    display: inline;
+    margin-top: 0em;
+  } 
+
+
+}

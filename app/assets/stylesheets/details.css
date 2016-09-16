@@ -78,30 +78,6 @@ a.sub-menu-link-product:visited {
   display: none;
 }
 
-.slider-for {
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-  margin-top: -7em;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    transform: none;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.slick-current {
-  background-color: #69a2d2;
-}
-
-.slick-slide img {
-  margin: 0 auto;
-}
-
 .slider-nav {
   background-color: #e2f3f2;
   height: 8em;
@@ -383,6 +359,7 @@ a.alert-dismiss {
   margin-bottom: 0em;
 }
 
+
 @media only screen and (max-width: 900px) {
 
 
@@ -442,17 +419,6 @@ a.alert-dismiss {
 
   .slider-nav {
     height: 6em;
-  }
-
-  .slider-for {
-    width: 100%;
-    display: inline;
-    margin-top: 0em;
-  } 
-
-  .slick-slider {
-    /*top: 10%;*/
-    /*margin-top: -6em;*/
   }
 
   .photo-car-description {
@@ -583,31 +549,10 @@ a.alert-dismiss {
     width: 90%;
   }
 
-  .slider-wrap {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
   input.button.contact-form-button {
     margin-left: 30%;
   }
 
-  .slick-slider .slick-track,
-  .slick-slider .slick-list
-  {
-      transform: none;
-      position: relative;
-      overflow: hidden;
-      white-space: nowrap;
-      /*padding: 0 10%;*/
-      -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: none; -o-transform: translate3d(0, 0, 0); transform: none; 
-  }
-
-/*  .slick-initialized .slick-slide
-    {
-    display: block;
-    overflow:hidden;
-    }*/
 
 }
 

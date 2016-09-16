@@ -8,8 +8,18 @@ $(document).ready(function(){
     slidesToShow: 1,
     arrows: true,
     dots: false,
+    lazyLoad: 'ondemand',
     nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right desktop-right"></i>',
     prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left desktop-left"></i>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right mobile-right client-right"></i>',
+          prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left mobile-left client-left"></i>'
+        }
+      }
+    ]
   });
 
   $('.slider-for').slick({
@@ -19,6 +29,7 @@ $(document).ready(function(){
     arrows: true,
     fade: true, 
     focusOnSelect: true,
+    lazyLoad: 'ondemand',
     asNavFor: '.slider-nav',
     nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right desktop-right"></i>',
     prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left desktop-left"></i>',
@@ -42,6 +53,7 @@ $(document).ready(function(){
     centerMode: true,
     arrows: false,
     focusOnSelect: true,
+    lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 900,

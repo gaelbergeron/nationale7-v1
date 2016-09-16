@@ -5,25 +5,31 @@
     // This js snippet was put in erb because I couldn't figure out how to pass ruby variables in the js file
     $(document).ready(function(){
 
-      // $(".extra-info-layer").hide();
+      $(".extra-info-layer").hide();
 
-      // $(".carItem<%= car.id %>").mouseover(function () {
-      //     $(".car-extra-info<%= car.id %>").show("fast");
-      // });
+      $(".car-image-<%= car.id %>").mouseover(function () {
+          $(".car-extra-info<%= car.id %>").show("fast");
+      });
 
-      // $(".carItem<%= car.id %>").mouseleave(function () {
-      //   $(".car-extra-info<%= car.id %>").hide("fast");
-      // });
+      $(".car-image-<%= car.id %>").mouseleave(function () {
+        $(".car-extra-info<%= car.id %>").hide("fast");
+      });
     });
   </script>
 
   <div class="column page-acheter carItem<%= car.id %>">
   	<div class="picture-extras page-acheter">
-  		<%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
+      <div class="car-image-<%= car.id %>">
+    		<%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
+      </div>
+    <div style="position: relative; height: 0">
   		<div class="car-extra-info<%= car.id %> extra-info-layer">
   			<p class="engine-version"><%= car.motorisation %> <%= car.finition %> </p>
   			<p class="mileage"> <%= number_with_delimiter(car.kilometrage, :delimiter => ' ') %> Km</p>
   		</div>
+    </div>
+
+
   	</div>
     <p class="derniere-voiture-name">
       <%= car.marque %> <%= car.modele %> <%= car.annee %> 

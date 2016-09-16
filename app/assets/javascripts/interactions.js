@@ -56,7 +56,7 @@ $(document).ready(function(){
   );
 
   
-  $('#menu2').slicknav();
+  $('#mobile-menu').slicknav();
 
   // $('.acheter-triangle').hide();
 

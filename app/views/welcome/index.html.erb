@@ -31,9 +31,24 @@
       <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
-    </div>
-      
+    </div>   
   </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', commentcamarche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', prixn7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertisen7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', faq_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', apropos_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
 
   <section class="cd-intro homepage-tagline-container">
     <h1 class="cd-headline rotate-1 homepage-tagline">
@@ -89,19 +104,21 @@
   <div class="title-green-line"></div>
 
   <div class='clients-slider'>
-    <div class="client-serein-smart-1" style="height:53em;">
-      <div class="client-serein-caption smart-1-caption">
-        <h3 style="color:black;">Jonathan</h3>
-        <p>Service au top ! Merci beaucoup Nationale 7.</p>
+    <div class="client-serein-smart-1" >
+<!--       <div style="position: relative; height: 0">
+ -->        <div class="client-serein-caption smart-1-caption">
+          <h3 style="color:black;">Jonathan</h3>
+          <p class="caption-p">Service au top ! Merci beaucoup Nationale 7.</p>
+        <!-- </div> -->
       </div>
     </div>
-    <div class="client-serein-smart-2" style="height:53em;">
+    <div class="client-serein-smart-2">
       <div class="client-serein-caption smart-2-caption">
         <h3 style="color:black;">Pierre-Olivier</h3>
-        <p>À moi la liberté avec ma nouvelle Smart !</p>
+        <p class="caption-p" >À moi la liberté avec ma nouvelle Smart !</p>
       </div>
     </div>
-    </div>
+  </div>
 
 </div>
 
@@ -119,22 +136,24 @@
 
           $(".extra-info-layer").hide();
 
-          $(".carItem<%= car.id %>").mouseover(function () {
+          $(".car-image-<%= car.id %>").mouseover(function () {
               $(".car-extra-info<%= car.id %>").show("fast");
           });
 
-          $(".carItem<%= car.id %>").mouseleave(function () {
+          $(".car-image-<%= car.id %>").mouseleave(function () {
             $(".car-extra-info<%= car.id %>").hide("fast");
           });
         });
       </script>
-
+    
       <div class="column carItem<%= car.id %>" >
         <div class="picture-extras">
           <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'details', controller: 'cars',  id: car } %>
-          <div class="car-extra-info<%= car.id %> extra-info-layer">
-            <p class="engine-version"><%= car.motorisation %> <%= car.finition %> </p>
-            <p class="mileage"> <%= number_with_delimiter(car.kilometrage, :delimiter => ' ') %> Km</p>
+          <div style="position: relative; height: 0">
+            <div class="car-extra-info<%= car.id %> extra-info-layer">
+              <p class="engine-version"><%= car.motorisation %> <%= car.finition %> </p>
+              <p class="mileage"> <%= number_with_delimiter(car.kilometrage, :delimiter => ' ') %> Km</p>
+            </div>
           </div>
         </div>
         <p class="derniere-voiture-name">
