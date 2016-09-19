@@ -98,7 +98,7 @@ a.sub-menu-link-product:visited {
     background-color: rgba(255, 255, 255, 0.67);
     position: relative;
     left: 15%;
-    /*z-index: 80;*/
+    z-index: 80;
     top: 2em;
     font-family: 'Montserrat';
     border-top-right-radius: 50px;
