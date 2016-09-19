@@ -3,10 +3,10 @@
 {
     transform: none;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     white-space: nowrap;
     height: 100%;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 .slick-current {
@@ -146,7 +146,6 @@
   margin: 0 auto;
   position: relative;
   margin-top: -5em;
-  z-index: 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -159,13 +158,8 @@
   .slick-slider.slick-track,
   .slick-slider.slick-list
   {
-      /*height: 100%;*/
-      /*transform: none;*/
-      /*position: relative;*/
-      /*overflow: hidden;*/
-      /*white-space: nowrap;*/
-      /*padding: 0 10%;*/
-      /*-webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: none; -o-transform: translate3d(0, 0, 0); transform: none; */
+    transform: none;
+    position: relative;
   }
 
 /*  .slick-initialized .slick-slide

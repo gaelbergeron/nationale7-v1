@@ -1,20 +1,20 @@
 $(document).ready(function(){
 
-  $('.sub-menu-homepage').hide();
+  // $('.sub-menu-homepage').hide();
 
-  $('.wrapper').hoverIntent({
-    over: startHover,
-    out: endHover,
-    timeout: 1200
-  });
+  // $('.wrapper').hoverIntent({
+  //   over: startHover,
+  //   out: endHover,
+  //   timeout: 1200
+  // });
 
-  function startHover(e){
-    $(".sub-menu-homepage").slideDown('fast');
-  }
+  // function startHover(e){
+  //   $(".sub-menu-homepage").slideDown('fast');
+  // }
 
-  function endHover(){
-    $(".sub-menu-homepage").slideUp('fast');
-  }
+  // function endHover(){
+  //   $(".sub-menu-homepage").slideUp('fast');
+  // }
 
   $('.acheter-button').click(function() {   
     if ($('.vendre-explanation').css('display') == 'block') {

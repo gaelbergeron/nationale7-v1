@@ -9,7 +9,14 @@ html, body {
   padding:0;
   height:100%;
   font-family: 'Montserrat', serif;
+  position: relative; 
+
 }
+
+/*#wrapper {
+  min-height: 100%;
+  position: relative;
+}*/
 
 a, a:link, a:visited {
   text-decoration: none;
@@ -62,13 +69,13 @@ span {
   background-color: rgb(245, 245, 245);
   opacity: 0.902;
   position: absolute;
-  z-index: 1;
+  /*z-index: 1;*/
 
 }
 
 .homepage-nav-bar {
   position: absolute;
-  z-index: 99;
+  /*z-index: 99;*/
   right: 0em;
 }
 

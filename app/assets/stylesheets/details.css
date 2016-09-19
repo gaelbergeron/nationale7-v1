@@ -64,7 +64,7 @@ a.sub-menu-link-product:link {
   color: #69a2d2;
   font-size: 14px;
   padding: 5px 0 10px 0;
-  z-index: 100;
+  /*z-index: 100;*/
 }
 
 a.sub-menu-link-product.first-link:link {
@@ -75,6 +75,16 @@ a.sub-menu-link-product:visited {
   text-decoration-line: none; 
   list-style-type: none;
   color: #69a2d2;
+}
+
+.sub-menu-details {
+  height: 16em;
+  width: 100%;
+  /*background-color: rgb(245, 245, 245);*/
+  background-color: yellow;
+  opacity: 0.902;
+  position: absolute;
+  /*z-index: 99;*/
 }
 
 .car-header-description {
@@ -88,7 +98,7 @@ a.sub-menu-link-product:visited {
     background-color: rgba(255, 255, 255, 0.67);
     position: relative;
     left: 15%;
-    z-index: 4;
+    /*z-index: 80;*/
     top: 2em;
     font-family: 'Montserrat';
     border-top-right-radius: 50px;
@@ -111,6 +121,13 @@ a.sub-menu-link-product:visited {
   font-family: 'Montserrat-Light';
   color: black;
   font-size: 1.1em;
+}
+
+.slider-for {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -5em;
 }
 
 .car-data-wrap {

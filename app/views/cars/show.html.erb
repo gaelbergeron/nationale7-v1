@@ -20,15 +20,15 @@
     <li class="header-link-product"><%= link_to 'Vendre', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>  
     <li class="header-link-product"><%= link_to 'Acheter', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-product sliding-middle-out sliding-blue" %></li>
     <li class="header-link-product wrapper pourquoi-n7 sliding-blue">Pourquoi Nationale 7 ?
-      <div class="sub-menu-homepage">
-      <ul class="header-sub-menu">
-        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "sub-menu-link-product first-link sliding-middle-out sliding-blue" %></li>
-        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
-        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
-        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
-        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
-      </ul>
-      </div>  
+        <div class="sub-menu-details">
+        <ul class="header-sub-menu">
+          <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "sub-menu-link-product first-link sliding-middle-out sliding-blue" %></li>
+          <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+          <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+          <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+          <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+        </ul>
+        </div>  
     </li>
   </ul>
 
@@ -81,7 +81,7 @@
     <div><img src="<%=photo.picture_url%>" width="80%" height="80%" ></div>
     <% end %>
   </div>
-
+<!-- </div> -->
   <div class="car-data-wrap">
     <div class="prix-n7"><%= number_with_delimiter(@car.prix_n7, :delimiter => ' ') %> €</div>
     <div class="achetez-button">achetez-moi</div>
@@ -638,7 +638,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="car-menu-title">Ce que dit Auto-Plus sur la <%= @car.modele%> de <%= @car.prenom %></a>
+            <a href="#" class="car-menu-title">Ce que dit Auto-Plus sur la <%= @car.modele %> de <%= @car.prenom %></a>
             <ul class="menu vertical sublevel-1">
               <div class="section-autoplus">
               <%= @car.auto_plus %>
