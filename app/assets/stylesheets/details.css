@@ -113,9 +113,13 @@ a.sub-menu-link-product:visited {
   font-size: 1.1em;
 }
 
+.car-data-wrap {
+  height: 100%;
+}
+
 .car-data-menu {
-  width: 50em;
-  margin-left: 13%;
+  width: 52%;
+  margin-left: 12%;
   margin-bottom: 6em;
   font-family: 'Montserrat',
 }
@@ -123,7 +127,7 @@ a.sub-menu-link-product:visited {
 .prix-n7 {
   height: 2.4em;
   font-size: 3em;
-  margin-left: 14.5%;
+  margin-left: 16%;
   display: flex;
   align-items: center;
   margin-top: 1em;
@@ -134,12 +138,12 @@ a.sub-menu-link-product:visited {
 .achetez-button {
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
-  font-size: 2.8em;
+  font-size: 2.4em;
   font-weight: 200;
   color: #ffffff;
   text-align: center;
   font-family: 'Montserrat-UltraLight';
-  width: 8.5em;
+  width: 25%;
   height: 1.5em;
   display: flex;
   justify-content: center;
@@ -150,6 +154,9 @@ a.sub-menu-link-product:visited {
   margin-right: 18%;
   padding-right: 0.8em;
   padding-left: 0.8em;
+  left: 67%;
+  margin-top: -3.5em;
+  position: absolute;
 }
 
 .achetez-button:hover {
@@ -159,15 +166,36 @@ a.sub-menu-link-product:visited {
 .certifie-experveo {
   display: flex;
   float: right;
-  margin-top: -2em;
+  margin-top: -3em;
   position: absolute;
-  left: 64%;
-  width: 14em;
-  height: 10em; 
+  left: 73%;
+  width: 10em;
+  height: 7em;
 }
 
 .certifie-experveo-mobile {
   display: none;
+}
+
+.com-general {
+  float: right;
+  position: absolute;
+  left: 67%;
+  margin-top: 5em;
+  width: 25%;
+  font-family: 'Montserrat-Light';
+  font-size: 1.1em;
+}
+
+.com-general-mobile {
+  display: none;
+}
+
+.com-general-titre {
+  color: #69a2d2;
+  font-family: 'Montserrat';
+  margin-bottom: 1em;
+  font-size: 1.2em;
 }
 
 a.car-menu-title {
@@ -176,7 +204,7 @@ a.car-menu-title {
   font-size: 1.2em;
   color: rgb(63, 63, 63);
   line-height: 1.2;
-  margin-bottom: 0.8em;
+  margin-bottom: 2em;
 }
 
 a.car-menu-title:before {
@@ -450,6 +478,7 @@ a.alert-dismiss {
     margin: 0 auto;
     margin-bottom: 2em;
     float: none;
+    position: inherit;
   }
 
   .certifie-experveo {
@@ -514,6 +543,21 @@ a.alert-dismiss {
     margin-left: 5%;
   }
 
+  .com-general-mobile {
+    padding-top: 2em;
+    width: 90%;
+    font-family: 'Montserrat-Light';
+    font-size: 1.1em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .com-general {
+    display: none;
+  }
+
+
   .optional {
     width: 90%;
     margin-left: 0%;
@@ -544,14 +588,6 @@ a.alert-dismiss {
     margin-left: 30%;
   }
 
-
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  
-  .slider-nav {
-    height: 14em;
-  }
 
 }
 

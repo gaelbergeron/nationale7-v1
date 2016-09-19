@@ -149,13 +149,16 @@ ActiveAdmin.register Car do
                 :fonctionnement_GPS,
                 :prix_n7,
                 :type_garantie ,
-                :echeance_garantie
+                :echeance_garantie,
+                :prenom,
+                :auto_plus
 
   index do
     id_column
     column :reference_interne
     column :statut
     column :commentaire_general
+    column :prenom
     column :marque
     column :modele
     column :annee
@@ -299,6 +302,7 @@ ActiveAdmin.register Car do
     column :prix_n7
     column :type_garantie 
     column :echeance_garantie
+    column :auto_plus
     column :created_at
     column :updated_at
     actions
@@ -308,6 +312,7 @@ form do |f|
   f.inputs do
     f.input :reference_interne
     f.input :statut
+    f.input :prenom
     f.input :commentaire_general
     f.input :marque
     f.input :modele
@@ -452,9 +457,16 @@ form do |f|
     f.input :prix_n7
     f.input :type_garantie, as: :select, collection: (["MAPFRE", "Constructeur"])
     f.input :echeance_garantie
+    f.input :auto_plus
 
   end
   f.actions
 end
+
+    controller do
+      def find_resource
+        scoped_collection.friendly.find(params[:id])
+      end
+    end
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160916132817) do
+ActiveRecord::Schema.define(version: 20160919152402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -216,6 +216,8 @@ ActiveRecord::Schema.define(version: 20160916132817) do
     t.string   "fonctionnement_GPS"
     t.date     "echeance_garantie"
     t.string   "slug"
+    t.string   "prenom"
+    t.text     "auto_plus"
   end
 
   create_table "clients", force: :cascade do |t|
