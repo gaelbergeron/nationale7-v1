@@ -9,15 +9,7 @@ html, body {
   padding:0;
   height:100%;
   font-family: 'Montserrat', serif;
-  /*overflow-x: hidden;*/
-  /*overflow: scroll;*/
-  /*-webkit-overflow-scrolling: touch;*/
 }
-
-/*#wrapper {
-  min-height: 100%;
-  position: relative;
-}*/
 
 a, a:link, a:visited {
   text-decoration: none;
@@ -65,12 +57,12 @@ span {
 }
 
 .sub-menu-homepage {
-  height: 15em;
+  height: 16em;
   width: 100%;
   background-color: rgb(245, 245, 245);
   opacity: 0.902;
   position: absolute;
-  z-index: 99;
+  z-index: 1;
 
 }
 
@@ -86,6 +78,10 @@ a.sub-menu-link-homepage {
   color: black;
   font-size: 14px;
   padding: 5px 0 10px 0;
+}
+
+a.sub-menu-link-homepage.first-link {
+  padding-top: 20px;
 }
 
 ul.header-sub-menu {

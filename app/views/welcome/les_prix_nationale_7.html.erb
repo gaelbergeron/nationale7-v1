@@ -1,0 +1,132 @@
+<header class="header-prix">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "sub-menu-link-homepage first-link sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      </div>
+    </div>
+  </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
+  <div class="prix-tagline-wrap">
+    <h1 class="prix-h1-tagline">LES PRIX NATIONALE 7</h1>
+    <h2 class="prix-h2-tagline">Plus d'argent aux vendeurs et des acheteurs qui paient moins cher !</h2>
+  </div>
+
+</header>
+
+<div class="prix-comparaison-wrap">
+	<p class="comparaison-p"><span>Les vendeurs obtiennent 15% de plus pour la vente de leur voiture.</span><span>Quant aux acheteurs, ils paient 10% de moins qu'en concession.</span><span>Comment faire pour que tout le monde soit gagnant dans la transaction ?</span><span>Voici comment ça marche chez Nationale 7 !</span></p>
+
+	<div class="comparaison-wrap">
+		<p class="a-vendre">À vendre</p>
+		<%= image_tag "profil-ds4.jpg", class: "profil-ds4" %>
+		<div class="comparaison-image-wrap">
+			<div class="comparaison-header">
+			  <div class="comparaison-header-1">Concessionnaire</div>
+			  <div class="comparaison-header-2"><%= image_tag "logo-blue.png", class: "logo-comparaison" %>
+				</div>
+				<span>
+			  	<div class="comparaison-header-3">Prix 20 000 €</div>
+			  	<div class="comparaison-header-4">Prix 18 000 €</div>
+			  </span>
+			</div>
+			<div class="revenu-concessionnaire ">Revenus concessionnaire 6 000 €</div>
+			<div class="revenu-n7">Revenus N7&nbsp900 €</div>
+			<div class="marge-concessionnaire">Marge vendeur 14 000 €</div>
+			<div class="marge-n7">Marge vendeur 17 000 €</div>
+			<%= image_tag "prix-comparaison.png", class: "prix-comparaison-img" %>
+		</div>
+	</div>
+</div>
+
+<div class="prix-evaluation-wrap">
+	<p class="prix-evaluation-titre">Comment fixons-nous le prix de vente ?</p>
+	<%= image_tag "prix-evaluation.png", class: "prix-evaluation-img" %>
+	<%= image_tag "prix-evaluation-mobile.png", class: "prix-evaluation-mobile" %>
+	<p class="prix-evaluation-p">Définir le bon prix pour votre véhicule n’est pas simple : c’est la raison pour laquelle nous avons développé nos propres outils, qui analysent en temps réel l’offre de véhicules comparables.</p>
+	<p class="prix-evaluation-p">Basés sur l’intégralité des annonces réelles, ces outils nous permettent de définir un prix de vente au plus près de la réalité du marché : un concentré de technique à votre service pour s’assurer que nous définissons ensemble le juste prix !</p>
+	<p class="prix-evaluation-p evaluation-last-p">Le prix définitif de votre véhicule est ensuite validé lors de l’inspection complète de la voiture en fonction de l’état précis du véhicule.</p>
+	
+</div>
+
+	<div class="prix-options-wrap">
+		<p class="prix-options-titre"><span>Le secret :</span><span> un coût minimal, un service maximal</span></p>
+		
+		<div class="option-div petites-annonces">
+		<p class="option-sous-titre">Petites annonces</p>
+		<%= image_tag "prix-annonces.png", class: "option-img" %>
+		<p class="option-p-1"><span>Tout faire soi-même,</span><span>sans être sûr de faire la bonne affaire.</span></p>
+		<p class="option-p-2">Toujours difficile d’éplucher les annonces pendant des heures, faire semblant d’inspecter la voiture puis se lancer dans une conversation rarement agréable.</p>
+		</div>
+		<div class="option-div concessionnaire">
+		<p class="option-sous-titre">Concessionnaire</p>
+		<%= image_tag "prix-usine.png", class: "option-img" %>
+		<p class="option-p-1"><span>Un service traditionnel,</span><span> au prix d'or.</span></p>
+		<p class="option-p-2">Un professionnel de l’automobile prend en moyenne 30 % de commission sur la vente d’une auto d’occasion. C’est le minimum nécessaire pour assumer ses coûts très élevés : showroom, vendeurs, trésorerie, assurance etc.</p>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+<div class="n7-option">
+	<div class="arrow-down"></div>
+	<%= image_tag "logo-homepage.png", class: "option-n7-logo" %>
+	<%= image_tag "prix-ampoule.png", class: "option-n7-img" %>
+	<p class="option-n7-titre">Un service et un prix sans équivalents</p>
+	<div class="option-n7-p">​​​​​​​Nationale 7 ne prend que 5% pour vendre votre voiture, sans que vous n’ayez à sortir de chez vous ! Nos coûts super légers et super flexibles nous permettent de tout offrir : estimation, inspection, visite virtuelle, livraison, garantie, avec sourire et bonne humeur !</div>
+</div>
+
+<div class="prix-cta">
+	<p class="prix-cta-titre">Ça vous intéresse ?</p>
+	
+	<%= link_to 'Ça m\'intéresse d\'acheter avec N7', acheter_voiture_occasion_certifiee_garantie_path, class: "prix-button prix-acheter" %>
+	<%= link_to 'Ça m\'intéresse de vendre avec N7', vendre_voiture_occasion_meilleur_prix_path, class: "prix-button prix-vendre" %>
+
+	<%= link_to 'Acheter avec N7', acheter_voiture_occasion_certifiee_garantie_path, class: "prix-button-mobile prix-acheter-mobile" %>
+	<%= link_to 'Vendre avec N7', vendre_voiture_occasion_meilleur_prix_path, class: "prix-button-mobile prix-vendre-mobile" %>
+
+</div>
+
+

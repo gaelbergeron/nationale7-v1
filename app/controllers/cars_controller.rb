@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
   
-  def acheter
+  def acheter_voiture_occasion_certifiee_garantie
     @filterrific = initialize_filterrific(
       Car,
       params[:filterrific],
@@ -34,7 +34,7 @@ class CarsController < ApplicationController
     end
   end
 
-  def vendre
+  def vendre_voiture_occasion_meilleur_prix
     @evaluation = Evaluation.new
   end
 

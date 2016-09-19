@@ -1,0 +1,468 @@
+.header-prix {
+  height: 20em;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/prix-garage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.prix-tagline-wrap {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 9em;
+}
+
+.prix-h1-tagline {
+	color: white;
+	font-size: 2.8em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+}
+
+.prix-h2-tagline {
+	color: white;
+	font-size: 1.7em;
+  font-family: 'Montserrat';
+  text-align: center;	
+}
+
+.prix-comparaison-wrap {
+
+}
+
+.comparaison-p {
+	font-family: 'Montserrat-Light';
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 3em;
+}
+
+.comparaison-wrap {
+	width: 35em;
+	margin: 0 auto;
+}
+
+.a-vendre {
+	font-size: 1.4em;
+  color: rgb(56, 127, 194);
+	margin-top: 2em;
+	text-align: center;
+	font-weight: 600;
+}
+
+.profil-ds4 {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comparaison-image-wrap {
+	margin: 0 auto;
+}
+
+.comparaison-header {
+	margin-top: 2em;
+	height: 7em;
+}
+
+.comparaison-header-1 {
+	width: 50%;
+	float: left;
+	text-align: center;
+  color: rgb(56, 127, 194);
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.comparaison-header-2 {
+	width: 50%;
+	float: left;
+	text-align: center;
+  color: rgb(56, 127, 194);
+  margin-bottom: 1em;
+}
+
+.logo-comparaison {
+	width: 100px;
+}
+
+.comparaison-header-3 {
+	width: 50%;
+	float: left;
+	text-align: center;
+  color: rgb(56, 127, 194);
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.comparaison-header-4 {
+	width: 50%;
+	float: left;
+	text-align: center;
+  color: rgb(56, 127, 194);
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.prix-comparaison-img {
+	width: 35em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5em;
+}
+
+.revenu-concessionnaire {
+	width: 8em;
+	position: absolute;
+	color: white;
+	margin-top: 4em;
+	margin-left: 3.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.1em;
+}
+
+.revenu-n7 {
+  width: 12em;
+  position: absolute;
+  color: white;
+  margin-top: 5.5em;
+  margin-left: 18.5em;
+  text-align: center;
+  vertical-align: middle;
+	font-size: 1.1em;
+}
+
+.marge-concessionnaire {
+  width: 8em;
+  position: absolute;
+  color: white;
+  margin-top: 21.5em;
+  margin-left: 3.5em;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+.marge-n7 {
+  width: 8em;
+  position: absolute;
+  color: white;
+  margin-top: 15em;
+  margin-left: 20.4em;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+.prix-evaluation-wrap {
+	background-color: rgba(226, 243, 242, 0.54);
+}
+
+.prix-evaluation-titre {
+  color: rgb(56, 127, 194);
+  font-size: 2.4em;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.prix-evaluation-img {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 3em;
+}
+
+.prix-evaluation-mobile {
+	display: none;
+}
+
+.prix-ds4 {
+  color: rgb(56, 127, 194);
+  position: absolute;
+  margin-top: 3em;
+  margin-left: 34em;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.prix-evaluation-p {
+	font-family: 'Montserrat-Light';
+	font-size: 1.2em;
+	text-align: left;
+	padding-top: 1.5em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.evaluation-last-p {
+	padding-bottom: 5em;
+}
+
+.prix-options-titre {
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+  color: rgb(56, 127, 194);
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.option-div {
+	width: 50%;
+	float: left;
+}
+
+.option-img {
+	width: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.option-sous-titre {
+	text-align: center;
+  color: black;
+  font-size: 2em;
+  margin-bottom: 1em;
+ 	font-family: 'Montserrat-Light';
+}
+
+.option-p-1 {
+	text-align: center;
+  color: rgb(56, 127, 194);
+  font-size: 1.5em;
+  font-family: 'Montserrat-Light';
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.option-p-2 {
+  text-align: center;
+  width: 49%;
+  font-size: 1.2em;
+  font-family: 'Montserrat-Light';
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.n7-option {
+	background-color: #69a2d2;
+}
+
+.arrow-down {
+  width: 0;
+ 	height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 50px solid white;
+  background-color: #69a2d2;
+  margin: 0 auto;
+}
+
+.option-n7-logo {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.option-n7-img {
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.option-n7-titre {
+	width: 45%;
+	margin: 0 auto;
+	color: white;
+	font-family: 'Montserrat-Light';
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.option-n7-p {
+	width: 45%;
+	margin: 0 auto;
+	color: white;
+	font-family: 'Montserrat-Light';
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 1em;
+	padding-bottom: 3em;
+}
+
+.prix-cta-titre {
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+  color: rgb(56, 127, 194);
+  font-size: 2.4em;
+  text-align: center;
+}
+
+a.prix-button {
+  border-top-right-radius: 35px;
+  border-bottom-left-radius:35px;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Montserrat-UltraLight';
+  width: 21em;
+  height: 1.3em;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border: none;
+  margin-bottom: 5em;
+  padding: 1em;
+}
+
+a.prix-button-mobile {
+	display: none;
+}
+
+
+a.prix-button:hover {
+  opacity: 0.7;
+}
+
+a.prix-vendre {
+	background-color: #E54B40;
+	float: right;
+	margin-right: 2em;
+}
+
+a.prix-acheter {
+	background-color: rgb(56, 127, 194);
+	float: left;
+	margin-left: 2em;
+}
+
+@media only screen and (max-width: 900px) {
+
+	.prix-tagline-wrap {
+		padding-top: 5em;
+	}
+
+	.header-prix {
+  	height: 27em;
+	}
+
+	.comparaison-p {
+		width: 88%;
+    margin: 0 auto;
+    margin-top: 2em;
+	}
+
+	.comparaison-wrap {
+		width: 27em;
+	}
+
+	.revenu-concessionnaire {
+		margin-left: 1.8em;
+		margin-top: 3em;
+	}
+
+	.marge-concessionnaire {
+		margin-left: 1.8em;
+		margin-top: 16.5em;
+	}
+
+	.revenu-n7 {
+    margin-top: 4.3em;
+    margin-left: 14.8em;
+    font-size: 1em;
+	}
+
+	.marge-n7 {
+		margin-top: 14em;
+    margin-left: 14.8em;
+	}
+
+	.prix-evaluation-img {
+		display: none;
+	}
+
+	.prix-evaluation-mobile {
+		display: block;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 3em;
+	}
+
+	.prix-evaluation-p {
+		width: 90%;
+	}
+
+	.option-div {
+		width: 100%;
+	}
+
+	.option-p-1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.option-p-2 {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 5em;
+	}
+
+	.option-n7-titre {
+		width: 90%;
+	}
+
+	.option-n7-p {
+		width: 90%;
+	}
+
+	.prix-cta {
+		margin: 0 auto;
+	}
+	
+	.prix-cta-titre {
+		margin-bottom: 0em;
+	}
+
+	a.prix-button {
+		display: none;
+	}
+
+	a.prix-button-mobile {
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat-UltraLight';
+    display: inline;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 5em;
+	}
+
+	a.prix-vendre-mobile {
+		background-color: #E54B40;
+		float: right;
+	}
+
+	a.prix-acheter-mobile {
+		background-color: rgb(56, 127, 194);
+		float: left;
+	}
+
+}

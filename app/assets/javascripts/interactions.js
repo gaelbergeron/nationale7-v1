@@ -1,60 +1,64 @@
 $(document).ready(function(){
 
+  $('.sub-menu-homepage').hide();
 
-  $(".sub-menu-homepage").hide();
-
-  $(".pourquoi-n7").mouseover(function () {
-      $(".sub-menu-homepage").slideDown('fast').css('z-index','99');
+  $('.wrapper').hoverIntent({
+    over: startHover,
+    out: endHover,
+    timeout: 1200
   });
 
-  $(".wrapper").mouseleave(function () {
-      $(".sub-menu-homepage").slideUp('fast');
-  });
+  function startHover(e){
+    $(".sub-menu-homepage").slideDown('fast');
+  }
+
+  function endHover(){
+    $(".sub-menu-homepage").slideUp('fast');
+  }
 
   $('.acheter-button').click(function() {   
     if ($('.vendre-explanation').css('display') == 'block') {
-        $('.vendre-explanation').css("display", "none");
-        $(".acheter-explanation").slideToggle();
+        $('.vendre-explanation').css('display', 'none');
+        $('.acheter-explanation').slideToggle();
     } else {
-        $(".acheter-explanation").slideToggle();
+        $('.acheter-explanation').slideToggle();
     }
   });
 
   $('.vendre-button').click(function() {   
     if ($('.acheter-explanation').css('display') == 'block') {
-        $('.acheter-explanation').css("display", "none");
-        $(".vendre-explanation").slideToggle();
+        $('.acheter-explanation').css('display', 'none');
+        $('.vendre-explanation').slideToggle();
     } else {
-        $(".vendre-explanation").slideToggle();
+        $('.vendre-explanation').slideToggle();
     }
   });
 
-  $(".toutes-voitures-link").mouseover(function () {
-      $(".toutes-voitures-line").css("background-color", "#cbe6e6" );
+  $('.toutes-voitures-link').mouseover(function () {
+      $('.toutes-voitures-line').css('background-color', '#cbe6e6' );
   });
 
-  $(".toutes-voitures-link").mouseleave(function () {
-      $(".toutes-voitures-line").css("background-color", "#69a2d2" );
+  $('.toutes-voitures-link').mouseleave(function () {
+      $('.toutes-voitures-line').css('background-color', '#69a2d2' );
   });
 
-  $(".achetez-button").click(function() {
+  $('.achetez-button').click(function() {
       $('html, body').animate({
-          scrollTop: $(".contact-wrapper").offset().top
+          scrollTop: $('.contact-wrapper').offset().top
       }, 1000);
   });
 
-  $(".alert-dismiss").click(
+  $('.alert-dismiss').click(
     function() {
-      $(".confirmation-message").hide();
+      $('.confirmation-message').hide();
     }
   );
 
-  $(".answer-div").hide();
+  $('.answer-div').hide();
 
-  $(".question-div").click( function() { 
+  $('.question-div').click( function() { 
     $(this).next().slideToggle();} 
   );
-
   
   $('#mobile-menu').slicknav();
 
@@ -101,7 +105,7 @@ $(document).ready(function(){
     $('.vendre-content').show('slide', { direction: 'up'}, 500);
     $('.vendre-arrow').hide();
     $('html, body').animate({
-      scrollTop: $(".vendre-summary").offset().top
+      scrollTop: $('.vendre-summary').offset().top
     }, 500);
   });
 

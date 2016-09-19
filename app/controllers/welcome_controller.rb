@@ -9,25 +9,25 @@ class WelcomeController < ApplicationController
     p "**" * 90
   end
 
-  def commentcamarche
+  def comment_ca_marche
   end
 
-  def prixn7
+  def les_prix_nationale_7
   end
 
-  def expertisen7
+  def expertise_nationale_7
   end
 
-  def apropos
+  def a_propos_de_nationale_7
   end
 
-  def faq
+  def foire_aux_questions
   end
 
-  def cgv
+  def conditions_generales_de_vente
   end
 
-  def mentionslegales
+  def mentions_legales
   end
 
 end
