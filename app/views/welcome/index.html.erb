@@ -18,7 +18,7 @@
         <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
         <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
         <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
-        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
       </ul>
 
       </div>  
@@ -27,8 +27,8 @@
     <div id="aide-popup" class="white-popup mfp-hide">
       <div class="popup-content">
       <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
-      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
-      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-chat">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale-7.fr">bonjour@nationale-7.fr</a>
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>   
@@ -41,7 +41,7 @@
         <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
-        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
       </ul>
     </li>
     <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
@@ -76,7 +76,7 @@
     <ul class="sub-explanation-bullets">
       <li class="sub-explanation-li">La garantie d’un <strong>meilleur prix</strong> que chez le concessionnaire.</li>
       <li class="sub-explanation-li">Une gestion complète de la transaction.</br>
-      <strong>Paiement et paperasserie inclus.</strong></li>
+      <strong>Paiement et paperasse inclus.</strong></li>
       <li class="sub-explanation-li">Enlèvement de la voiture <strong>depuis chez-vous.</strong></li>
     </ul>
   </div>
@@ -90,7 +90,7 @@
     <ul class="sub-explanation-bullets">
       <li class="sub-explanation-li">Certification après une <strong>inspection </br> complète sur 75 points. Garantie 6 mois.</strong></li>
       <li class="sub-explanation-li"><strong>Livraison où vous voulez,</strong> quand vous voulez !</li>
-      <li class="sub-explanation-li">Paiement à la livraison, <strong>pas avant !</strong></li>
+      <li class="sub-explanation-li">Paiement à la livraison au <strong>meilleur prix !</strong></li>
     </ul>
   </div>
   <div class="sub-explanation-page-link acheter-link"><%= link_to raw('<strong>DÉCOUVRIR</strong></br> VOTRE FUTURE VOITURE'), acheter_voiture_occasion_certifiee_garantie_path, class: "sub-explanation-a-link acheter-a-link" %></div>
@@ -104,20 +104,27 @@
   <div class="title-green-line"></div>
 
   <div class='clients-slider'>
-    <div class="client-serein-smart-1" >
-<!--       <div style="position: relative; height: 0">
- -->        <div class="client-serein-caption smart-1-caption">
-          <h3 style="color:black;">Jonathan</h3>
-          <p class="caption-p">Service au top ! Merci beaucoup Nationale 7.</p>
+    
+    <div class="client-serein smart-1" >
+      <div class="client-serein-caption smart-1-caption">
+          <h3 style="color:#69a2d2;">Jonathan</h3>
+          <p class="caption-p">Nationale 7 a trouvé un acheteur très rapidement pour la Smart de Jonathan et s'est occupé de tout jusqu'au paiement, en temps et en heure ! <span>Seul le réveil le jour de la livraison a été compliqué pour Jonathan !</span></p>
         <!-- </div> -->
       </div>
     </div>
-    <div class="client-serein-smart-2">
+    <div class="client-serein fiat-500">
+      <div class="client-serein-caption fiat-500-caption">
+        <h3 style="color:#69a2d2;">Zaccharie</h3>
+        <p class="caption-p" ><span>C’est exactement le modèle que recherchait Zachari pour partir étudier à Madrid !</span><span>Quelques jours plus tard, le voilà au volant sa Fiat 500, prêt pour le grand départ !</span></p>
+      </div>
+    </div>    
+    <div class="client-serein smart-2">
       <div class="client-serein-caption smart-2-caption">
-        <h3 style="color:black;">Pierre-Olivier</h3>
-        <p class="caption-p" >À moi la liberté avec ma nouvelle Smart !</p>
+        <h3 style="color:#69a2d2;">Pierre-Olivier</h3>
+        <p class="caption-p" >Pierre-Olivier était tout heureux de se faire livrer sa Smart (celle de Jonathan) au pied de la Tour Eiffel un samedi matin, toute propre et il n’a même pas eu à s’occuper de la carte grise !</p>
       </div>
     </div>
+  
   </div>
 
 </div>

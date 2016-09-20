@@ -9,7 +9,7 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     lazyLoad: 'ondemand',
     nextArrow: '<i class="fa fa-angle-right fa-5x hvr-grow slider-right desktop-right"></i>',
     prevArrow: '<i class="fa fa-angle-left fa-5x hvr-grow slider-left desktop-left"></i>',

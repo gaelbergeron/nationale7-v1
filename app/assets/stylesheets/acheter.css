@@ -5,7 +5,6 @@
 .acheter-pictos-wrap {
   display:flex;
   justify-content:center;
-  align-items:center;
   margin-top: 10em;
 }
 
@@ -157,6 +156,10 @@ a:link.recherche-button {
   width: 19em;
   color: white;
   justify-content: center;
+}
+
+a:link.recherche-button:hover {
+  background-color: rgb(56, 127, 194);
 }
 
 .acheter-popup {

@@ -98,47 +98,57 @@
 
 .client-serein-caption {
   position: absolute;
-  width: 14em;
   padding: 1em;
   z-index: 3;
   font-family: 'Montserrat';
   font-size: 1.3em;
   color: black;
-  background-color: rgba(255, 255, 255, 0.64);
+  background-color: rgba(255, 255, 255, 0.84);
   border-radius: 10px;
 }
 
 .caption-p {
   word-break: break-word;
   white-space: normal;
+  margin-bottom: 0em;
+  font-family: 'Montserrat-Light';
+}
+
+.client-serein {
+  background-position: center;
+  background-size: 80em auto;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+}
+
+.smart-1 {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Jonathan---WEB+-ImmatN7.jpg");
 }
 
 .smart-1-caption {
+  width: 25em;
   margin-top: 1em;
   margin-left: 1em;
+}
+
+.fiat-500 {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Fiat-500-Zacchari.jpg");
+}
+
+.fiat-500-caption {
+  width: 25em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.smart-2 {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Pierre-Olivier-2+-+WEB.jpg");
 }
 
 .smart-2-caption {
+  width: 30em;
   margin-top: 1em;
   margin-left: 1em;
-}
-
-.client-serein-smart-1 {
-  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Jonathan---WEB.jpg");
-  background-position: center;
-  background-size: 80em auto;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  /*height: 53em;*/
-}
-
-.client-serein-smart-2 {
-  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Smart-Fortwo-Cabrio---Pierre-Olivier-2+-+WEB.jpg");
-  background-position: center;
-  background-size: 80em auto;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  /*height: 53em;*/
 }
 
 .slider-for {
@@ -179,9 +189,9 @@
     padding: 1em;
     z-index: 3;
     font-family: 'Montserrat';
-    font-size: 1.1em;
+    font-size: 1em;
     color: black;
-    background-color: rgba(255, 255, 255, 0.64);
+    background-color: rgba(255, 255, 255, 0.84);
     border-radius: 10px;
   }
 
@@ -193,15 +203,15 @@
   .smart-2-caption {
 		margin-top: 1em;
     position: absolute;
-    right: 26%;
+    right: 21%;
   }
 
-  .client-serein-smart-1 {
+  .client-serein {
     background-size: 45em auto;
     background-color: #e2f3f2;
   }
 
-  .client-serein-smart-2 {
+  .client-serein {
     background-size: 45em auto;
     background-color: #e2f3f2;
   }

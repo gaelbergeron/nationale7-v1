@@ -9,7 +9,7 @@
 
     <meta property="og:title" content="Parce que c'est un peu plus qu'une voiture.">
     <meta property="og:url" content="www.nationale-7.fr">
-    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/home.jpg">
+    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/home-logo.jpg">
     <meta property="og:description" content="Voitures d'occasion expertisées et garanties entre particuliers, au bon prix et en toute tranquilité. Quand acheter et vendre sa voiture devient aussi agréable qu'un départ en vacances.">
 
     <%= stylesheet_link_tag    "application" %>
@@ -27,7 +27,11 @@
       <%= yield %>
       <%= render 'layouts/footer' %>
       <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-      
+      <script>
+        window.intercomSettings = {
+          app_id: "cusnq9r8"
+        };
+      </script>
     </div>
   </body>
 </html>

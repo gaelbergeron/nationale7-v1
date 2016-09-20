@@ -1,5 +1,5 @@
 .footer {
-  height: 28em;
+  height: 50em;
   background-color: #69a2d2;
   color: rgb(255, 255, 255);
   display: relative;
@@ -41,7 +41,7 @@ a.footer-link:hover {
 
 .social-buttons {
   text-align: center;
-  margin-top: 2.5em;
+  margin-top: 4.2em;
 }
 
 a.social-icon {
@@ -50,12 +50,24 @@ a.social-icon {
   margin-right: 0.7em;
 }
 
-.copyright {
+.corporate-details {
   text-align: center;
   font-size: 1.1em;
   color: white;
-  margin-top: 2.2em;
+  margin-top: 4.2em;
 }
+
+.corpo-p {
+  margin-bottom: 0.5em;
+}
+
+#lemonway-partner-logo {
+  width: 3em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-top: 3em;
+}
+
 
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
@@ -191,7 +203,7 @@ a.social-icon {
 
 @media only screen and (max-width: 900px) {
   .footer {
-    height: 33em;
+    height: 58em;
   }
   .footer-link {
     display: block;

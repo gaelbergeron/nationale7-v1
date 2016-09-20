@@ -41,6 +41,8 @@ gem 'simple_form'
 # Install Foundation 6 as CSS & JS framework
 gem 'foundation-rails'
 
+gem 'intercom-rails'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 
 

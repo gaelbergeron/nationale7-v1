@@ -1,5 +1,5 @@
 class Inspector < ActiveRecord::Base
-  # has_many :cars
+  # has_many :voitures
   has_many :car_clients
 
   def to_s

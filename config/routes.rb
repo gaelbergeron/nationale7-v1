@@ -32,6 +32,6 @@ Rails.application.routes.draw do
   match '/evaluations', to: 'evaluations#new', via: 'get'
   resources :evaluations
 
-  resources 'cars'
+  resources 'cars', :path => "voitures"
 
 end

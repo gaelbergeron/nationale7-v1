@@ -228,7 +228,7 @@ a.car-menu-title:before {
 }
 
 .is-accordion-submenu-parent > a::after {
-  border-color: #e2f3f2 transparent transparent;
+  border-color: #69a2d2 transparent transparent;
       border-top-width: 18px;
     border-right-width: 18px;
     border-left-width: 18px;

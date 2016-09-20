@@ -1,4 +1,5 @@
 class Evaluation < MailForm::Base
+  attribute :nom
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone_number
   attribute :marque

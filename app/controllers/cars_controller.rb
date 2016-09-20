@@ -9,23 +9,19 @@ class CarsController < ApplicationController
         with_marque: Car.options_for_select_marque,
         with_energie: ['Diesel', 'Essence'], 
         with_prix_n7: [
-          ['Max 10 000 Eur', 10000], 
-          ['Max 15 000 Eur', 15000], 
-          ['Max 20 000 Eur', 20000], 
-          ['Max 30 000 Eur', 30000],  
-          ['Max 40 000 Eur', 40000], 
-          ['Max 50 000 Eur', 50000], 
-          ['Max 60 000 Eur', 60000], 
-          ['Max 70 000 Eur', 70000], 
-          ['Max 80 000 Eur', 80000], 
-          ['Max 90 000 Eur', 90000], 
-          ['Max 100 000 Eur', 100000], 
-          ['Max 500 000 Eur', 500000]]
+          ['Moins de 5 000 €', 5000], 
+          ['Moins de 10 000 €', 10000], 
+          ['Moins de 15 000 €', 15000], 
+          ['Moins de 20 000 €', 20000], 
+          ['Moins de 25 000 €', 25000], 
+          ['Moins de 30 000 €', 30000],  
+          ['Moins de 40 000 €', 40000], 
+          ['Moins de 50 000 €', 50000], 
+        ]
       }
     ) or return 
     @cars = @filterrific.find.page(params[:page])
     @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
-    p @profile_photos
 
 
     respond_to do |format|
@@ -41,9 +37,6 @@ class CarsController < ApplicationController
   def show
     @contact = Contact.new
     @car = Car.friendly.find(params[:id])
-    p "**" * 200
-    p @car.friendly_id
-    p "**" * 200
     @caroptions = CarOption.where(car_id: @car.id)
     @inspector = Inspector.where(id: @car.inspector_id).first
     @options = Option.where(id: @caroptions.map(&:option_id))

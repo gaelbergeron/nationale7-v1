@@ -26,7 +26,7 @@
           <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
           <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
           <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
-          <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
+          <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "sub-menu-link-product sliding-middle-out sliding-blue" %></li>
         </ul>
         </div>  
     </li>
@@ -39,7 +39,7 @@
         <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
-        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
       </ul>
     </li>
     <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
@@ -52,7 +52,7 @@
       <div class="popup-content">
       <p class="parlez-nous">Parlez nous ! <span>(on est sympas et serviables)</span></p>
       <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
-      <a class="help-button-email" href="mailto:bonjour@nationale7.co">bonjour@nationale7.co</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale-7.fr">bonjour@nationale-7.fr</a>
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <div class='photo-car-description'>
       <h2 class='photo-car-description-h2'><%= @car.marque %> <%= @car.modele %> <%= @car.annee %>
       </h2>
-      <p class='photo-car-description-p'><%= @car.motorisation %> - <%= @car.finition %> | <%= @car.kilometrage %> Km</p>
+      <p class='photo-car-description-p'><%= @car.motorisation %> - <%= @car.finition %> | <%= number_with_delimiter(@car.kilometrage, :delimiter => ' ') %> Km</p>
     </div>
   <div class="slider-wrap">
     <div class='slider-for'>
@@ -116,9 +116,9 @@
                     <li class="car-menu-li"><strong>Transmission :</strong> <%= @car.transmission %></li>
                     <li class="car-menu-li"><strong>Nombre de portes :</strong> <%= @car.nombre_portes %></li>
                     <li class="car-menu-li"><strong>Nombre de places :</strong> <%= @car.nombre_places %></li>
-                    <li class="car-menu-li"><strong>Kilométrage :</strong> <%= @car.kilometrage %> Km</li>
+                    <li class="car-menu-li"><strong>Kilométrage :</strong> <%= number_with_delimiter(@car.kilometrage, :delimiter => ' ') %> Km</li>
                     <li class="car-menu-li"><strong>Nombre de propriétaires précédents :</strong> <%= @car.nombre_proprietaires %></li>
-                    <li class="car-menu-li"><strong>Date de première mise en circulation :</strong> <%= @car.premiere_mise_en_circulation %></li>
+                    <li class="car-menu-li"><strong>Date de première mise en circulation :</strong> <%= @car.premiere_mise_en_circulation.to_formatted_s(:rfc822) %></li>
                     <li class="car-menu-li"><strong>Couleur extérieure :</strong> <%= @car.couleur_exterieure %></li>
                     <li class="car-menu-li"><strong>Matière intérieure :</strong> <%= @car.matiere_interieure %></li>
                     <li class="car-menu-li"><strong>Couleur intérieure :</strong> <%= @car.couleur_interieure %></li>
@@ -135,7 +135,7 @@
                   <ul class="two-column-section">
                     <li class="car-menu-li"><strong>Puissance din :</strong> <%= @car.puissance_din %></li>
                     <li class="car-menu-li"><strong>Puissance fiscale :</strong> <%= @car.puissance_fiscale %></li>
-                    <li class="car-menu-li"><strong>Cylindrée :</strong> <%= @car.cylindree %> cm3</li>
+                    <li class="car-menu-li"><strong>Cylindrée :</strong> <%= number_with_delimiter(@car.cylindree, :delimiter => ' ') %> cm3</li>
                     <li class="car-menu-li"><strong>Nombre de cylindres :</strong> <%= @car.nombre_cylindres %></li>
                     <li class="car-menu-li"><strong>Nombre de soupapes :</strong> <%= @car.nombre_soupapes %></li>
                     <li class="car-menu-li"><strong>Roues motrices :</strong> <%= @car.roues_motrices %></li>
