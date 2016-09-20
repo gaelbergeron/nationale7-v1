@@ -126,14 +126,46 @@ $(document).ready(function(){
 // *********************
 
   $('.acheter-content-mobile').hide();
+  $('.vendre-content-mobile').hide();
 
 
   $('.ccm-intro-acheter-mobile').click( function() {
-    $('.vendre-content-mobile').hide('slide', { direction:'down'}, 500);
+    $('.vendre-content-mobile').hide();
     $('.acheter-content-mobile').show('slide', { direction: 'up'}, 500);
-    $('.ccm-intro-acheter').css('opacity', '0.7');
+    $('.ccm-intro-acheter-mobile').css('opacity', '1');
+    $('.ccm-intro-vendre-mobile').css('opacity', '0.6');
     $('html, body').animate({
-      scrollTop: $('.acheter-content-mobile').offset().top
+      scrollTop: $('.ccm-intro-acheter-mobile').offset().top
+    }, 500);
+  });
+
+  $('.ccm-intro-vendre-mobile').click( function() {
+    $('.acheter-content-mobile').hide();
+    $('.vendre-content-mobile').show('slide', { direction: 'up'}, 500);
+    $('.ccm-intro-acheter-mobile').css('opacity', '0.6');
+    $('.ccm-intro-vendre-mobile').css('opacity', '1');
+    $('html, body').animate({
+      scrollTop: $('.ccm-intro-vendre-mobile').offset().top
+    }, 500);
+  });
+
+  $('.vendre-savoir-mobile').click( function() {
+    $('.acheter-content-mobile').fadeOut(300);
+    $('.vendre-content-mobile').show('slide', { direction: 'up'}, 500);
+    $('.ccm-intro-acheter-mobile').css('opacity', '0.6');
+    $('.ccm-intro-vendre-mobile').css('opacity', '1');
+    $('html, body').animate({
+      scrollTop: $('.ccm-intro-vendre-mobile').offset().top
+    }, 500);
+  });
+
+  $('.acheter-savoir-mobile').click( function() {
+    $('.vendre-content-mobile').fadeOut(300);
+    $('.acheter-content-mobile').show('slide', { direction: 'up'}, 500);
+    $('.ccm-intro-acheter-mobile').css('opacity', '1');
+    $('.ccm-intro-vendre-mobile').css('opacity', '0.6');
+    $('html, body').animate({
+      scrollTop: $('.ccm-intro-acheter-mobile').offset().top
     }, 500);
   });
 

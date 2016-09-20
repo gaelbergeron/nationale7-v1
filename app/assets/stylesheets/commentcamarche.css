@@ -1,3 +1,10 @@
+.header-description-page {
+  height: 8em;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
 .ccm-grey-header {
   background-color: rgb(245, 245, 246);
   height: 15em;
@@ -123,6 +130,10 @@ a.decouvrir-span {
 
 .ccm-intro-text {
 	padding-bottom: 1em;
+}
+
+.ccm-intro-text-mobile {
+  display: none;
 }
 
 u {
@@ -677,7 +688,12 @@ button.acheter-savoir {
   }
 
   .ccm-intro-text {
-    padding-bottom: 2em;
+    display: none;
+  }
+
+  .ccm-intro-text-mobile {
+    padding-bottom: 1em;
+    display: block;
   }
 
   .ccm-chiffre {
@@ -700,6 +716,84 @@ button.acheter-savoir {
 
   .summary-pictos-wrap{
     display: none;
+  }
+
+  .acheter-content-mobile {
+    background-color: rgb(245, 245, 246);
+  }
+
+  .vendre-content-mobile {
+    background-color: rgb(245, 245, 246);    
+  }
+
+  .picto-mobile {
+    border-radius: 100px;
+    width: 70px;
+  }
+
+  .ccm-row {
+    width: 90%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    margin: 0 auto;
+  }
+
+  .picto-wrap-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chiffre-picto {
+    width: 30px;
+    margin-bottom: 15px;
+    margin-left: 1em;  
+  }
+
+  .acheter-title {
+    color: rgb(68, 139, 199);
+  }
+
+  .vendre-title {
+    color: rgb(235, 111, 102);
+  }
+
+  .row-title {
+    width: inherit;
+    font-size: 1.2em;
+    margin: 0 auto;
+    text-align: center;    
+  }
+
+  .row-content {
+    width: inherit;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+
+  button.acheter-savoir-mobile {
+    background: #69a2d2;
+  }
+
+  button.vendre-savoir-mobile {
+    background: #f17971;
+  }
+
+  button.savoir-mobile {
+    font-family: 'Montserrat-UltraLight';
+    margin-left: 40%;
+    margin-top: 3em;
+    font-weight: 600;
+    border: none;
+    padding: 1em;
+    font-size: 1.8em;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2em;
   }
 
 }
