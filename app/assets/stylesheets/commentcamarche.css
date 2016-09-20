@@ -1,3 +1,9 @@
+.ccm-grey-header {
+  background-color: rgb(245, 245, 246);
+  height: 15em;
+  font-family: 'Montserrat-Light';
+}
+
 .ccm-title {
 	padding-top: 1em;
 	padding-bottom: 0.6em;
@@ -623,4 +629,77 @@ button.acheter-savoir {
 
 .acheter-savoir:hover {
 	background-color: rgba(105, 162, 210, 0.85);
+}
+
+@media only screen and (max-width: 900px) {
+
+  .ccm-bottom {
+    display: none;
+  }
+
+  .ccm-bottom-mobile {
+    height: 10em;
+  }
+
+  .ccm-intro-wrap-mobile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ccm-intro-wrap {
+    display: none;
+  }
+
+  .ccm-intro-acheter-mobile {
+    background-color: rgb(145, 188, 221);
+    width: 50%;
+    float: left;
+    flex: 1;
+    height: 12em;
+    color: white;
+    font-size: 1.6em;
+  }
+
+  .ccm-intro-vendre-mobile {
+    background-color: #f17971;
+    width: 50%;
+    float: left;
+    flex: 1;
+    height: 12em;
+    color: white;
+    font-size: 1.6em;
+  }
+
+  .verbe-span {
+      margin-top: 3em;
+  }
+
+  .ccm-intro-text {
+    padding-bottom: 2em;
+  }
+
+  .ccm-chiffre {
+    padding: 0.5em;
+  }
+
+  .ccm-grey-header {
+    background-color: rgb(245, 245, 246);
+    height: 100%;
+    font-family: 'Montserrat-Light';
+  }
+
+  .ccm-subtitle {
+    margin-bottom: 2em;
+  }
+
+  .vendre-summary {
+    top: 29.5em;
+  }
+
+  .summary-pictos-wrap{
+    display: none;
+  }
+
 }

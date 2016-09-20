@@ -31,13 +31,29 @@
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>
-      
   </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
 
 </header>
 
 
-<div class="grey-title-wrap">
+<div class="ccm-grey-header">
   <h1 class="ccm-title">Tout savoir sur l'expérience Nationale 7</h1>
   <h3 class="ccm-subtitle">Vous êtes en bonne compagnie</h3>
 </div>
@@ -48,7 +64,6 @@
 		<span class="ccm-intro-text verbe-span">ACHETER</span>
 		<a href="#" class="ccm-intro-text decouvrir-span"><u>Découvrir</u></a>
 		<i class="fa fa-angle-right fa-5x hvr-grow acheter-arrow"></i>
-
 	</div>
 
 	<div class="acheter-summary">
@@ -74,40 +89,40 @@
 	  </div>
 	</div>
 
-	<!-- <div class="acheter-triangle"></div> -->
 	<div class="ccm-intro-vendre">
 		<span class="ccm-intro-text verbe-span">VENDRE</span>
 		<a href="#" class="ccm-intro-text decouvrir-span"><u>Découvrir</u></a>
 		<i class="fa fa-angle-left fa-5x hvr-grow vendre-arrow"></i>
 	</div>
 
-	<div class="vendre-summary">
-		<h1 class="vendre-ccm-h1">5 étapes pour vendre votre voiture</h1>
-		<h3 class="vendre-ccm-h3">Vous allez voir, il n'y a rien de plus simple !</h3>
-		<div class="summary-pictos-wrap wrap-vendre">
-	  	<div class="summary-picto-vendre">
-	  		<%= image_tag('vendre-estimation.jpg', class: "acheter-summary-picto") %>
-	  		<p class="summary-p"><span>Estimation</span><span>de votre voiture</span></p>
-	  	</div>
-	  	<div class="summary-picto-vendre">
-	  		<%= image_tag('vendre-expertise.jpg', class: "acheter-summary-picto") %>
-	  		<p class="summary-p"><span>Expertise</span><span>de votre voiture</span></p>
-	  	</div>
-	  	<div class="summary-picto-vendre">
-	  		<%= image_tag('vendre-mel.jpg', class: "acheter-summary-picto") %>
-	  		<p class="summary-p"><span>Mise en ligne</span><span>de votre voiture</span></p>
-	  	</div>  	
-	  	<div class="summary-picto-vendre">
-	  		<%= image_tag('vendre-gerer-acheteur.jpg', class: "acheter-summary-picto") %>
-	  		<p class="summary-p"><span>On s'occupe</span><span>des acheteurs</span></p>
-	  	</div>  
-	  	<div class="summary-picto-vendre">
-	  		<%= image_tag('vendre-enlevement.jpg', class: "acheter-summary-picto") %>
-	  		<p class="summary-p"><span>On gère l'enlèvement</span> <span>et le paiement</span></p>
-	  	</div>  
-	  </div>
-	</div>
-</div>
+    <div class="vendre-summary">
+  		<h1 class="vendre-ccm-h1">5 étapes pour vendre votre voiture</h1>
+  		<h3 class="vendre-ccm-h3">Vous allez voir, il n'y a rien de plus simple !</h3>
+  		<div class="summary-pictos-wrap wrap-vendre">
+  	  	<div class="summary-picto-vendre">
+  	  		<%= image_tag('vendre-estimation.jpg', class: "acheter-summary-picto") %>
+  	  		<p class="summary-p"><span>Estimation</span><span>de votre voiture</span></p>
+  	  	</div>
+  	  	<div class="summary-picto-vendre">
+  	  		<%= image_tag('vendre-expertise.jpg', class: "acheter-summary-picto") %>
+  	  		<p class="summary-p"><span>Expertise</span><span>de votre voiture</span></p>
+  	  	</div>
+  	  	<div class="summary-picto-vendre">
+  	  		<%= image_tag('vendre-mel.jpg', class: "acheter-summary-picto") %>
+  	  		<p class="summary-p"><span>Mise en ligne</span><span>de votre voiture</span></p>
+  	  	</div>  	
+  	  	<div class="summary-picto-vendre">
+  	  		<%= image_tag('vendre-gerer-acheteur.jpg', class: "acheter-summary-picto") %>
+  	  		<p class="summary-p"><span>On s'occupe</span><span>des acheteurs</span></p>
+  	  	</div>  
+  	  	<div class="summary-picto-vendre">
+  	  		<%= image_tag('vendre-enlevement.jpg', class: "acheter-summary-picto") %>
+  	  		<p class="summary-p"><span>On gère l'enlèvement</span> <span>et le paiement</span></p>
+  	  	</div>  
+  	  </div>
+  	</div>
+<!--   </div>
+ --></div>
 
 <div class="acheter-content">
 	<!-- Left side of road, html sequence is upside down to keep the first element as a reference point for margin-left -->
@@ -222,4 +237,47 @@
 <div class="ccm-bottom">
 	
 </div>
+
+<!-- *********************** -->
+<!-- Mobile version of page  -->
+<!-- *********************** -->
+
+
+
+<div class="ccm-intro-wrap-mobile">
+
+  <div class="ccm-intro-acheter-mobile">
+    <span class="ccm-intro-text verbe-span"><span>Acheter en</span> <span class="ccm-chiffre">4</span> étapes</span>
+    <a href="#" class="ccm-intro-text decouvrir-span"><u>Découvrir</u></a>
+  </div>
+
+  <div class="ccm-intro-vendre-mobile">
+    <span class="ccm-intro-text verbe-span"><span>Vendre en</span> <span class="ccm-chiffre">5</span> étapes</span>
+    <a href="#" class="ccm-intro-text decouvrir-span"><u>Découvrir</u></a>
+  </div>
+  
+</div>
+
+<div class="acheter-content-mobile">
+        <%= image_tag('acheter-reperage.jpg', class: "acheter-summary-picto") %>
+
+        <%= image_tag('acheter-commande.jpg', class: "acheter-summary-picto") %>
+
+        <%= image_tag('acheter-livraison.jpg', class: "acheter-summary-picto") %>
+
+        <%= image_tag('acheter-garantie.jpg', class: "acheter-summary-picto") %>
+
+</div>
+
+<div class="vendre-content-mobile">
+
+</div>
+
+<div class="ccm-bottom-mobile">
+  
+</div>
+
+
+
+
 

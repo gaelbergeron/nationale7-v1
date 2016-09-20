@@ -31,15 +31,31 @@
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>
-      
   </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
 
 </header>
 
 
 <div class="grey-title-wrap">
   <h1 class="expertise-title">L'EXPERTISE NATIONALE 7</h1>
-  <h3 class="expertise-subtitle">L'expérience au profite de votre voiture</h3>
+  <h3 class="expertise-subtitle">L'expérience au profit de votre voiture</h3>
 </div>
 
 
@@ -65,7 +81,7 @@
     <%= image_tag('expertise-historique-entretien.jpg', class: "expertise-picto-img") %>
     <p class="expertise-p"><span>Historique</span><span>et entretien</span></p>
   </div>
-  <div class="expertise-picto-wrap">
+  <div class="expertise-picto-wrap last-expert-wrap">
     <%= image_tag('expertise-test-conduite.jpg', class: "expertise-picto-img") %>
     <p class="expertise-p"><span>Test</span><span>de conduite</span></p>
   </div>

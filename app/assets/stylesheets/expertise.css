@@ -86,7 +86,67 @@
 	height: 8em;
 }
 
+@media only screen and (max-width: 900px) {
 
+	.expertise-title {
+    padding-top: 0.5em;
+    line-height: 1;
+	}
+
+	.expertise-subtitle {
+    line-height: 1;
+    margin-top: 1.5em;
+	}
+
+	.expertise-explanation-wrap {
+		width: 90%;
+	}
+
+	.expertise-pictos {
+		display: inherit;
+	}
+
+	.expertise-picto-wrap {
+    width: 50%;
+    float: left;
+	}
+
+	.last-expert-wrap {
+		margin-left: 25%;
+	}
+
+	.expertise-experveo-wrap {
+		display: inherit;
+	}
+
+	.fake-expertise-img {
+		width: 100%;
+	}
+
+	.experveo-presentation {
+		width: 100%;
+	}
+
+	.experveo-presentation-title {
+		text-align: center;
+		margin-left: 0em;
+	}
+
+	.experveo-presentation-copy {
+		width: 80%;
+		margin-left: 0em;
+		margin: 0 auto;
+	}
+
+	.experveo-presentation-img {
+    width: 50%;
+    margin-top: 2em;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2em;
+  }
+
+}
 
 
 

@@ -31,8 +31,24 @@
       <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
       </div>
     </div>
-      
   </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'A propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
 
 </header>
 
@@ -45,9 +61,9 @@
 <div class="faq-intro-wrap">
   <h2 class="faq-intro-title">Qu'est-ce que Nationale 7 ?</h2>
   <div class="intro-copy">
-    <p class="p-apropos paragraph-start" >Nationale 7 est le service dont vous rêviez pour votre voiture d'occasion. Notre objectif est de vous simplifier à l'extrême la vente et l'achat entre particuliers.</p>
-    <p class="p-apropos paragraph-start" >Nationale 7 agit comme tiers de confiance et permet aux vendeurs et acheteurs d'interagir dans un environnement simple et à la fois sécurisé. Chacune de nos voitures passe une inspection rigoureuse de 75 points complétée par un expert agréé.</p>
-    <p class="p-apropos paragraph-start" >Nous nous occupons de toutes les étapes importantes: pré-sélectionner, expertiser, certifier, photographier puis livrer et transiger la voiture. Toutefois nous ne sommes pas un concessionnaire traditionnel: pas de stocks ni de showroom coûteux, un système qui offre des économies à la fois aux acheteurs et aux vendeurs.</p>
+    <p class="p-apropos paragraph-start" >Nationale 7 est le service dont vous rêviez pour votre voiture d'occasion. Notre objectif est de faire rentrer la vente et l’achat de voiture d’occasion au 21e siècle en vous simplifiant à l'extrême la vente et l'achat entre particuliers.</p>
+    <p class="p-apropos paragraph-start" >Nationale 7 agit comme tiers de confiance et permet aux vendeurs et aux acheteurs d'interagir dans un environnement à la fois simple et sécurisé. Chacune de nos voitures passe une inspection rigoureuse de 75 points effectuée par un expert agréé.</p>
+    <p class="p-apropos paragraph-start" >Nous nous occupons de toutes les étapes importantes : pré-sélectionner, expertiser, certifier, photographier puis livrer et effectuer les démarches administratives liées la voiture. Toutefois nous ne sommes pas un concessionnaire traditionnel ! Pas de stocks, de force de vente rémunérée à la vente, ni de showroom coûteux : notre raison d’être est de faire réaliser des économies à la fois aux acheteurs, qui achètent au meilleur prix garanti, et aux vendeurs qui vendent plus cher !</p>
   </div>
 </div>
 
@@ -56,77 +72,97 @@
     <div class="faq-acheter-content">
       <p class="faq-content-title">Acheter</p>
       
-      <div class="question-div" id="aq1">
+      <div class="question-div">
         <div class="faq-round">1</div><p class="p-question">Êtes-vous un concessionnaire ?</p>
       </div>
-      <div class="answer-div" id="aa1">
-        <p>Yo</p>
-      </div>
-      <div class="question-div" id="aq2">
+      <div class="answer-div">
+        <p>Non, nous ne sommes pas un concessionnaire ou garagiste, Nationale 7 est un service visant à faciliter la transaction entre particuliers.</p>
+
+        <p>La transparence est ce qu’il y a de plus important pour nous. Vous connaissez absolument tout des voitures que nous proposons à la vente grâce au rapport d’expert et aux nombreuses photos prises par Nationale 7.</p>
+
+        <p>Nous ne prenons pas possession des voitures. Elles restent chez leurs vendeurs pendant la vente, nous n’avons donc aucun stock, pas de showrooms coûteux, ni fioritures, ce qui permet aux vendeurs et aux acheteurs d’empocher plus d’argent lors de la transaction.</p>      </div>
+      <div class="question-div">
         <div class="faq-round">2</div><p class="p-question">J'ai moi-même une titine à vendre, vous me faites un deal ?</p>
       </div>
-      <div class="answer-div" id="aa2">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Avec plaisir ! Si vous décidez de vendre votre voiture par Nationale 7 nous sommes heureux de vous faire une offre que vous ne pourrez pas refuser.</p>
+
+        <p>Appelez-nous au 01 76 39 02 84 pour en discuter !</p>
       </div>
-      <div class="question-div" id="aq3">
+      <div class="question-div">
         <div class="faq-round">3</div><p class="p-question">Je veux voir une de vos voitures, comment ça se passe ?</p>
       </div>
-      <div class="answer-div" id="aa3">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Félicitations vous venez de prendre la bonne décision. Pour acheter la voiture de vos rêves il suffit de nous contacter pour planifier la livraison à l’endroit de votre choix.</p>
+        <p>Nous demandons ensuite le virement du montant du prix de vente de la voiture vers notre compte séquestre. Rassurez-vous si la voiture ne vous plaît pas, si vous n’avez pas le coup de cœur : nous vous remboursons immédiatement 100% de la somme versée.</p>
+        <p>Vous restez en contrôle de votre achat en tout temps. Nos représentants Nationale 7 sont à votre disposition pour l’essai sans aucune pression d’achat, jamais.</p>
       </div>
-      <div class="question-div" id="aq4">
+      <div class="question-div">
         <div class="faq-round">4</div><p class="p-question">Est-ce que je peux faire un essai ? Est-ce que je peux changer d'avis une fois qu'elle arrive chez moi ?</p>
       </div>
-      <div class="answer-div" id="aa4">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Bien évidemment ! Si vous n’avez pas le coup de cœur au moment de l’essai vous êtes intégralement remboursé du prix de vente, sans aucune question et nous reconduisons la voiture chez le vendeur.</p>
+        <p>L’important pour nous, est que vous preniez la bonne décision, pour vous, toujours.</p>
       </div>
-      <div class="question-div" id="aq5">
+      <div class="question-div">
         <div class="faq-round">5</div><p class="p-question">Comment se passe la livraison ? Combien ça coûte ?</p>
       </div>
-      <div class="answer-div" id="aa5">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>La livraison s’effectue selon vos préférences, nous pouvons vous apporter la voiture où vous voulez, quand vous voulez.</p>
+        <p>Vous bénéficiez de la livraison gratuite du véhicule à votre domicile ou tout autre lieu convenu dans le département de l’Ile-de-France ou dans un rayon de 50 kilomètres autour de Paris.</p>
+        <p>Si vous souhaitez une livraison en dehors de l’Ile-de-France, nous calculons la distance à parcourir et proposons le barème suivant :</p>
+        <ul>
+          <li>La somme de 200€ : lorsque le lieu de situation du véhicule et le lieu de livraison se trouvent entre 50 et 300 kilomètres.</li>
+          <li>La somme de 300€, lorsque le lieu de situation du véhicule et le lieu de livraison se trouvent entre 300 kilomètres et plus.</li>
+        </ul>
+        <p>Nationale 7 propose donc de livrer votre voiture de rêve partout en France. N’hésitez pas à nous appeler au 01 76 39 02 84 pour en parler en détail.</p>
       </div>
-      <div class="question-div" id="aq6">
+      <div class="question-div">
         <div class="faq-round">6</div><p class="p-question">Je refuse la livraison, je veux me déplacer en personne chez le vendeur. Est-ce possible ?</p>
       </div>
-      <div class="answer-div" id="aa6">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Décidémment vous savez ce que vous voulez, mais vos désirs sont des ordres. Cela nous fera plaisir de planifier la rencontre chez le vendeur. Toutefois nos frais de commission de 5% restent non négociables, l’absence de livraison ne vous permettra pas d’obtenir une réduction. Scusi.</p>
       </div>
-      <div class="question-div" id="aq7">
+      <div class="question-div">
         <div class="faq-round">7</div><p class="p-question">Qui va venir livrer la voiture ?</p>
       </div>
-      <div class="answer-div" id="aa7">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>La livraison de la voiture sera faite par un représentant Nationale 7, nous nous déplaçons nous-mêmes jusque chez vous.</p>
+        <p>Et même si vous n’avez pas le coup de cœur, on vous parie que vous passerez un bon moment en notre compagnie.</p>
       </div>
-      <div class="question-div" id="aq8">
+      <div class="question-div">
         <div class="faq-round">8</div><p class="p-question">Comment vérifiez-vous l'historique de la voiture ?</p>
       </div>
-      <div class="answer-div" id="aa8">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>L’historique de la voiture est vérifié par notre expert agréé par le Ministère de l’Intérieur qui procède à un contrôle minutieux de tous les points.</p>
+        <p>L’historique des documents est retracé grâce via des bases de données nationales, aucun doute permis. S’il y avait eu l’ombre d’un doute la voiture ne serait pas en vente par Nationale 7. Aussi simple que ça.</p>
       </div>
-      <div class="question-div" id="aq9">
+      <div class="question-div">
         <div class="faq-round">9</div><p class="p-question">Est-ce que la voiture a été accidentée ?</p>
       </div>
-      <div class="answer-div" id="aa9">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Une voiture qui a eu un bobo peut sans problème retrouver la route tant que les réparations ont été suivies par un expert. Lors de nos inspections les vérifications de l'expert permettent de valider que la voiture a toujours été bien suivie et 100% conforme.</p>
       </div>
-      <div class="question-div" id="aq10">
+      <div class="question-div">
         <div class="faq-round">10</div><p class="p-question">Est-ce que le prix est négociable ?</p>
       </div>
-      <div class="answer-div" id="aa10">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Pour déterminer le prix de vente de nos voitures nous procédons à une analyse rigoureuse de tous les paramètres, ainsi que des tendances de marché au moment de la vente, ceci en partenariat avec Autovista, leader européen de la cotation de véhicules. Ce qui nous permet d’obtenir le montant exact de la valeur de titine.</p>
+        <p>Le prix final est validé avec les résultats de l’expertise ce qui rendra le montant indiscutable et non négociable auprès des acheteurs sérieux.</p>
       </div>
-      <div class="question-div" id="aq11">
+      <div class="question-div">
         <div class="faq-round">11</div><p class="p-question">Quels moyens de paiement sont à ma disposition ?</p>
       </div>
-      <div class="answer-div" id="aa11">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Nous avons cherché à vous simplifier la vie au maximum avec un paiement simple et sécurisé. Tout s'effectue par virement bancaire électronique pour éviter le risque de fraude.</p>
+        <p>Nos vendeurs et acheteurs interagissent dans un milieu sécurisé.</p>
       </div>
-      <div class="question-div" id="aq12">
+      <div class="question-div">
         <div class="faq-round">12</div><p class="p-question">Comment sécurisez-vous le paiement ?</p>
       </div>
-      <div class="answer-div" id="aa12">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Nous travaillons avec Lemonway et BNP Paribas pour vous offrir une complète tranquillité d’esprit. Chaque transfert de fonds s’effectue via un compte séquestre afin de garantir leur validité à chaque étape de la transaction.</p>
+        <p>Adieu les arnaques, tchao les escrocs !</p>
       </div>
     </div>
   </div>
@@ -135,88 +171,132 @@
     <div class="faq-vendre-content">
       <p class="faq-content-title">Vendre</p>
       
-      <div class="question-div" id="vq1">
+      <div class="question-div">
         <div class="faq-round">1</div><p class="p-question">Que se passe-t-il une fois que ma voiture passe l’inspection ?</p>
       </div>
-      <div class="answer-div" id="va1">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Votre voiture passe l’inspection avec succès une fois que l’expert a validé son bon état de fonctionnement, elle est alors irréprochable et peut répondre aux questions des acheteurs les plus minutieux.</p>
+        <p>La première étape est de valider avec vous le prix final, basé sur les observations de l’expert. Nous ne prenons aucune décision sans votre accord, vous restez en contrôle de la transaction en tout temps !</p>
+        <p>La première étape est de valider avec vous le prix final, basé sur les observations de l’expert. Nous ne prenons aucune décision sans votre accord, vous restez en contrôle de la transaction en tout temps !</p>
+        <ul>
+          <li>Certificat d’immatriculation (carte-grise) ;</li>
+          <li>Carte d’identité du Vendeur (recto verso) ;</li>
+          <li>Justificatif de domicile de moins de trois mois ;</li>
+          <li>Justificatif du dernier contrôle technique datant de moins de 4 mois, pour les véhicules de plus de 4 ans.</li>
+        </ul>
+        <p>Il est entendu que ces dernières données ne seront pas visibles sur aucun site et sont seulement destinées à la vérification par Nationale 7 de la propriété du véhicule, à l’obtention du certificat de non-gage et à la préparation de la déclaration de cession lors de la vente.</p>
+        <p>Félicitations ! Votre voiture est certifiée Nationale 7, prête à rouler vers de nouveaux horizons !</p>
       </div>
       
-      <div class="question-div" id="vq2">
+      <div class="question-div">
         <div class="faq-round">2</div><p class="p-question">Quels sont les frais prélevés par Nationale 7 ?</p>
       </div>
-      <div class="answer-div" id="va2">
-        <p>Yo</p>
-      </div>
+      <div class="answer-div">
+        <p>Nos frais s'élèvent 5% du prix de vente, avec une commission minimum de 600€. Ceci vous permet d'obtenir jusqu'à 25% de plus pour votre voiture par rapport à un concessionnaire. Encore plus de budget pour la caravane (enfin, vous faites ce que vous voulez).</p>
+        <p>Notre commission réduite vous apporte un service ultra complet, nous nous occupons de : présélectionner, expertiser, certifier, photographier puis livrer et transiger la voiture. Rien que ça.</p>
+        <p>Avec Nationale 7 on vous enlève tous les soucis et pertes de temps. Vendre et acheter sa voiture d'occasion devient enfin un plaisir !</p>      </div>
 
       <div class="question-div" id="vq3">
         <div class="faq-round">3</div><p class="p-question">Est-ce que je peux vendre ma voiture ailleurs quand elle est avec Nationale 7?</p>
       </div>
       <div class="answer-div" id="va3">
-        <p>Yo</p>
+        <p>Lorsque vous nous confiez votre titine et que vous acceptez les conditions du mandat de vente, nous nous occupons de la vendre dans les 5 semaines.</p>
+        <p>Lorsque vous nous confiez votre titine et que vous acceptez les conditions du mandat de vente, nous nous occupons de la vendre dans les 5 semaines.</p>
+        <p>A l’issue des 5 semaines, vous pouvez nous demander de retirer l’annonce, ou de la maintenir. Comptez sur nous pour faire un suivi soigneux avec vous.</p>
+        <p>D’autre part, vous pouvez continuer à commercialiser la voiture de votre côté ; si vous la vendez sans utiliser les services de Nationale 7 dans les 5 semaines, nous demanderons une compensation de 300€, correspondant à une partie des frais engagés dans l’inspection, la mise en valeur du véhicule et la recherche d’acheteurs potentiels.</p>
+        <p>La compensation s’applique également si vous décidez d’annuler la vente avant la fin du mandat de 5 semaines. On est vraiment déterminés à vendre votre voiture !</p>
+        <p>Pour toute question concernant ces points ou autre, n’hésitez pas à nous appeler : 01 76 39 02 84 !</p>
       </div>
 
-      <div class="question-div" id="vq4">
+      <div class="question-div">
         <div class="faq-round">4</div><p class="p-question">Comment définissez-vous le prix de ma voiture ?</p>
       </div>
-      <div class="answer-div" id="va4">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Définir le bon prix pour votre véhicule n’est pas simple : c’est la raison pour laquelle nous avons développé nos propres outils, qui analysent en temps réel l’offre de véhicules comparables.</p>
+        <p>Basés sur l’intégralité des annonces réelles, ces outils nous permettent de définir un prix de vente au plus près de la réalité du marché : un concentré de technique à votre service pour s’assurer que nous définissons ensemble le juste prix !</p>
+        <p>Le prix définitif de votre véhicule est ensuite validé lors de l’inspection complète de la voiture en fonction de l’état précis du véhicule.</p>
       </div>
 
-      <div class="question-div" id="vq5">
+      <div class="question-div">
         <div class="faq-round">5</div><p class="p-question">Comment se déroule l’expertise ?</p>
       </div>
-      <div class="answer-div" id="va5">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>L’expertise et la prise de photos peuvent se dérouler dans les 72 heures à partir de l’instant où vous décidez de mettre votre voiture en vente. Quoi qu’il arrive cela a lieu quand vous voulez, où vous voulez, vous décidez.</p>
+        <p>L’expert procède au contrôle de 75 points sur la carrosserie, l’intérieur, la mécanique et le chassis. Il vérifie également l’historique, entretien et effectue un test de conduite. Titine n’aura plus de secret pour nous.</p>
+        <p>Les vérifications durent 1 heure et comptez 20 minutes supplémentaires pour la séance photo qui sera faite dans la foulée par un représentant Nationale 7. Rassurez-vous seule la voiture a besoin de prendre la pose :-)</p>
       </div>
 
-      <div class="question-div" id="vq6">
+      <div class="question-div">
         <div class="faq-round">6</div><p class="p-question">Dois-je être présent lors de l’expertise ?</p>
       </div>
-      <div class="answer-div" id="va6">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Vous ou quelqu’un de votre choix doit obligatoirement assister au début de l’expertise. La première étape est de présenter les éléments suivants :</p>
+        <ul>
+          <li>Carnet d’entretien ;</li>
+          <li>Facture d’achat, le cas échéant ;</li>
+          <li>Factures d’entretiens, le cas échéant ;</li>
+          <li>Certificat d’immatriculation ;</li>
+          <li>Carte d’identité du propriétaire ;</li>
+          <li>Procès-verbal de contrôle technique (pour les véhicules de plus de quatre ans, seulement) ;</li>
+          <li>Manuel d’utilisation ;</li>
+          <li>Les clés et le double des clés.</li>
+        </ul>
+        <p>Une fois ces éléments présentés vous serez libres de vaquer à vos occupations préférées. Pétanque ou Games of Thrones : qui sommes-nous pour juger !?</p>
       </div>
 
-      <div class="question-div" id="vq7">
+      <div class="question-div">
         <div class="faq-round">7</div><p class="p-question">Qui sont vos experts ?</p>
       </div>
-      <div class="answer-div" id="va7">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Notre partenaire Experveo, filiale de BCA Expertise, est un leader du domaine. Avec un réseau de 600 experts agréés par le Ministère de l'Intérieur, ils peuvent intervenir chez vous en moins de 72h. Ils sont très forts.</p>
       </div>
 
-      <div class="question-div" id="vq8">
+      <div class="question-div">
         <div class="faq-round">8</div><p class="p-question">Qui gère les rendez-vous avec les acheteurs potentiels ?</p>
       </div>
-      <div class="answer-div" id="va8">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Le but de notre service : que vous ne vous occupiez de rien !</p>
+        <p>Gérer les appels, répondre aux questions des acheteurs potentiels : vous n’avez pas à lever un petit doigt, nous nous occupons de tout ! Continuez à conduire le temps que nous trouvions un acheteur, aucuns frais à prévoir de votre côté.</p>
       </div>
 
-      <div class="question-div" id="vq9">
+      <div class="question-div">
         <div class="faq-round">9</div><p class="p-question">Que se passe-t-il lorsqu'un acheteur sérieux se manifeste ?</p>
       </div>
-      <div class="answer-div" id="va9">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>C’est l’heure de dire au-revoir !</p>
+        <p>Dès qu’un acheteur se manifeste nous vous contactons pour planifier l’enlèvement de la voiture depuis le lieu de votre choix. En prime nous lui refaisons une petite beauté avant de la livrer chez l’acheteur.</p>
+        <p>Nous nous occupons bien sûr de gérer le paiement, vous gardez le contrôle de votre voiture tant que le transfert final n’est pas sécurisé. Nos partenaires Lemonway et BNP Paribas travaillent avec nous pour vous garantir une complète tranquillité d’esprit.</p>
       </div>
 
-      <div class="question-div" id="vq10">
+      <div class="question-div">
         <div class="faq-round">10</div><p class="p-question">Comment se passe la livraison ?</p>
       </div>
-      <div class="answer-div" id="va10">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>L’acheteur bénéficie de la livraison du véhicule gratuite à son domicile ou tout autre lieu convenu dans le département de l’Ile-de-France ou dans un rayon de 50 kilomètres.</p>
+        <p>Si l’acheteur demande à Nationale 7 une livraison qui ne serait pas en Ile-de-France, nous calculons la distance à parcourir et proposons le barème suivant :</p>
+        <ul>
+          <li>La somme de 200€ : lorsque le lieu de situation du véhicule et le lieu de livraison se trouvent entre 50 et 300 kilomètres.</li>
+          <li>La somme de 300€, lorsque le lieu de situation du véhicule et le lieu de livraison se trouvent entre 300 kilomètres et plus.</li>
+        </ul>
+        <p>Avec Nationale 7 votre voiture peut donc intéresser des acheteurs à travers la France !</p>
       </div>
 
-      <div class="question-div" id="vq11">
+      <div class="question-div">
         <div class="faq-round">11</div><p class="p-question">Que se passe-t-il si l'acheteur ne souhaite pas acheter la voiture ?</p>
       </div>
-      <div class="answer-div" id="va11">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>Il arrive que l’acheteur ait un doute au moment de l’essai, dans ce cas nous ramènerons la voiture chez vous sans aucun frais à débourser de votre part. Le prépaiement du prix de vente sera alors remboursé sur le compte de l’acheteur.</p>
+        <p>Notre philosophie est d’offrir un service sans aucune pression d’achat. Promis, un autre acheteur ne sera pas loin.</p>
       </div>
       
-      <div class="question-div" id="vq12">
+      <div class="question-div">
         <div class="faq-round">12</div><p class="p-question">Comment gérez-vous le paiement ?</p>
       </div>
-      <div class="answer-div" id="va12">
-        <p>Yo</p>
+      <div class="answer-div">
+        <p>C’est une excellente question, là aussi nous avons cherché à vous simplifier la vie avec un paiement simple et sécurisé. Tout s'effectue par virement électronique.</p>
+        <p>Lorsque l’acheteur demande la livraison nous réceptionnons le montant du prix de vente sur un compte séquestre, la voiture ne part pas de chez vous tant que nous n’avons pas sécurisé les fonds.</p>
+        <p>Au moment de finaliser la transaction le montant est versé sur votre compte. Dans le cas où l’acheteur n’a pas le coup de cœur, nous procédons au remboursement immédiat de son virement.</p>
+        <p>Nous travaillons avec Lemon Way et BNP Paribas pour vous garantir une complète tranquillité d’esprit. Adieu les arnaques, tchao les escrocs !</p>
       </div>
 
 

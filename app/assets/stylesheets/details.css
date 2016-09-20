@@ -1,6 +1,9 @@
 .header-product {
   height: 8em;
   background-color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo-product {
@@ -77,16 +80,6 @@ a.sub-menu-link-product:visited {
   color: #69a2d2;
 }
 
-.sub-menu-details {
-  height: 16em;
-  width: 100%;
-  /*background-color: rgb(245, 245, 245);*/
-  background-color: yellow;
-  opacity: 0.902;
-  position: absolute;
-  /*z-index: 99;*/
-}
-
 .car-header-description {
   margin-top: 1em;
   display: none;
@@ -99,7 +92,7 @@ a.sub-menu-link-product:visited {
     position: relative;
     left: 15%;
     z-index: 80;
-    top: 2em;
+    top: 8em;
     font-family: 'Montserrat';
     border-top-right-radius: 50px;
     padding-left: 6em;
@@ -122,13 +115,13 @@ a.sub-menu-link-product:visited {
   color: black;
   font-size: 1.1em;
 }
-
+/*
 .slider-for {
   width: 70%;
   margin: 0 auto;
   position: relative;
-  margin-top: -5em;
-}
+  margin-top: 2em;
+}*/
 
 .car-data-wrap {
   height: 100%;

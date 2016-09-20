@@ -105,6 +105,7 @@
 .p-question {
 	padding-top: 0.4em;
   margin-left: 3em;
+  font-weight: 600;
 }
 
 .faq-end-section {
@@ -127,3 +128,37 @@ a.faq-end-a {
 }
 
 
+@media only screen and (max-width: 900px) {
+
+	.intro-copy {
+		width: 85%;
+	}
+
+	.faq-sides-wrap {
+		display: inherit;
+	}
+
+	.faq-acheter-section {
+		width: 100%;
+	}
+	
+	.faq-acheter-content {
+    margin-right: 3%;
+    margin-left: 3%;
+	}
+
+	.faq-vendre-section {
+		width: 100%;		
+	}
+
+	.faq-vendre-content {
+    margin-right: 3%;
+    margin-left: 3%;
+	}
+
+	.faq-end-section {
+    height: 100%;
+    margin-bottom: 4em;
+	}
+
+}
