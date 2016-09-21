@@ -16,6 +16,11 @@ $(document).ready(function(){
     $(".sub-menu-homepage").slideUp('fast');
   }
 
+    // $('.').hover(function() {
+    //     $(this).css('cursor','pointer');
+    // });
+
+
   $('.acheter-button').click(function() {   
     if ($('.vendre-explanation').css('display') == 'block') {
         $('.vendre-explanation').css('display', 'none');

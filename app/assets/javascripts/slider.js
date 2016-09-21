@@ -1,5 +1,5 @@
 $( window ).load(function() {
-  $('.slider-for').focus()
+  $('.slider-for').focus();
 });
 
 $(document).ready(function(){
@@ -43,8 +43,6 @@ $(document).ready(function(){
         }
       }
     ]
-
-
   });
   
   $('.slider-nav').slick({
