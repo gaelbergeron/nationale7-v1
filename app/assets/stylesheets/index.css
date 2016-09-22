@@ -554,6 +554,18 @@ background-color: #69a2d2;
   display: none;  
 }
 
+@media only screen and (max-width: 1100px) {
+
+  .phone-number-header-homepage {
+    width: 0em;
+    margin-right: 0em;
+  }
+
+  a.header-number-homepage {
+    font-size: 0em;
+  }
+
+}
 
 @media only screen and (max-width: 900px) {
 
