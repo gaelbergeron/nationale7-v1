@@ -39,6 +39,29 @@ $(document).ready(function(){
     }
   });
 
+  $('.acheter-button').click(function() {
+      $('html, body').animate({
+        scrollTop: $('.acheter-button').offset().top
+      }, 600);
+  });
+
+  $('.vendre-button').click(function() {
+      $('html, body').animate({
+        scrollTop: $('.vendre-button').offset().top
+      }, 600);
+  });
+
+  $('.header-button-homepage.vendre-button').click(function() {
+if ( $('.sub-explanation-homepage.vendre-explanation').is(':visible')) {
+      $('html, body').animate({
+        scrollTop: $('.header-button-homepage').offset().top
+      }, 1000);
+    }
+    else {
+      console.log('FERMÉ')
+    }
+  });
+
   $('.toutes-voitures-link').mouseover(function () {
       $('.toutes-voitures-line').css('background-color', '#cbe6e6' );
   });

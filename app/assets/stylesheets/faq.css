@@ -106,6 +106,14 @@
 	padding-top: 0.4em;
   margin-left: 3em;
   font-weight: 600;
+  cursor: pointer; 
+  cursor: hand; 
+}
+
+.p-question:hover {
+	color: #cbe6e6;
+  cursor: pointer; 
+  cursor: hand; 
 }
 
 .faq-end-section {
