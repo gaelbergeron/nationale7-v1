@@ -2,11 +2,11 @@ class CarsController < ApplicationController
   
   def acheter_voiture_occasion_certifiee_garantie
     @filterrific = initialize_filterrific(
-      Car,
+      Car.where(statut: 'Actif'),
       params[:filterrific],
       :select_options => {
-        sorted_by: Car.options_for_sorted_by,
-        with_marque: Car.options_for_select_marque,
+        sorted_by: Car.where(statut: 'Actif').options_for_sorted_by,
+        with_marque: Car.where(statut: 'Actif').options_for_select_marque,
         with_energie: ['Diesel', 'Essence'], 
         with_prix_n7: [
           ['Moins de 5 000 €', 5000], 

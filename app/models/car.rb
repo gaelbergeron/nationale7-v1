@@ -41,15 +41,15 @@ class Car < ActiveRecord::Base
 
 
   scope :with_marque, lambda { |marque|
-    where(marque: [marque])
+    where(marque: [marque]).where(statut: 'Actif')
   }
 
   scope :with_energie, lambda { |energie|
-    where(energie: [energie])
+    where(energie: [energie]).where(statut: 'Actif')
   }  
 
   scope :with_prix_n7, lambda { |prix_n7|
-    where('cars.prix_n7 < ?', prix_n7)
+    where('cars.prix_n7 < ?', prix_n7).where(statut: 'Actif')
   }  
 
   def self.options_for_sorted_by
