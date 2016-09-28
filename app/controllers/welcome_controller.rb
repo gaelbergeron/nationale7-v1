@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    @cars = Car.last(3).reverse
+    @cars = Car.where(statut: 'Actif').last(3).reverse
     @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
   end
 
