@@ -159,6 +159,18 @@
   margin-left: 1em;
 }
 
+.mini-countryman {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Success+club/Mini+Countryman+-+Marie-Christine+et+Alain+-+WEB.jpg");
+}
+
+.mini-countryman-caption {
+  width: 20em;
+  margin-top: 1em;
+  margin-right: 1em;
+  position: inherit;
+  float: right;
+}
+
 .slider-for {
   width: 70%;
   margin: 0 auto;
@@ -220,6 +232,14 @@
 		margin-top: 1em;
     position: absolute;
     right: 50%;
+  }
+
+  .mini-countryman-caption {
+    width: 13em;
+    margin-top: 1em;
+    margin-right: 1em;
+    position: inherit;
+    float: right;
   }
 
   .client-serein {
