@@ -2,10 +2,17 @@
   height: 49em;
 }
 
+.acheter-tagline-container {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 11em;
+}
+
 .acheter-pictos-wrap {
   display:flex;
   justify-content:center;
-  margin-top: 10em;
+  margin-top: 6em;
 }
 
 .acheter-picto-sub-wrap {
@@ -21,7 +28,7 @@
 
 .acheter-picto {
   width: 110px;
-  height: 115px;
+  height: 100px;
   margin: 0 auto;
 }
 
