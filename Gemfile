@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -43,8 +43,9 @@ gem 'foundation-rails'
 
 gem 'intercom-rails'
 
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'sitemap_generator'
 
+gem 'bootstrap-sass', '~> 3.3.6'
 
 #Magnific popup plugin
 gem 'magnific-popup-rails', '~> 1.1.0'
