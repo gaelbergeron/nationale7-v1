@@ -28,10 +28,10 @@ SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
 tBjpCXv4X3tqDwgHD717cEgLAFe+ryBzciJzAtAy',
   fogdirectory: 'nationale7v1')
 
-  SitemapGenerator::Sitemap.sitemapshost = "https://s3.amazonaws.com/nationale7v1/"
+  SitemapGenerator::Sitemap.sitemaps_host = "https://s3.amazonaws.com/nationale7v1/"
 
-  SitemapGenerator::Sitemap.sitemapspath = 'sitemaps/'
-  SitemapGenerator::Sitemap.publicpath = 'tmp/'
+  SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
+  SitemapGenerator::Sitemap.public_path = 'tmp/'
 
 SitemapGenerator::Sitemap.create do
     Car.find_each do |car|
