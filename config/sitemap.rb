@@ -34,7 +34,7 @@ tBjpCXv4X3tqDwgHD717cEgLAFe+ryBzciJzAtAy',
   SitemapGenerator::Sitemap.public_path = 'tmp/'
 
 SitemapGenerator::Sitemap.create do
-    Car.find_each do |car|
+    Car.where(statut: 'Actif').find_each do |car|
       add car_path(car.slug), :lastmod => car.updated_at
     end
   add '/comment-ca-marche'
