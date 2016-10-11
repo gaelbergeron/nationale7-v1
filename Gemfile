@@ -44,6 +44,7 @@ gem 'foundation-rails'
 gem 'intercom-rails'
 
 gem 'sitemap_generator'
+gem 'fog-aws'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 

@@ -1,7 +1,6 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
 
-SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
@@ -21,6 +20,20 @@ SitemapGenerator::Sitemap.create do
   #
   # Add all articles:
   #
+
+  SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
+  fogprovider: 'AWS',
+  awsaccesskeyid: 'AKIAICXQRWCM6HQ5HDSA',
+  awssecretaccesskey: '
+tBjpCXv4X3tqDwgHD717cEgLAFe+ryBzciJzAtAy',
+  fogdirectory: 'nationale7v1')
+
+  SitemapGenerator::Sitemap.sitemapshost = "https://s3.amazonaws.com/nationale7v1/"
+
+  SitemapGenerator::Sitemap.sitemapspath = 'sitemaps/'
+  SitemapGenerator::Sitemap.publicpath = 'tmp/'
+
+SitemapGenerator::Sitemap.create do
     Car.find_each do |car|
       add car_path(car.slug), :lastmod => car.updated_at
     end
