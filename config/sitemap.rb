@@ -35,7 +35,7 @@ SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fog_provider: 'AWS',
   aws_access_key_id: 'AKIAI3YND4WPLSICL56Q',
-  aws_secret_access_key: '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',
+  aws_secret_access_key: 'A1McRZ3BnP6BSy3Whh9isLx0vxhYYOT',
   fog_directory: 'nationale7v1',
   fog_region: 'eu-west-1'
   )
