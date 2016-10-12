@@ -45,8 +45,8 @@
         <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
       </ul>
     </li>
-    <li><%= link_to 'ACHETER', acheter_voiture_occasion_certifiee_garantie_path, class: "menu-link-mobile" %></li>
-    <li><%= link_to 'VENDRE', vendre_voiture_occasion_meilleur_prix_path, class: "menu-link-mobile" %></li>  
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_path, class: "menu-link-mobile" %></li>  
     <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
     <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
   </ul>  
@@ -81,7 +81,7 @@
       <li class="sub-explanation-li">Enlèvement de la voiture <strong>depuis chez vous.</strong></li>
     </ul>
   </div>
-  <div class="sub-explanation-page-link vendre-link"><%= link_to raw('<strong>VENDRE</strong></br> VOTRE VOITURE'), vendre_voiture_occasion_meilleur_prix_path, class: "sub-explanation-a-link vendre-a-link" %></div>
+  <div class="sub-explanation-page-link vendre-link"><%= link_to raw('<strong>VENDRE</strong></br> VOTRE VOITURE'), vendre_voiture_occasion_path, class: "sub-explanation-a-link vendre-a-link" %></div>
 </div>
 
 <div class="sub-explanation-homepage acheter-explanation">
@@ -94,7 +94,7 @@
       <li class="sub-explanation-li">Paiement à la livraison au <strong>meilleur prix !</strong></li>
     </ul>
   </div>
-  <div class="sub-explanation-page-link acheter-link"><%= link_to raw('<strong>DÉCOUVRIR</strong></br> VOTRE FUTURE VOITURE'), acheter_voiture_occasion_certifiee_garantie_path, class: "sub-explanation-a-link acheter-a-link" %></div>
+  <div class="sub-explanation-page-link acheter-link"><%= link_to raw('<strong>DÉCOUVRIR</strong></br> VOTRE FUTURE VOITURE'), acheter_voiture_occasion_path, class: "sub-explanation-a-link acheter-a-link" %></div>
 </div>
 
 <%= render 'welcome/n7explanationindex' %>
@@ -210,7 +210,7 @@
   </div>
 
   <div class="toutes-voitures-div">
-    <%= link_to 'Voir toutes nos voitures', acheter_voiture_occasion_certifiee_garantie_path, class: "toutes-voitures-link" %>
+    <%= link_to 'Voir toutes nos voitures', acheter_voiture_occasion_path, class: "toutes-voitures-link" %>
     <div class="toutes-voitures-line"></div>
   </div>
 
