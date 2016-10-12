@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.example.com"
+SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
 
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fog_provider: 'AWS',
