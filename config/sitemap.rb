@@ -33,7 +33,6 @@ SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
   add '/conditions-generales-de-vente', :changefreq => 'monthly', :priority => 0.2 
   add '/mentions-legales', :changefreq => 'monthly', :priority => 0.2 
 
-
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fog_provider: 'AWS',
   aws_access_key_id: 'AKIAI3YND4WPLSICL56Q',
@@ -44,11 +43,11 @@ SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
 SitemapGenerator::Sitemap.sitemaps_host = "https://s3-eu-west-1.amazonaws.com/nationale7v1/"
 
 SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
+
 SitemapGenerator::Sitemap.public_path = 'tmp/'
 
 SitemapGenerator::Sitemap.create do
     Car.where(statut: 'Actif').find_each do |car|
       add car_path(car.slug), :lastmod => car.updated_at, :changefreq => 'weekly', :priority => 0.9
     end
-
 end

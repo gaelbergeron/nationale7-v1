@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   
   #Cars controller
   root 'welcome#index'
-  get '/acheter-voiture-occasion-certifiee-garantie', to: 'cars#acheter_voiture_occasion_certifiee_garantie', as: 'acheter_voiture_occasion_certifiee_garantie'
+  get '/acheter-voiture-occasion', to: 'cars#acheter_voiture_occasion', as: 'acheter_voiture_occasion'
   
-  get '/vendre-voiture-occasion-meilleur-prix', to: 'cars#vendre_voiture_occasion_meilleur_prix', as: 'vendre_voiture_occasion_meilleur_prix'
+  get '/vendre-voiture-occasion', to: 'cars#vendre_voiture_occasion', as: 'vendre_voiture_occasion'
 
   # get 'vendre' => 'cars#vendre'
 
