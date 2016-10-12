@@ -22,15 +22,15 @@ SitemapGenerator::Sitemap.default_host = "https://www.nationale-7.fr"
   #
 
 #Static content pages
-  add '/comment-ca-marche', :changefreq => 'monthly', :priority => 0.7
-  add '/les-prix-nationale-7', :changefreq => 'monthly', :priority => 0.7 
-  add '/expertise-nationale-7', :changefreq => 'monthly', :priority => 0.7 
-  add '/foire-aux-questions', :changefreq => 'monthly', :priority => 0.7 
-  add '/a-propos-de-nationale-7', :changefreq => 'monthly', :priority => 0.7 
-  add '/acheter-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
-  add '/vendre-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
-  add '/conditions-generales-de-vente', :changefreq => 'monthly', :priority => 0.2 
-  add '/mentions-legales', :changefreq => 'monthly', :priority => 0.2 
+  # add '/comment-ca-marche', :changefreq => 'monthly', :priority => 0.7
+  # add '/les-prix-nationale-7', :changefreq => 'monthly', :priority => 0.7 
+  # add '/expertise-nationale-7', :changefreq => 'monthly', :priority => 0.7 
+  # add '/foire-aux-questions', :changefreq => 'monthly', :priority => 0.7 
+  # add '/a-propos-de-nationale-7', :changefreq => 'monthly', :priority => 0.7 
+  # add '/acheter-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
+  # add '/vendre-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
+  # add '/conditions-generales-de-vente', :changefreq => 'monthly', :priority => 0.2 
+  # add '/mentions-legales', :changefreq => 'monthly', :priority => 0.2 
 
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fog_provider: 'AWS',
