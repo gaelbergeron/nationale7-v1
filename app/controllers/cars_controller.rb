@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
   
-  def acheter_voiture_occasion_certifiee_garantie
+  def acheter_voiture_occasion
     @filterrific = initialize_filterrific(
       Car.where(statut: 'Actif'),
       params[:filterrific],
@@ -18,7 +18,8 @@ class CarsController < ApplicationController
           ['Moins de 40 000 €', 40000], 
           ['Moins de 50 000 €', 50000], 
         ]
-      }
+      },
+      :persistence_id => false,
     ) or return 
     @cars = @filterrific.find.page(params[:page])
     @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
@@ -30,7 +31,7 @@ class CarsController < ApplicationController
     end
   end
 
-  def vendre_voiture_occasion_meilleur_prix
+  def vendre_voiture_occasion
     @evaluation = Evaluation.new
   end
 
