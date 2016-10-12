@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   match '/evaluations', to: 'evaluations#new', via: 'get'
   resources :evaluations
 
-  resources 'cars', :path => "voitures"
+  resources 'cars', :path => "acheter_voiture_occasion"
+
+  get '/sitemap.xml.gz', to: redirect("https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz")
 
 end
