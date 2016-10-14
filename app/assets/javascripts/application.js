@@ -13,8 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
-//= require jquery.turbolinks
 //= require jquery-ui
 //= require filterrific/filterrific-jquery
 //= require magnific-popup
