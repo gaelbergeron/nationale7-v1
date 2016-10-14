@@ -17,7 +17,7 @@ class Evaluation < MailForm::Base
   def headers
     {
       :subject => "Nouvelle demande d'évaluation",
-      :to => "gael.bergeron@gmail.com",
+      :to => "gael@nationale-7.fr",
       :from => %(<#{email}>)
     }
   end
