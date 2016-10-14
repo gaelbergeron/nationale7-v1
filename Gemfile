@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Install Active Admin for data management
 gem 'activeadmin', '1.0.0.pre1'
 # Devise to implement login feature on back office
-gem 'devise'
+gem 'devise', '~> 3.5.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -38,7 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mail_form'
 gem 'simple_form'
 gem 'amazon-ses-mailer'
-gem 'openssl'
+# gem 'openssl'
 
 # Install Foundation 6 as CSS & JS framework
 gem 'foundation-rails'
