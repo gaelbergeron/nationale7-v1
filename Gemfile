@@ -37,6 +37,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mail_form'
 gem 'simple_form'
+gem 'amazon-ses-mailer'
+gem 'openssl'
 
 # Install Foundation 6 as CSS & JS framework
 gem 'foundation-rails'

@@ -18,7 +18,7 @@ class Evaluation < MailForm::Base
     {
       :subject => "Nouvelle demande d'évaluation",
       :to => "gael@nationale-7.fr",
-      :from => %(<#{email}>)
+      :from => "gael@nationale-7.fr"
     }
   end
 end
