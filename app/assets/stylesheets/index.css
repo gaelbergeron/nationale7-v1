@@ -10,7 +10,6 @@ html, body {
   height:100%;
   font-family: 'Montserrat', serif;
   position: relative; 
-
 }
 
 a, a:link, a:visited {
@@ -448,6 +447,10 @@ a.acheter-a-link {
   font-weight: 300;
   padding-top: 1.6em;
   margin-bottom: 0em;
+}
+
+a.button, a:link.button, a:visited.button, input[type=submit], input[type=button], button {
+  box-shadow: none;
 }
 
 .hvr-grow {

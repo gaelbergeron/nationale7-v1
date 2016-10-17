@@ -16,3 +16,31 @@
 //
 //   .status_tag { background: #6090DB; }
 
+
+body { font-size: 75%; font-family: 'Montserrat'; }
+
+form input[type=submit], form input[type=button], form button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Montserrat';
+  border: none;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+
+  &:not(.disabled) {
+    &:hover{
+    	box-shadow: inherit;
+  		background-color: #4987bb;
+  		background-image: inherit;
+    }
+
+    &:active {
+    	box-shadow: inherit;
+  		background-color: #4987bb;
+  		background-image: inherit;
+    }
+  }
+}

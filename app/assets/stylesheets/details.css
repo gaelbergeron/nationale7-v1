@@ -366,6 +366,12 @@ input.button.contact-form-button {
   margin-left: 45%;
   background-color: #69a2d2;
   color: white;
+  background-image: inherit;
+  font-size: 1.2em;
+  width: 9em;
+  height: 3em;
+  border-radius: 10px;
+  text-shadow: none;
 }
 
 input.button.contact-form-button:hover {
@@ -596,7 +602,7 @@ a.alert-dismiss {
   }
 
   input.button.contact-form-button {
-    margin-left: 30%;
+    margin-left: 40%;
   }
 
 

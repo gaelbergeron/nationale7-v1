@@ -118,11 +118,21 @@ input.button.evaluation-form-button {
 	right: 0;
 	font-family: 'Montserrat';
 	margin-bottom: 5em;
-	width: 12em;
+  background-color: #69a2d2;
+  color: white;
+  background-image: inherit;
+  font-size: 1.2em;
+  width: 9em;
+  height: 3em;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+input.button.evaluation-form-button:hover {
+  background-color: #4987bb;
 }
 
 .vendre-bottom-explanation {
-	/*height: 10em;*/
 	width: 100%;
 	background-color: #f4fafa;
 }
