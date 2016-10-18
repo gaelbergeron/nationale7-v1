@@ -2,69 +2,73 @@
 
 	<p><%= @voiture_annonce.prenom %> met sa <%= @voiture_annonce.marque %> <%= @voiture_annonce.modele %> en vente, au meilleur prix garanti grâce à Nationale 7, tiers de confiance entre particuliers !</p>
 
-	<p style="margin-bottom: 0em;" >*Cette <%= @voiture_annonce.modele %> en bref : </p>
-	<ul style="margin-top: 0em;" >
-		<li>Modèle : <%= @voiture_annonce.modele %></li>
-		<li>Motorisation et finition : <%= @voiture_annonce.motorisation %> <%= @voiture_annonce.finition %></li>
-		<li>Transmission : <%= @voiture_annonce.transmission %></li>
-		<li>Carburant : <%= @voiture_annonce.energie %></li>
-		<li>Année : </li>
-		<li>Kilométrage : </li>
-		<li>Mise en circulation : </li>
+	<p>
+		<span>*Cette <%= @voiture_annonce.modele %> en bref :<span>
+		<span>- Modèle : <%= @voiture_annonce.modele %></span>
+		<span>- Motorisation et finition : <%= @voiture_annonce.motorisation %> <%= @voiture_annonce.finition %></span>
+		<span>- Transmission : <%= @voiture_annonce.transmission %></span>
+		<span>- Carburant : <%= @voiture_annonce.energie %></span>
+		<span>- Année : <%= @voiture_annonce.annee %></span>
+		<span>- Kilométrage : <%= @voiture_annonce.kilometrage %></span>
+		<span>- Mise en circulation : <%= @voiture_annonce.premiere_mise_en_circulation %></span>
 		<% if @voiture_annonce.nombre_proprietaires == 1 %>
-			<li>1ère main</li>
+			<span>- 1ère main</span>
 		<% elsif @voiture_annonce.nombre_proprietaires == 2 %>
-			<li>2ème main</li>
+			<span>- 2ème main</span>
 		<% elsif @voiture_annonce.nombre_proprietaires == 3 %>
-			<li>3ème main</li>
+			<span>- 3ème main</span>
 		<% else %>
-			<li><i>| Impossible de définir le nombre de mains ! |</i></li>
+			<span>- <i>| Impossible de définir le nombre de mains ! |</i></span>
 		<% end %>
-		<li>Couleur extérieure : <%= @voiture_annonce.couleur_exterieure %></li>
-		<li>Couleur intérieure : <%= @voiture_annonce.couleur_interieure %></li>
-	</ul> 
+		<span>- Couleur extérieure : <%= @voiture_annonce.couleur_exterieure %></span>
+		<span>- Couleur intérieure : <%= @voiture_annonce.couleur_interieure %></span>
+	</p>
 
-	<p style="margin-bottom: 0em;" >*Les petits plus de cette <%= @voiture_annonce.modele %> : </p>
-	<p style="margin-top: 0em;" ><%= @voiture_annonce.commentaire_general %></p>
+	<p>
+		<span>*Les petits plus de cette <%= @voiture_annonce.modele %> :</span>
+		<span><%= @voiture_annonce.commentaire_general %></span>
+	</p>
 
-	<p style="margin-bottom: 0em;" >*Ce que dit Auto-Plus : </p>
-	<p style="margin-top: 0em;" ><%= @voiture_annonce.auto_plus %></p>
+	<p>
+		<span>*Ce que dit Auto-Plus :</span>
+		<span>« <%= @voiture_annonce.auto_plus %> »</span>
+	</p>
 
-	<p style="margin-bottom: 0em;" >*Un achat malin avec Nationale 7 ! Ce véhicule est :</p>
-	<ul style="margin-top: 0em;" >
-		<li>Certifié par un expert, avec un examen eu 75 points et un test de conduite</li>
-		<li>Garanti 6 mois pièces et main d’œuvre à partir de la cession</li>
-		<li>Garanti 5 à 10 % moins cher que la moyenne du marché</li>
-		<li>Sans paperasse et Nationale 7 peut aussi s’occuper de la carte grise pour vous</li>
-		<li>Livré devant chez vous (gratuitement en Île-de-France)</li>
-	</ul>
+	<p>
+		<span>*Un achat malin avec Nationale 7 ! Ce véhicule est :</span>
+		<span>- Certifié par un expert, avec un examen eu 75 points et un test de conduite</span>
+		<span>- Garanti 6 mois pièces et main d’œuvre à partir de la cession</span>
+		<span>- Garanti 5 à 10 % moins cher que la moyenne du marché</span>
+		<span>- Sans paperasse et Nationale 7 peut aussi s’occuper de la carte grise pour vous</span>
+		<span>- Livré devant chez vous (gratuitement en Île-de-France)</span>
+	</p>
 
-	<p style="margin-bottom: 0em;" >*Synthèse de l'expert :</p>
-	<ul style="margin-top: 0em;" >
-		<li>Conformité administrative : <%= @voiture_annonce.note_entretien %> / 10</li>
-		<li>Sécurité : <%= @voiture_annonce.note_securite %> / 10</li>
-		<li>Mécanique : <%= @voiture_annonce.note_mecanique %> / 10</li>
-		<li>Carrosserie : <%= @voiture_annonce.note_carrosserie %> / 10</li>
-		<li>Intérieur : <%= @voiture_annonce.note_interieur %> / 10</li>
-	</ul>
+	<p>
+		<span>*Synthèse de l'expert :</span>
+		<span>- Conformité administrative : <%= @voiture_annonce.note_entretien %> / 10</span>
+		<span>- Sécurité : <%= @voiture_annonce.note_securite %> / 10</span>
+		<span>- Mécanique : <%= @voiture_annonce.note_mecanique %> / 10</span>
+		<span>- Carrosserie : <%= @voiture_annonce.note_carrosserie %> / 10</span>
+		<span>- Intérieur : <%= @voiture_annonce.note_interieur %> / 10</span>
+	</p>
 
-	<p style="margin-bottom: 0em;" >*Principaux équipements et options (liste complète disponible sur www . nationale-7 . fr) :</p>
-	<ul style="margin-top: 0em;" >
+	<p>
+		<span>*Principaux équipements et options (liste complète disponible sur www . nationale-7 . fr) :</span>
 		<% @options.each do |option| %>
-    	<li><%= option.description %></li>
-    <% end %>
-  </ul>
+    	<span>- <%= option.description %></span>
+  	<% end %>
+  </p>
 
   <p>Venez faire une visite virtuelle complète et découvrir tous les avantages d’acheter votre véhicule avec Nationale 7 : photos HD, descriptif détaillé et rapport d’expertise disponibles sur www . nationale-7 . fr !</p>
 
   <p>Contactez Emmanuel au 01 76 39 02 84 ou au 06 37 34 15 36 ou sur www . nationale-7 . fr pour en savoir plus !</p>
 
   <p>
-  <span>Note : (Bravo d’avoir lu jusqu'au bout !)</span>
-  <span>À titre d’information, une note de :</span>
-	<span>10/10 = le véhicule est irréprochable (quasi neuf si peu de km)</span>
-	<span>5/10 = le véhicule a quelques années au compteur mais est en bon état</span>
-	<span>0/10 = le véhicule passe juste la barre minimum du contrôle technique</span>
+  	<span>Note : (Bravo d’avoir lu jusqu'au bout !)</span>
+  	<span>À titre d’information, une note de :</span>
+		<span>10/10 = le véhicule est irréprochable (quasi neuf si peu de km)</span>
+		<span>5/10 = le véhicule a quelques années au compteur mais est en bon état</span>
+		<span>0/10 = le véhicule passe juste la barre minimum du contrôle technique</span>
 	</p>
 
 </div>
