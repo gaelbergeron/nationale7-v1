@@ -35,7 +35,6 @@ Rails.application.routes.draw do
   resources 'cars', :path => "acheter_voiture_occasion"
 
   resources 'annonces'
-  # , :path => "contenu_annonce_leboncoin"
   # get '/annonces', to: 'annonces#annonces', as: 'annonces'
 
   get '/sitemap.xml.gz', to: redirect("https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz")

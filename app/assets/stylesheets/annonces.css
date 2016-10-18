@@ -1,4 +1,9 @@
-.contenu-annonce {
+.h1-annonce {
+	font-size: 2em;
+	color: black;
+}
+
+.body-page-annonce {
 	width: 80%;
 	padding-top: 4em;
 	padding-bottom: 4em;
