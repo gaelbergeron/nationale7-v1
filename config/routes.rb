@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
-  #Cars controller
   root 'welcome#index'
+  #Cars controller
   get '/acheter-voiture-occasion', to: 'cars#acheter_voiture_occasion', as: 'acheter_voiture_occasion'
   
   get '/vendre-voiture-occasion', to: 'cars#vendre_voiture_occasion', as: 'vendre_voiture_occasion'
@@ -33,6 +33,10 @@ Rails.application.routes.draw do
   resources :evaluations
 
   resources 'cars', :path => "acheter_voiture_occasion"
+
+  resources 'annonces'
+  # , :path => "contenu_annonce_leboncoin"
+  # get '/annonces', to: 'annonces#annonces', as: 'annonces'
 
   get '/sitemap.xml.gz', to: redirect("https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz")
 

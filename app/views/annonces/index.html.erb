@@ -1,0 +1,6 @@
+<% @voitures_annonces.each do |voiture_annonce| %>
+
+<ul>
+	<li><%= link_to( voiture_annonce.slug, action: 'show', controller: 'annonces',  id: voiture_annonce.slug ) %></li>
+</ul>
+<% end %>

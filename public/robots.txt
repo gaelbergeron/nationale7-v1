@@ -2,5 +2,6 @@
 
 
 User-agent: *
-Disallow: /admin
+Disallow: /admin/
+Disallow: /annonce/
 Sitemap: https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz
