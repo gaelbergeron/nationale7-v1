@@ -29,10 +29,14 @@
 		<span><%= @voiture_annonce.commentaire_general %></span>
 	</p>
 
+	</br>
+
 	<p>
 		<span>*Ce que dit Auto-Plus :</span>
 		<span>« <%= @voiture_annonce.auto_plus %> »</span>
 	</p>
+
+	</br>
 
 	<p>
 		<span>*Un achat malin avec Nationale 7 ! Ce véhicule est :</span>
@@ -43,6 +47,8 @@
 		<span>- Livré devant chez vous (gratuitement en Île-de-France)</span>
 	</p>
 
+	</br>
+
 	<p>
 		<span>*Synthèse de l'expert :</span>
 		<span>- Conformité administrative : <%= @voiture_annonce.note_entretien %> / 10</span>
@@ -52,6 +58,8 @@
 		<span>- Intérieur : <%= @voiture_annonce.note_interieur %> / 10</span>
 	</p>
 
+	</br>
+
 	<p>
 		<span>*Principaux équipements et options (liste complète disponible sur www . nationale-7 . fr) :</span>
 		<% @options.each do |option| %>
@@ -59,9 +67,13 @@
   	<% end %>
   </p>
 
+	</br>
+
   <p>Venez faire une visite virtuelle complète et découvrir tous les avantages d’acheter votre véhicule avec Nationale 7 : photos HD, descriptif détaillé et rapport d’expertise disponibles sur www . nationale-7 . fr !</p>
 
+
   <p>Contactez Emmanuel au 01 76 39 02 84 ou au 06 37 34 15 36 ou sur www . nationale-7 . fr pour en savoir plus !</p>
+
 
   <p>
   	<span>Note : (Bravo d’avoir lu jusqu'au bout !)</span>
