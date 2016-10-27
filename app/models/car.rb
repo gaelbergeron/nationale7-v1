@@ -16,7 +16,7 @@ class Car < ActiveRecord::Base
 
 
   def car_url
-    "#{reference_interne} #{marque} #{modele} #{annee} #{motorisation} #{finition}"
+    "#{marque} #{modele} #{annee} #{motorisation} #{finition} #{reference_interne}"
   end
 
 
