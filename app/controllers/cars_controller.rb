@@ -42,16 +42,19 @@ class CarsController < ApplicationController
     @inspector = Inspector.where(id: @car.inspector_id).first
     @options = Option.where(id: @caroptions.map(&:option_id))
     @photos = Photo.where(car_id: @car.id).order(created_at: :asc)
+    
     prepare_meta_tags(
-      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + @car.annee.to_s,
+      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s + " " + @car.motorisation + " " + @car.finition ,
       description: @car.commentaire_general,
       image: @photos.second.picture_url,
-      og: {title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + @car.annee.to_s},
-      og: {description: @car.commentaire_general},
     )
-    # p "****" * 30
-    # p @photos.second.picture_url
-    # p "****" * 30
+
+    set_meta_tags og: {
+      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s + " " + @car.motorisation + " " + @car.finition,
+      description: @car.commentaire_general,
+      image: @photos.second.picture_url
+    }
+    
   end
 
 end
