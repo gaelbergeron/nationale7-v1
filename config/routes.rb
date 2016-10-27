@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   match '/evaluations', to: 'evaluations#new', via: 'get'
   resources :evaluations
 
-  resources 'cars', :path => "acheter_voiture_occasion"
+  resources 'cars', :path => "/acheter-voiture-occasion"
 
   resources 'annonces'
   # get '/annonces', to: 'annonces#annonces', as: 'annonces'
