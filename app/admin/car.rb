@@ -151,6 +151,7 @@ ActiveAdmin.register Car do
                 :type_garantie ,
                 :echeance_garantie,
                 :prenom,
+                :slug,
                 :auto_plus
 
   index do
@@ -303,6 +304,7 @@ ActiveAdmin.register Car do
     column :type_garantie 
     column :echeance_garantie
     column :auto_plus
+    column :slug
     column :created_at
     column :updated_at
     actions
@@ -455,6 +457,7 @@ form do |f|
     f.input :fonctionnement_autoradio_commandes
     f.input :fonctionnement_GPS
     f.input :prix_n7
+    f.input :slug    
     f.input :type_garantie, as: :select, collection: (["MAPFRE", "Constructeur"])
     f.input :echeance_garantie
     f.input :auto_plus

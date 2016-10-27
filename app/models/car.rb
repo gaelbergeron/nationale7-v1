@@ -14,7 +14,6 @@ class Car < ActiveRecord::Base
   has_many :photos
   has_many :car_options
 
-
   def car_url
     "#{marque} #{modele} #{annee} #{motorisation} #{finition} #{reference_interne}"
   end
