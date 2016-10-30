@@ -44,17 +44,17 @@ class CarsController < ApplicationController
     @photos = Photo.where(car_id: @car.id).order(created_at: :asc)
     
     prepare_meta_tags(
-      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s + " " + @car.motorisation + " " + @car.finition ,
+      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s ,
       description: @car.commentaire_general,
       image: @photos.second.picture_url,
     )
 
     set_meta_tags og: {
-      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s + " " + @car.motorisation + " " + @car.finition,
+      title: "Saisissez cette " + @car.marque.to_s + " " +  @car.modele.to_s + " " + @car.annee.to_s ,
       description: @car.commentaire_general,
       image: @photos.second.picture_url
     }
-    
+
   end
 
 end
