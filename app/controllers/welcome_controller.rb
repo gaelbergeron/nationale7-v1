@@ -72,12 +72,36 @@ class WelcomeController < ApplicationController
   end
 
   def foire_aux_questions
+    
+    prepare_meta_tags(
+      title: "Foire aux questions, foire aux réponses",
+      description: "Les questions les plus souvent posées sur l'achat et la vente de voiture d'occasion avec Nationale 7.",
+      reverse: true
+    )
+
+    set_meta_tags og: {
+      title: "Nationale 7 - Foire aux questions, foire aux réponses",
+      description: "Les questions les plus souvent posées sur l'achat et la vente de voiture d'occasion avec Nationale 7."
+    }
+
   end
 
   def conditions_generales_de_vente
+    
+    prepare_meta_tags(
+      title: "Conditions générales de vente",
+      reverse: true
+    )
+
   end
 
   def mentions_legales
+    
+    prepare_meta_tags(
+      title: "Mentions légales",
+      reverse: true
+    )
+
   end
 
 end
