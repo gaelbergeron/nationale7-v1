@@ -4,14 +4,14 @@ class CarsController < ApplicationController
     
     prepare_meta_tags(
       title: "Acheter sa voiture d'occasion l'esprit léger grâce à Nationale 7.",
-      description: "Les voitures Nationale 7 sont toutes inspectées sur 75 points, garanties 6 mois et au meilleur prix. Notre équipe s'occupe également de la paperasse et de la sécurisation du paiement.",
+      description: "Les voitures Nationale 7 sont inspectées 75 points, garanties 6 mois et au meilleur prix. N7 s'occupe gère aussi la paperasse et la sécurisation du paiement.",
       image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Acheter+voiture+occasion.jpg",
       reverse: true
     )
 
     set_meta_tags og: {
       title: "Acheter sa voiture d'occasion l'esprit léger grâce à Nationale 7.",
-      description: "Les voitures Nationale 7 sont toutes inspectées sur 75 points, garanties 6 mois et au meilleur prix. Notre équipe s'occupe également de la paperasse et de la sécurisation du paiement.",
+      description: "Les voitures Nationale 7 sont inspectées 75 points, garanties 6 mois et au meilleur prix. N7 s'occupe gère aussi la paperasse et la sécurisation du paiement.",
       image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Acheter+voiture+occasion.jpg"
     }
 
@@ -47,6 +47,20 @@ class CarsController < ApplicationController
   end
 
   def vendre_voiture_occasion
+    
+    prepare_meta_tags(
+      title: "Vendre sa voiture d'occasion et économiser des milliers d'euros grâce à Nationale 7.",
+      description: "Vendez votre voiture avec Nationale 7 et économisez des milliers d'euros par rapport à un concessionnaire. Expertise, garantie, paiement et paperasse : on s'en occupe !",
+      image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Vendre+voiture+occasion.jpg",
+      reverse: true
+    )
+
+    set_meta_tags og: {
+      title: "Vendre sa voiture d'occasion et économiser des milliers d'euros grâce à Nationale 7.",
+      description: "Vendez votre voiture avec Nationale 7 et économisez des milliers d'euros par rapport à un concessionnaire. Expertise, garantie, paiement et paperasse : on s'en occupe !",
+      image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Vendre+voiture+occasion.jpg"
+    }
+
     @evaluation = Evaluation.new
   end
 
