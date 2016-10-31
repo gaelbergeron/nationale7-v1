@@ -8,11 +8,10 @@ class ApplicationController < ActionController::Base
   def prepare_meta_tags(options={})
     site_name   = "Nationale 7"
     title       = "Voitures d'occasion l'esprit léger."
-    description = "Voitures d'occasion entre particuliers, expertisées, garanties et pas chères. Quand acheter et vendre sa voiture devient aussi agréable qu'un départ en vacances."
+    description = "Voitures d'occasion entre particuliers, expertisées, garanties et pas chères. Quand acheter et vendre sa voiture est aussi agréable qu'un départ en vacances."
     image       = options[:image] || "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/home-logo.jpg"
     current_url = request.url
 
-    # Let's prepare a nice set of defaults
     defaults = {
       site:        site_name,
       title:       title,
