@@ -52,6 +52,10 @@
 	margin-top: 1em;
 }
 
+.vendre-form {
+  margin-top: -5em;
+}
+
 #evaluation_marque {
   border: 2px solid #69a2d2;
   border-radius: 5px;
@@ -106,6 +110,39 @@
 	margin-top: 5em;
 }
 
+.description-label {
+  width: 61%;
+  margin-left: 24.8%;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.form-aide {
+  background-color: #f4fafa;
+  height: 3.5em;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 2.7em;
+  width: 30em;
+  padding-top: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.optional {
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+  width: 65%;
+  margin-left: 15%; 
+}
+
+#evaluation_description {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
 .evaluation-button {
 	width: 100%;
 	display: flex;
@@ -122,7 +159,7 @@ input.button.evaluation-form-button {
   color: white;
   background-image: inherit;
   font-size: 1.2em;
-  width: 9em;
+  width: 13em;
   height: 3em;
   border-radius: 10px;
   text-shadow: none;
@@ -194,7 +231,8 @@ input.button.evaluation-form-button:hover {
   }
 
   .optional {
-    width: 90%;
+    width: 75%;
+    margin-left: 10%;
   }
 
   #evaluation_marque {
@@ -245,6 +283,20 @@ input.button.evaluation-form-button:hover {
   #evaluation_code_postal {
     width: 90%;
     margin-bottom: 1em;
+  }
+
+  #evaluation_description {
+    width: 90%;
+  }
+
+  .form-aide {
+    height: 5em;
+    width: 80%;
+    padding-top: 1.4em;
+  }
+
+  .description-label {
+    margin-left: 17.5%;
   }
 
   .vendre-bottom-section-wrap {

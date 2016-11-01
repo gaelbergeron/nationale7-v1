@@ -1,10 +1,18 @@
-<!--  -->
+<div>
   <% flash.each do |key, value| %>
-    <div class="confirmation-message">
-      <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
-        <%= value %>
-    </div>
+    <% if flash[:alert] %>
+      <div class="alert-message">
+        <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+          <%= value %>
+      </div>    
+    <% else %>
+      <div class="notice-message">
+        <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+          <%= value %>
+      </div>
+    <% end %>
   <% end %>
+</div>
 
 <header class="header-product">
   <div class="logo-product">

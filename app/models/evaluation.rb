@@ -2,12 +2,12 @@ class Evaluation < MailForm::Base
   attribute :nom
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone_number
-  attribute :marque
-  attribute :modele
-  attribute :annee
-  attribute :motorisation
-  attribute :finition
-  attribute :kilometrage
+  attribute :description
+  # attribute :modele
+  # attribute :annee
+  # attribute :motorisation
+  # attribute :finition
+  # attribute :kilometrage
   attribute :code_postal
   attribute :nickname,  :captcha  => true
   attribute :details
