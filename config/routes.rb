@@ -39,4 +39,7 @@ Rails.application.routes.draw do
 
   get '/sitemap.xml.gz', to: redirect("https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz")
 
+  # match '/alertes_acheteurs', to: 'alertes_acheteurs#new', via: 'get'
+  resources 'acheteurs', :path => "/rechercher-voiture-occasion"
+
 end

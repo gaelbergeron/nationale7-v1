@@ -45,7 +45,7 @@
 }
 
 .acheter-filter {
-  width: 19em;
+  width: 15em;
   display: inline-block;
   margin: 1em;
 }
@@ -72,7 +72,7 @@ select {
   font-size: 1em;
   background-color: white;
   border: thin solid rgb(105, 162, 210);
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
   line-height: 1.5em;
   padding: 0.5em 3.5em 0.5em 1em;

@@ -1,0 +1,55 @@
+.header-rechercher {
+	height: 22em;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/header-vendre.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.buyer-form-1 {
+	width: 25%;
+	display: inline-block;
+}
+
+.buyer-form-2 {
+	width: 25%;
+	display: inline-block;
+}
+
+#acheteur_modele {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	margin-left: 0;
+}
+
+#acheteur_modele_1 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_marque_1 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_email {
+	width: 100%;
+}
+
+#acheteur_phone_number {
+	width: 100%;
+}
+
+#acheteur_nom {
+	width: 100%;
+}
+
+#acheteur_code_postal {
+	width: 100%;
+}

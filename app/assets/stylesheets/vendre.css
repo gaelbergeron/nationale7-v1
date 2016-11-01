@@ -54,65 +54,48 @@
 
 .vendre-form {
   margin-top: -5em;
-}
-
-#evaluation_marque {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-}
-
-#evaluation_modele {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-}
-
-#evaluation_annee {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-}
-
-#evaluation_motorisation {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-}
-
-#evaluation_finition {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-}
-
-#evaluation_kilometrage {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #evaluation_nom {
   border: 2px solid #69a2d2;
   border-radius: 5px;
+  width: 100%;
 }
 
 #evaluation_email {
   border: 2px solid #69a2d2;
   border-radius: 5px;
+  width: 100%;
 }
 
 #evaluation_phone_number {
   border: 2px solid #69a2d2;
   border-radius: 5px;
+  width: 100%;
 }
 
 #evaluation_code_postal {
   border: 2px solid #69a2d2;
   border-radius: 5px;
+  width: 100%;
+}
+
+#evaluation_description {
+  border: 2px solid #69a2d2;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  width: 100%;
 }
 
 .email-field {
-	margin-top: 5em;
+  margin-top: 5em;
 }
 
 .description-label {
   width: 61%;
-  margin-left: 24.8%;
   font-size: 1.2em;
   margin-top: 2em;
 }
@@ -130,17 +113,11 @@
   border-radius: 5px;
 }
 
-.optional {
+.evaluation-input {
   font-family: 'Montserrat';
   font-size: 1.1em;
-  width: 65%;
-  margin-left: 15%; 
-}
-
-#evaluation_description {
-  border: 2px solid #69a2d2;
-  border-radius: 5px;
-  margin-bottom: 0.5em;
+  width: 100%;
+  /*margin-left: 15%; */
 }
 
 .evaluation-button {
@@ -230,73 +207,45 @@ input.button.evaluation-form-button:hover {
     font-size: 1.4em;
   }
 
-  .optional {
-    width: 75%;
-    margin-left: 10%;
-  }
-
-  #evaluation_marque {
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-  #evaluation_modele {
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-  #evaluation_annee {
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-  #evaluation_motorisation {
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-  #evaluation_finition {
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-  #evaluation_kilometrage {
-    width: 90%;
-    margin-bottom: 1em;
+  .vendre-form {
+    margin-top: -5em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #evaluation_nom {
     width: 90%;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   #evaluation_email {
     width: 90%;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   #evaluation_phone_number {
     width: 90%;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   #evaluation_code_postal {
     width: 90%;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   #evaluation_description {
-    width: 90%;
+    width: 100%;
   }
 
   .form-aide {
     height: 5em;
     width: 80%;
     padding-top: 1.4em;
-  }
-
-  .description-label {
-    margin-left: 17.5%;
   }
 
   .vendre-bottom-section-wrap {

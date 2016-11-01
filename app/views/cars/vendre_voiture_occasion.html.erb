@@ -87,12 +87,12 @@
     <div class="vendre-form">
 
       <%= simple_form_for @evaluation, :html => {:class => 'form-horizontal' } do |f| %>
-        <%= f.input :nom, :label => 'Nom et prénom', :required => false, wrapper_html: { class: 'email-field' } %>
-        <%= f.input :email, :label => 'Email', :required => false %>
-        <%= f.input :phone_number, :label => 'Numéro de téléphone', :required => false %> 
-        <%= f.input :code_postal, :label => 'Code postal', :required => false %> 
-        <%= label_tag :'Description de la voiture :', nil, :class => "description-label string" %>
-        <%= f.input :description, :label => 'marque, modèle, année, motorisation, finition, kilométrage', :required => false %>
+        <%= f.input :nom, :label => 'Nom et prénom', :required => false, wrapper_html: { class: 'email-field evaluation-input' } %>
+        <%= f.input :email, :label => 'Email', :required => false, wrapper_html: { class: 'evaluation-input' } %>
+        <%= f.input :phone_number, :label => 'Numéro de téléphone', :required => false, wrapper_html: { class: 'evaluation-input' } %> 
+        <%= f.input :code_postal, :label => 'Code postal', :required => false, wrapper_html: { class: 'evaluation-input' } %> 
+        <%= label_tag :'Description de la voiture :', nil, :class => "description-label string evaluation-input" %>
+        <%= f.input :description, :label => 'marque, modèle, année, motorisation, finition, kilométrage', :required => false, wrapper_html: { class: 'evaluation-input' } %>
         <div class="form-aide">Rassurez-vous si vous n'avez pas toute l'information, <span>nous vous aiderons à la trouver !</span></div>
       <div class= "hidden">
         <%= f.input :nickname, :hint => 'Leave this field blank!' %>
@@ -157,5 +157,4 @@
       </div>
     </div>
     <div class="vendre-bottom-white">
-      
     </div>

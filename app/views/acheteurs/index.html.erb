@@ -1,0 +1,203 @@
+<div>
+  <% flash.each do |key, value| %>
+    <% if flash[:alert] %>
+      <div class="alert-message">
+        <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+          <%= value %>
+      </div>    
+    <% else %>
+      <div class="notice-message">
+        <a href="#" data-dismiss="alert" class="alert-dismiss">×</a>
+          <%= value %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<header class="header-rechercher">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_voiture_occasion_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_voiture_occasion_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "sub-menu-link-homepage first-link sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale-7.fr">bonjour@nationale-7.fr</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      <p class="horaires-popup">Nous sommes ouverts du lundi au samedi de 9h à 20h !</p>
+      </div>
+    </div>
+  </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
+  <div class="vendre-tagline-wrap">
+    <h1 class="vendre-h1-tagline">Soyez les premiers prévenus !</h1>
+    <h2 class="vendre-h2-tagline">Remplissez le formulaire ci-dessous pour être alerté <span>dès que Nationale 7 propose votre perle rare !</span></h2>
+  </div>
+
+</header>
+
+
+<%= simple_form_for Acheteur.new, :html => {:class => 'form-horizontal' } do |f| %>
+        
+	<div class="buyer-form-1">
+		
+		<div class="form-title">Voiture n°1</div>
+
+		<div class="form-input">
+			Type de voiture
+			<%= f.select :type_1, ['Citadine', 'Compacte', 'Berline', 'Monospace', 'SUV, Crossover'], { include_blank: 'Tous' }, :required => false %> 
+		</div>
+		<div class="form-label">
+			et/ou marque
+	  	<%= f.input :marque_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
+	  </div>
+		<div class="form-label">
+			et/ou modèle
+	  	<%= f.input :modele_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
+	  </div>
+	  <div class="more-criterias">
+	  	<div class="criteria-label">Plus de critères</div>
+			<div class="form-label">
+				Transmission
+			  <%= f.select :transmission_1, ['Manuelle', 'Automatique'], { include_blank: 'Toutes' }, :required => false %> 
+			</div>
+			<div class="form-label">
+				Carburant
+			  <%= f.select :carburant_1, ['Essence', 'Diesel', 'Hybride', 'Électrique'], { include_blank: 'Tous' }, :required => false %> 
+			</div>
+			<div class="form-label">
+				Année, entre
+			  <%= f.select :annee_min_1, ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et		
+			  <%= f.select :annee_max_1, ['2008', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
+			</div>
+			<div class="form-label">
+				Kilométrage, entre
+			  <%= f.select :kilometrage_min_1, ['0 km', '10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et
+			  <%= f.select :kilometrage_max_1, ['10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
+			</div>
+			<div class="form-label">
+				Prix, entre
+			  <%= f.select :prix_min_1, ['5 000 €', '6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et
+			  <%= f.select :prix_max_1, ['6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
+			</div>
+	  </div>
+	</div>
+
+	<div class="buyer-form-2">
+		
+		<div class="form-title">Voiture n°2</div>
+
+		<div class="form-input">
+			Type de voiture
+			<%= f.select :type_1, ['Citadine', 'Compacte', 'Berline', 'Monospace', 'SUV, Crossover'], { include_blank: 'Tous' }, :required => false %> 
+		</div>
+		<div class="form-label">
+			et/ou marque
+	  	<%= f.input :marque_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
+	  </div>
+		<div class="form-label">
+			et/ou modèle
+	  	<%= f.input :modele_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
+	  </div>
+	  <div class="more-criterias">
+	  	<div class="criteria-label">Plus de critères</div>
+			<div class="form-label">
+				Transmission
+			  <%= f.select :transmission_1, ['Manuelle', 'Automatique'], { include_blank: 'Toutes' }, :required => false %> 
+			</div>
+			<div class="form-label">
+				Carburant
+			  <%= f.select :carburant_1, ['Essence', 'Diesel', 'Hybride', 'Électrique'], { include_blank: 'Tous' }, :required => false %> 
+			</div>
+			<div class="form-label">
+				Année, entre
+			  <%= f.select :annee_min_1, ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et		
+			  <%= f.select :annee_max_1, ['2008', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
+			</div>
+			<div class="form-label">
+				Kilométrage, entre
+			  <%= f.select :kilometrage_min_1, ['0 km', '10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et
+			  <%= f.select :kilometrage_max_1, ['10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
+			</div>
+			<div class="form-label">
+				Prix, entre
+			  <%= f.select :prix_min_1, ['5 000 €', '6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
+			</div>
+			<div class="form-label">
+				et
+			  <%= f.select :prix_max_1, ['6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
+			</div>
+	  </div>
+	</div>
+
+
+	  <%= f.input :email, :label => 'Email', :required => false %>
+	  <%= f.input :phone_number, :label => 'Numéro de téléphone [facultatif]', :required => false %> 
+		<%= f.input :nom, :label => 'Nom et prénom [facultatif]', :required => false, wrapper_html: { class: '' } %>
+	  <%= f.input :code_postal, :label => 'Code postal [facultatif]', :required => false %> 
+	  <div class= "hidden">
+	  	<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+	  </div>
+	  <div class="evaluation-button">
+	    <%= f.button :submit, 'Envoyer à l\'équipe N7', :class=> "evaluation-form-button" %>
+	  </div>
+<% end %>
+
+
+
+
+
+

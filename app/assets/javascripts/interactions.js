@@ -78,7 +78,13 @@ if ( $('.sub-explanation-homepage.vendre-explanation').is(':visible')) {
 
   $('.alert-dismiss').click(
     function() {
-      $('.confirmation-message').hide();
+      $('.alert-message').hide();
+    }
+  );
+
+  $('.alert-dismiss').click(
+    function() {
+      $('.notice-message').hide();
     }
   );
 
