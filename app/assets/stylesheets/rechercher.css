@@ -7,14 +7,33 @@
   background-position: center;
 }
 
-.buyer-form-1 {
-	width: 25%;
-	display: inline-block;
+.form-intro {
+	text-align: center;
+	font-size: 1.4em;
+	font-family: 'Montserrat';
+	color: rgb(97, 153, 200);
+	margin-top: 3em;
 }
 
-.buyer-form-2 {
-	width: 25%;
+.global-form {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+	width: 80%;
+}
+
+.form-label {
+	font-size: 1.1em;
+}
+
+.buyer-form {
+	width: 20%;
 	display: inline-block;
+	margin: 0 6.5%;
+}
+
+.contact-form {
+	width: 50%;
 }
 
 #acheteur_modele {
@@ -32,6 +51,34 @@
 }
 
 #acheteur_marque_1 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_modele_2 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_marque_2 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_modele_3 {
+	border: thin solid rgb(105, 162, 210);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inherit;
+}
+
+#acheteur_marque_3 {
 	border: thin solid rgb(105, 162, 210);
 	width: 100%;
 	border-radius: 5px;
