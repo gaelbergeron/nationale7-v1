@@ -84,51 +84,51 @@
 	        
 		<div class="buyer-form form-1">
 			
-			<div class="form-title">Voiture n°1</div>
+			<div class="form-title">Voiture de rêve n°1</div>
 
-			<div class="form-label">
-				Type de voiture
+			<div class="form-field">
+				<div class="form-label">Type de voiture</div>
 				<%= f.select :type_1, ['Citadine', 'Compacte', 'Berline', 'Monospace', 'SUV, Crossover'], { include_blank: 'Tous' }, :required => false %> 
 			</div>
-			<div class="form-label">
-				et/ou marque
+			<div class="form-field">
+				<div class="form-label">et/ou marque</div>
 		  	<%= f.input :marque_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-			<div class="form-label">
-				et/ou modèle
+			<div class="form-field">
+				<div class="form-label">et/ou modèle</div>
 		  	<%= f.input :modele_1, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-		  <div class="more-criterias">
 		  	<div class="criteria-label">Plus de critères</div>
-				<div class="form-label">
-					Transmission
+		  <div class="more-criterias">
+				<div class="form-field">
+					<div class="form-label">Transmission</div>
 				  <%= f.select :transmission_1, ['Manuelle', 'Automatique'], { include_blank: 'Toutes' }, :required => false %> 
 				</div>
-				<div class="form-label">
-					Carburant
+				<div class="form-field">
+					<div class="form-label">Carburant</div>
 				  <%= f.select :carburant_1, ['Essence', 'Diesel', 'Hybride', 'Électrique'], { include_blank: 'Tous' }, :required => false %> 
 				</div>
-				<div class="form-label">
-					Année, entre
+				<div class="form-field inter-label">
+					<div class="form-label">Année, entre</div>
 				  <%= f.select :annee_min_1, ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
 				</div>
-				<div class="form-label">
-					et		
+				<div class="form-field">
+					<div class="form-label">et</div>		
 				  <%= f.select :annee_max_1, ['2008', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :selected => '2016', :required => false %> 
 				</div>
-				<div class="form-label">
-					Kilométrage, entre
+				<div class="form-field inter-label">
+					<div class="form-label">Kilométrage, entre</div>
 				  <%= f.select :kilometrage_min_1, ['0 km', '10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
 				</div>
-				<div class="form-label">
-					et
+				<div class="form-field">
+					<div class="form-label">et</div>
 				  <%= f.select :kilometrage_max_1, ['10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :selected => '130 000 km', :required => false %> 
 				</div>
-				<div class="form-label">
-					Prix, entre
+				<div class="form-field inter-label">
+					<div class="form-label">Prix, entre</div>
 				  <%= f.select :prix_min_1, ['5 000 €', '6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et
 				  <%= f.select :prix_max_1, ['6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :selected => '50 000 €',  :required => false %> 
 				</div>
@@ -137,51 +137,51 @@
 
 		<div class="buyer-form form-2">
 			
-			<div class="form-title">Voiture n°2</div>
+			<div class="form-title">Voiture de rêve n°2</div>
 
-			<div class="form-label">
+			<div class="form-field">
 				Type de voiture
 				<%= f.select :type_2, ['Citadine', 'Compacte', 'Berline', 'Monospace', 'SUV, Crossover'], { include_blank: 'Tous' }, :required => false %> 
 			</div>
-			<div class="form-label">
+			<div class="form-field">
 				et/ou marque
 		  	<%= f.input :marque_2, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-			<div class="form-label">
+			<div class="form-field">
 				et/ou modèle
 		  	<%= f.input :modele_2, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-		  <div class="more-criterias">
 		  	<div class="criteria-label">Plus de critères</div>
-				<div class="form-label">
+		  <div class="more-criterias">
+				<div class="form-field">
 					Transmission
 				  <%= f.select :transmission_2, ['Manuelle', 'Automatique'], { include_blank: 'Toutes' }, :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Carburant
 				  <%= f.select :carburant_2, ['Essence', 'Diesel', 'Hybride', 'Électrique'], { include_blank: 'Tous' }, :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Année, entre
 				  <%= f.select :annee_min_2, ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et		
 				  <%= f.select :annee_max_2, ['2008', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :selected => '2016', :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Kilométrage, entre
 				  <%= f.select :kilometrage_min_2, ['0 km', '10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et
 				  <%= f.select :kilometrage_max_2, ['10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :selected => '130 000 km', :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Prix, entre
 				  <%= f.select :prix_min_2, ['5 000 €', '6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et
 				  <%= f.select :prix_max_2, ['6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :selected => '50 000 €',  :required => false %> 
 				</div>
@@ -190,51 +190,51 @@
 
 		<div class="buyer-form form-3">
 			
-			<div class="form-title">Voiture n°3</div>
+			<div class="form-title">Voiture de rêve n°3</div>
 
-			<div class="form-label">
+			<div class="form-field">
 				Type de voiture
 				<%= f.select :type_3, ['Citadine', 'Compacte', 'Berline', 'Monospace', 'SUV, Crossover'], { include_blank: 'Tous' }, :required => false %> 
 			</div>
-			<div class="form-label">
+			<div class="form-field">
 				et/ou marque
 		  	<%= f.input :marque_3, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-			<div class="form-label">
+			<div class="form-field">
 				et/ou modèle
 		  	<%= f.input :modele_3, label: false, :required => false, wrapper_html: { class: 'input-rechercher' } %>
 		  </div>
-		  <div class="more-criterias">
 		  	<div class="criteria-label">Plus de critères</div>
-				<div class="form-label">
+		  <div class="more-criterias">
+				<div class="form-field">
 					Transmission
 				  <%= f.select :transmission_3, ['Manuelle', 'Automatique'], { include_blank: 'Toutes' }, :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Carburant
 				  <%= f.select :carburant_3, ['Essence', 'Diesel', 'Hybride', 'Électrique'], { include_blank: 'Tous' }, :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Année, entre
 				  <%= f.select :annee_min_3, ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et		
 				  <%= f.select :annee_max_3, ['2008', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'], :selected => '2016', :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Kilométrage, entre
 				  <%= f.select :kilometrage_min_3, ['0 km', '10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et
 				  <%= f.select :kilometrage_max_3, ['10 000 km', '20 000 km', '30 000 km', '40 000 km', '50 000 km', '60 000 km', '70 000 km', '80 000 km', '90 000 km', '100 000 km', '110 000 km', '120 000 km', '130 000 km'], :selected => '130 000 km', :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					Prix, entre
 				  <%= f.select :prix_min_3, ['5 000 €', '6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :required => false %> 
 				</div>
-				<div class="form-label">
+				<div class="form-field">
 					et
 				  <%= f.select :prix_max_3, ['6 000 €', '7 000 €', '8 000 €', '9 000 €', '10 000 €', '11 000 €', '12 000 €', '13 000 €', '14 000 €', '15 000 €', '17 500 €', '20 000 €', '22 500 €', '25 000 €', '27 500 €', '30 000 €', '35 000 €', '40 000 €', '45 000 €', '50 000 €'], :selected => '50 000 €',  :required => false %> 
 				</div>

@@ -16,11 +16,6 @@ $(document).ready(function(){
     $(".sub-menu-homepage").slideUp('fast');
   }
 
-    // $('.').hover(function() {
-    //     $(this).css('cursor','pointer');
-    // });
-
-
   $('.acheter-button').click(function() {   
     if ($('.vendre-explanation').css('display') == 'block') {
         $('.vendre-explanation').css('display', 'none');
@@ -203,6 +198,17 @@ if ( $('.sub-explanation-homepage.vendre-explanation').is(':visible')) {
     }, 500);
   });
 
+  $('.more-criterias').hide();
+
+  $('.criteria-label').click(function() {   
+    if ($(this).text() == 'Plus de critères') {
+      $(this).next().slideToggle();
+      $(this).html('<span>Trop compliqué !</span> Moins de critères');
+    } else {
+      $(this).text('Plus de critères');
+      $(this).next().slideToggle();
+    }
+  });
 
 });
 
