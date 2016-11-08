@@ -86,6 +86,8 @@ class CarsController < ApplicationController
 
   end
 
+
+
   def acheter_mini_occasion
     
     prepare_meta_tags(

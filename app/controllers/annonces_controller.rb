@@ -1,7 +1,7 @@
 class AnnoncesController < ApplicationController
 
 	def index
-		@voitures_annonces = Car.where(statut: 'Actif')
+		@voitures_annonces = Car.where(statut: 'Actif').sort_by(&:created_at)
 	end
 
 	def show
