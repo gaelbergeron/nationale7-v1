@@ -62,6 +62,24 @@
   align-items: center;
 }
 
+.alertes-bouton-petit {
+  background-color: #69a2d2;
+  width: 13em;
+  height: 2.8em;
+  text-align: center;
+  padding-top: 0.8em;
+  border-radius: 5px;
+  margin: 1em;
+  font-size: 1.1em;
+}
+
+a.alertes-bouton-petit {
+  color: white !important;
+}
+
+a.alertes-bouton-petit:hover {
+  background-color: rgb(56, 127, 194);
+}
 
 select {
 
@@ -150,7 +168,7 @@ select:focus {
   color: black;
 }
 
-a:link.recherche-button {
+a:link.alertes-bouton-grand {
   background-color: #69a2d2;
   font-size: 1.4em;
   display: flex;
@@ -161,11 +179,15 @@ a:link.recherche-button {
   opacity: 1;
   border-radius: 5px;
   width: 19em;
-  color: white;
+  color: white !important;
   justify-content: center;
 }
 
-a:link.recherche-button:hover {
+a.alertes-bouton-grand {
+  color: white !important;
+}
+
+a:link.alertes-bouton-grand:hover {
   background-color: rgb(56, 127, 194);
 }
 
@@ -206,6 +228,14 @@ a:link.recherche-button:hover {
     display: inherit; 
     justify-content: inherit; 
     align-items: inherit; 
+  }
+
+  .alertes-bouton-petit {
+    display: inherit;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 22.6em;
   }
 
   .acheter-filter {

@@ -12,7 +12,10 @@
 	font-size: 1.4em;
 	font-family: 'Montserrat';
 	color: rgb(97, 153, 200);
-	margin-top: 3em;
+  padding-top: 2em;
+  background-color: rgb(245, 245, 246);
+  padding-bottom: 1em;
+  margin-bottom: -1em;
 }
 
 .global-form {
@@ -25,10 +28,40 @@
 .form-title {
 	font-size: 1.3em;
 	margin-bottom: 1.3em;
+	margin-top: 1.5em;
+}
+
+.criteria-label {
+	margin-bottom: 1.4em;
+	font-size: 1.1em;
+	color: #69a2d2;
+}
+
+.criteria-label:hover {
+	text-decoration: underline;
+	color: black;
 }
 
 .form-label {
 	font-size: 1.1em;
+	margin-bottom: 0.2em;
+}
+
+.form-field {
+	margin-bottom: 1em;
+}
+
+.inter-label {
+	margin-top: 0.8em;
+	margin-bottom: 0em;
+}
+
+.et-label {
+	margin-bottom: 0em;
+}
+
+.group-field {
+	margin-bottom: 2em;
 }
 
 .buyer-form {
@@ -40,6 +73,20 @@
 
 .contact-form {
 	width: 50%;
+}
+
+.open-optional-fields {
+	text-align: center;
+	color: #69a2d2;
+	font-size: 1.3em;
+	margin-bottom: 1.5em;
+	margin-top: 2em;
+}
+
+.em {
+	width: 1.2em !important;
+	height: 1.2em !important;
+	vertical-align: sub !important
 }
 
 #acheteur_modele {
@@ -105,4 +152,32 @@
 
 #acheteur_code_postal {
 	width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+
+	.header-rechercher {
+		height: 27em;
+	}
+
+	.global-form {
+		width: 100%;
+	}
+
+	.form-intro {
+		font-size: 1.3em;
+	}
+
+	.buyer-form {
+		width: 90%;
+	}
+
+	.contact-form {
+		width: 90%;
+	}
+
+	.open-optional-fields {
+		font-size: 1.2em;
+	}
+
 }

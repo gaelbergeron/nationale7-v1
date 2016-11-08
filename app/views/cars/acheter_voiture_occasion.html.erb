@@ -102,6 +102,9 @@
 
 
 <div class="filters-wrap">
+
+  <%= link_to(raw('<i class="fa fa-bell fa-lg" aria-hidden="true"></i> Je crée une alerte !'), acheteurs_path, class: "alertes-bouton-petit" )%>
+
   <%= form_for_filterrific @filterrific do |f| %>
 
   <div class="acheter-filter">
@@ -139,9 +142,11 @@
 
 <div class="service-acheteur">
 
-  <h2 class="recherche-title"><span>VOUS RECHERCHEZ UNE VOITURE</span><span> EN PARTICULIER ?</span></h2>
+  <h2 class="recherche-title"><span>À LA RECHERCHE D'UNE VOITURE</span><span> EN PARTICULIER ?</span></h2>
 
-  <a href="#test-popup" class="open-popup-link recherche-button">Laissez-nous vous aider !</a>
+  <!-- <a href="#test-popup" class="open-popup-link recherche-button">Laissez-nous vous aider !</a> -->
+  <%= link_to(raw('<i class="fa fa-bell fa-lg" aria-hidden="true"></i>&nbsp Je crée une alerte !'), acheteurs_path, class: "alertes-bouton-grand" )%>
+
 
   <div id="test-popup" class="acheter-popup mfp-hide">
     <div class="popup-content">

@@ -201,14 +201,23 @@ if ( $('.sub-explanation-homepage.vendre-explanation').is(':visible')) {
   $('.more-criterias').hide();
 
   $('.criteria-label').click(function() {   
-    if ($(this).text() == 'Plus de critères') {
+    if ($(this).html() == 'Plus de critères<span>S’il vous plaît</span>') {
       $(this).next().slideToggle();
       $(this).html('<span>Trop compliqué !</span> Moins de critères');
     } else {
-      $(this).text('Plus de critères');
+      $(this).html('Plus de critères<span>S’il vous plaît</span>');
       $(this).next().slideToggle();
     }
   });
+
+  // $('.optional-fields').hide();
+
+  // $('.open-optional-fields').click(function() {
+  //     $('.optional-fields').slideToggle();
+  // });
+
+
+
 
 });
 
