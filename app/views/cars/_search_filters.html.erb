@@ -1,0 +1,36 @@
+<div class="filters-wrap">
+
+  <%= link_to(raw('<i class="fa fa-bell fa-lg" aria-hidden="true"></i> Je crée une alerte !'), acheteurs_path, class: "alertes-bouton-petit" )%>
+
+  <%= form_for_filterrific @filterrific do |f| %>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_marque,
+      @filterrific.select_options[:with_marque],
+      { include_blank: 'Toutes marques' }
+    )%>
+  </div>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_energie,
+      @filterrific.select_options[:with_energie],
+      { include_blank: 'Toutes motorisation' }
+    )%>
+  </div>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_prix_n7,
+      @filterrific.select_options[:with_prix_n7],
+      { include_blank: 'Tous les prix' }
+    )%>
+  </div>
+
+  <div class="acheter-filter tri">
+    <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by]) %>
+  </div>
+  <% end %>
+
+</div>

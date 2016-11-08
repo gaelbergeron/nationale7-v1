@@ -38,7 +38,6 @@ class CarsController < ApplicationController
     @cars = @filterrific.find.page(params[:page])
     @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
 
-
     respond_to do |format|
       format.html
       format.js
@@ -86,5 +85,53 @@ class CarsController < ApplicationController
     }
 
   end
+
+  def acheter_mini_occasion
+    
+    prepare_meta_tags(
+      title: "Acheter sa Mini d'occasion l'esprit léger",
+      description: "Les Mini Nationale 7 sont inspectées 75 points, garanties 6 mois et au meilleur prix. N7 s'occupe gère aussi la paperasse et la sécurisation du paiement.",
+      image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Acheter+voiture+occasion.jpg",
+      reverse: true
+    )
+
+    set_meta_tags og: {
+      title: "Acheter sa Mini d'occasion l'esprit léger grâce à Nationale 7.",
+      description: "Les Mini Nationale 7 sont inspectées 75 points, garanties 6 mois et au meilleur prix. N7 s'occupe gère aussi la paperasse et la sécurisation du paiement.",
+      image: "https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/Nationale+7+-+Acheter+voiture+occasion.jpg"
+    }
+
+    @filterrific = initialize_filterrific(
+      Car.where(statut: 'Actif'),
+      params[:filterrific],
+      :select_options => {
+        sorted_by: Car.where(statut: 'Actif').options_for_sorted_by,
+        with_marque: Car.where(statut: 'Actif').options_for_select_marque,
+        with_energie: ['Diesel', 'Essence'], 
+        with_prix_n7: [
+          ['Moins de 5 000 €', 5000], 
+          ['Moins de 10 000 €', 10000], 
+          ['Moins de 15 000 €', 15000], 
+          ['Moins de 20 000 €', 20000], 
+          ['Moins de 25 000 €', 25000], 
+          ['Moins de 30 000 €', 30000],  
+          ['Moins de 40 000 €', 40000], 
+          ['Moins de 50 000 €', 50000], 
+        ]
+      },
+      :persistence_id => false,
+      default_filter_params: { with_marque: 'Mini'},
+    ) or return 
+    @cars = @filterrific.find.page(params[:page])
+    @profile_photos = Photo.where(car_id: @cars.map(&:id)).where(description: 'Profile')
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
+
+  end
+
+
 
 end

@@ -42,4 +42,8 @@ Rails.application.routes.draw do
   # match '/alertes_acheteurs', to: 'alertes_acheteurs#new', via: 'get'
   resources 'acheteurs', :path => "/rechercher-voiture-occasion"
 
+  get '/acheter-mini-occasion', to: 'cars#acheter_mini_occasion', as: 'acheter_mini_occasion'
+
+
+
 end
