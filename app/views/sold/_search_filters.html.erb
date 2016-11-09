@@ -1,0 +1,26 @@
+<div class="filters-wrap">
+
+  <%= form_for_filterrific @filterrific do |f| %>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_marque,
+      @filterrific.select_options[:with_marque],
+      { include_blank: 'Toutes marques' }
+    )%>
+  </div>
+
+  <div class="acheter-filter">
+    <%= f.select(
+      :with_energie,
+      @filterrific.select_options[:with_energie],
+      { include_blank: 'Toutes motorisation' }
+    )%>
+  </div>
+
+  <div class="acheter-filter tri">
+    <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by]) %>
+  </div>
+  <% end %>
+
+</div>

@@ -20,7 +20,10 @@
   <div class="column page-acheter carItem<%= car.id %>">
   	<div class="picture-extras page-acheter">
       <div class="car-image-<%= car.id %>">
-        <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'show', controller: 'cars',  id: car.slug } %>
+        <div class="box">
+          <div class="ribbon"><span>Vendue !</span></div>
+            <%= link_to image_tag( @profile_photos.where(car_id: car.id).first.picture_url, :class => "car-image" ), { action: 'show', controller: 'sold',  id: car.slug } %>
+        </div>
       </div>
     <div style="position: relative; height: 0">
   		<div class="car-extra-info<%= car.id %> extra-info-layer">

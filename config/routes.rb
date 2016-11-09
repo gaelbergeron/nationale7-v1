@@ -34,6 +34,7 @@ Rails.application.routes.draw do
 
   resources 'cars', :path => "/acheter-voiture-occasion"
 
+  resources 'sold', :path => "/voitures-occasion-vendues"
   resources 'annonces'
   # get '/annonces', to: 'annonces#annonces', as: 'annonces'
 

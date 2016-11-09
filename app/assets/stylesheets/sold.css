@@ -1,0 +1,41 @@
+.header-sold {
+  height: 50em;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/nationale7v1/Website+assets/page-vendues-noir.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+}
+
+.sold-tagline-wrap {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-top: 21.5em;
+}
+
+.sold-h1-tagline {
+	color: white;
+	font-size: 3.4em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+}
+
+.sold-h2-tagline {
+	color: white;
+	font-size: 2.06em;
+  font-family: 'Montserrat-Light';
+  text-align: center;	
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+
+	.sold-tagline-wrap {
+  	text-align: center;
+  	left: 0;
+  	right: 0;
+  	padding-top: 16.5em;
+	}
+
+}

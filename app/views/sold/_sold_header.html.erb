@@ -1,0 +1,60 @@
+<header class="header-sold acheter-page">
+  <div class="logo-homepage">
+    <%= link_to image_tag('logo-homepage.png'), root_path, class: "logo-homepage" %>
+  </div>
+
+
+  <ul class="menu align-right homepage-nav-bar"> 
+    <li class="phone-number-header-homepage header-link-homepage"><a href="tel:0176390284" class="header-number-homepage">01 76 39 02 84</a></li>
+
+    <li class="besoin-aide header-link-homepage"><a href="#aide-popup" class="open-popup-link menu-link-homepage sliding-middle-out sliding-white">Besoin d'aide ?</a></li>  
+    
+    <li class="header-link-homepage"><%= link_to 'Vendre', vendre_voiture_occasion_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>  
+    <li class="header-link-homepage"><%= link_to 'Acheter', acheter_voiture_occasion_path, class: "menu-link-homepage sliding-middle-out sliding-white" %></li>
+    <li class="header-link-homepage wrapper pourquoi-n7 sliding-white">Pourquoi Nationale 7 ?
+      <div class="sub-menu-homepage">
+      <div class="sub-menu-homepage">
+      <ul class="header-sub-menu">
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "sub-menu-link-homepage first-link sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+      </ul>
+      </div>  
+    </li>
+
+    <div id="aide-popup" class="white-popup mfp-hide">
+      <div class="popup-content">
+      <p class="parlez-nous">Parlez nous ! (on est sympas et serviables)</p>
+      <a class="help-button-chat" href="">Chat (suivez la bulle rouge)</a>
+      <a class="help-button-email" href="mailto:bonjour@nationale-7.fr">bonjour@nationale-7.fr</a>
+      <a class="help-button-phone" href="tel:0176390284">01 76 39 02 84</a>
+      <p class="horaires-popup">Nous sommes ouverts du lundi au samedi de 9h à 20h !</p>
+      </div>
+    </div>
+  </ul>
+
+  <ul id="mobile-menu">
+    <li>POURQUOI NATIONALE 7 ?
+      <ul>
+        <li><%= link_to 'Comment ça marche ?', comment_ca_marche_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Les prix N7', les_prix_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+      </ul>
+    </li>
+    <li><%= link_to 'ACHETER', acheter_voiture_occasion_path, class: "menu-link-mobile" %></li>
+    <li><%= link_to 'VENDRE', vendre_voiture_occasion_path, class: "menu-link-mobile" %></li>  
+    <li class="besoin-aide"><a href="#aide-popup" class="open-popup-link menu-link-mobile">BESOIN D'AIDE ?</a></li>  
+    <li class=""><a href="tel:0176390284" class="header-number-product">01 76 39 02 84</a></li>
+  </ul>  
+
+    
+  <div class="sold-tagline-wrap">
+    <h1 class="sold-h1-tagline"><span>Nos voitures (bien) vendues,</span></h1>
+    <h2 class="sold-h2-tagline">au bon prix, en toute transparence et sérénité.</h2>
+  </div>
+
+</header>
