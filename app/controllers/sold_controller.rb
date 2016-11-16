@@ -5,8 +5,8 @@ class SoldController < ApplicationController
       Car.where(statut: 'Vendu'),
       params[:filterrific],
       :select_options => {
-        sorted_by: Car.where(statut: 'Actif').options_for_sorted_by,
-        with_marque: Car.where(statut: 'Actif').options_for_select_marque,
+        sorted_by: Car.where(statut: 'Vendu').options_for_sorted_by,
+        with_marque: Car.where(statut: 'Vendu').options_for_select_marque,
         with_energie: ['Diesel', 'Essence']
       },
       :persistence_id => false,
