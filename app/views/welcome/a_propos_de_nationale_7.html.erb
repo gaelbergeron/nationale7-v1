@@ -21,6 +21,7 @@
         <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
         <li><%= link_to 'FAQ', foire_aux_questions_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
         <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
+        <li><%= link_to 'Nos voitures vendues', { action: 'index', controller: 'sold'}, class: "sub-menu-link-homepage sliding-middle-out sliding-black" %></li>
       </ul>
 
       </div>  
@@ -45,6 +46,7 @@
         <li><%= link_to 'L\'expertise N7', expertise_nationale_7_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'FAQ', foire_aux_questions_path, class: "menu-link-mobile" %></li>
         <li><%= link_to 'À propos', a_propos_de_nationale_7_path, class: "menu-link-mobile" %></li>
+        <li><%= link_to 'Nos voitures vendues', { action: 'index', controller: 'sold'}, class: "menu-link-mobile" %></li>
       </ul>
     </li>
     <li><%= link_to 'ACHETER', acheter_voiture_occasion_path, class: "menu-link-mobile" %></li>

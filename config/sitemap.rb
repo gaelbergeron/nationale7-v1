@@ -20,14 +20,22 @@ add '/les-prix-nationale-7', :changefreq => 'monthly', :priority => 0.7
 add '/expertise-nationale-7', :changefreq => 'monthly', :priority => 0.7
 add '/foire-aux-questions', :changefreq => 'monthly', :priority => 0.7 
 add '/a-propos-de-nationale-7', :changefreq => 'monthly', :priority => 0.7 
+add '/voitures-occasion-vendues', :changefreq => 'monthly', :priority => 0.7 
 add '/acheter-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
 add '/vendre-voiture-occasion', :changefreq => 'monthly', :priority => 0.8 
 add '/conditions-generales-de-vente', :changefreq => 'monthly', :priority => 0.2 
 add '/mentions-legales', :changefreq => 'monthly', :priority => 0.2 
+add '/acheter-mini-occasion', :changefreq => 'monthly', :priority => 0.7
+add '/acheter-diesel-occasion', :changefreq => 'monthly', :priority => 0.7
 
 SitemapGenerator::Sitemap.create do
-    Car.where(statut: 'Actif').find_each do |car|
-      add car_path(car.slug), :lastmod => car.updated_at, :changefreq => 'weekly', :priority => 0.9
-    end
+  Car.where(statut: 'Actif').find_each do |car|
+    add car_path(car.slug), :lastmod => car.updated_at, :changefreq => 'weekly', :priority => 0.9
+  end
 end
 
+SitemapGenerator::Sitemap.create do
+  Car.where(statut: 'Vendu').find_each do |car|
+    add sold_path(car.slug), :lastmod => car.updated_at, :changefreq => 'weekly', :priority => 0.7
+  end
+end

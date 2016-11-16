@@ -5,25 +5,19 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   root 'welcome#index'
-  #Cars controller
-  get '/acheter-voiture-occasion', to: 'cars#acheter_voiture_occasion', as: 'acheter_voiture_occasion'
   
+  #Cars controller
+  get '/acheter-voiture-occasion', to: 'cars#acheter_voiture_occasion', as: 'acheter_voiture_occasion'  
   get '/vendre-voiture-occasion', to: 'cars#vendre_voiture_occasion', as: 'vendre_voiture_occasion'
-
-  # get 'vendre' => 'cars#vendre'
+  resources 'cars', :path => '/acheter-voiture-occasion'
 
   # Welcome controller
   get '/a-propos-de-nationale-7', to: 'welcome#a_propos_de_nationale_7', as: 'a_propos_de_nationale_7'
   get '/foire-aux-questions', to: 'welcome#foire_aux_questions', as: 'foire_aux_questions'
   get '/comment-ca-marche', to: 'welcome#comment_ca_marche', as: 'comment_ca_marche'
-  # get 'commentcamarche' => 'welcome#commentcamarche'
   get '/les-prix-nationale-7', to: 'welcome#les_prix_nationale_7', as: 'les_prix_nationale_7'
   get '/expertise-nationale-7', to: 'welcome#expertise_nationale_7', as: 'expertise_nationale_7'
-
   get '/conditions-generales-de-vente', to: 'welcome#conditions_generales_de_vente', as: 'conditions_generales_de_vente'
-
-  # get 'cgv' => 'welcome#cgv'
-  # get 'mentionslegales' => 'welcome#mentionslegales'
   get '/mentions-legales', to: 'welcome#mentions_legales', as: 'mentions_legales'
 
 
@@ -32,18 +26,16 @@ Rails.application.routes.draw do
   match '/evaluations', to: 'evaluations#new', via: 'get'
   resources :evaluations
 
-  resources 'cars', :path => "/acheter-voiture-occasion"
 
+  resources 'acheteurs', :path => "/rechercher-voiture-occasion"
   resources 'sold', :path => "/voitures-occasion-vendues"
   resources 'annonces'
-  # get '/annonces', to: 'annonces#annonces', as: 'annonces'
 
   get '/sitemap.xml.gz', to: redirect("https://s3-eu-west-1.amazonaws.com/nationale7v1/sitemaps/sitemap.xml.gz")
 
-  # match '/alertes_acheteurs', to: 'alertes_acheteurs#new', via: 'get'
-  resources 'acheteurs', :path => "/rechercher-voiture-occasion"
-
+  #Footer routes
   get '/acheter-mini-occasion', to: 'cars#acheter_mini_occasion', as: 'acheter_mini_occasion'
+  get '/acheter-diesel-occasion', to: 'cars#acheter_diesel_occasion', as: 'acheter_diesel_occasion'
 
 
 

@@ -71,6 +71,12 @@ if ( $('.sub-explanation-homepage.vendre-explanation').is(':visible')) {
       }, 1000);
   });
 
+  $('.acheter-button-sold').click(function() {
+      $('html, body').animate({
+          scrollTop: $('.contact-wrapper').offset().top
+      }, 1000);
+  });
+
   $('.alert-dismiss').click(
     function() {
       $('.alert-message').hide();
